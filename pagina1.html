@@ -31,20 +31,69 @@
                 “animales marinos”).</li>
             <li>Mapa de imagenes sin hacer uso de la etiqueta map donde al colocarnos encima de un elemento,
                 éste cambiará de color (de forma similar al ejercicio de “animales marinos”) </li>
-            <li>
-                Mapa de imágenes haciendo uso de la etiqueta <map>, definiendo al menos 4 áreas, 2 de ellas
-                    deben ser poligonales (de forma similar al ejercicio de “animales marinos”)
-            </li>
-            <li>
-                Animación basada en una hoja de Sprites que tenga relación con el tema del sitio
-            </li>
-            <li>
-                Inserción de audio y vídeo (al menos uno de cada).
-            </li>
-            <li>
-                Eventos con selectores por pseudoclase dinámica (al menos 3 distintos)
-            </li>
+
         </ul>
+
+<!-- Mapa de tipos de vino-->
+        <article>
+            <h2>Tipos de vinos</h2>        
+
+<!-- Mapa de imágenes haciendo uso de la etiqueta <map>, definiendo al menos 4 áreas, 2 de ellas
+                    deben ser poligonales (de forma similar al ejercicio de “animales marinos”)-->
+            <div class="mapa-div">
+                <h4>Diferentes vinos de Jerez</h4>
+                <map name="image-map">
+                    <img src="/img/tipos_vino.jpg" usemap="#image-map">
+
+                    <area class="map-vino-fino" alt="fino" title="fino"
+                        coords="33,7,123,6,138,91,104,143,95,183,97,222,136,248,132,263,106,286,57,287,46,271,24,257,28,238,62,224,63,148,34,125,21,97,28,23,31,15,32,6"
+                        shape="poly">
+                    <label for="map-vino-fino">Fino, el origen</label>
+
+                    <area class="map-vino-amonillado" alt="amontillado" title="amontillado"
+                        coords="194,6,283,4,295,92,260,147,256,221,296,244,315,272,305,289,168,291,167,264,184,242,218,225,223,149,178,97"
+                        shape="poly">
+                    <label for="map-vino-amonillado">Amontillado, la mezcla entre Fino y Oloroso</label>
+
+                    <area class="map-vino-oloroso" alt="oloroso" title="oloroso" coords="343,7,459,290" shape="rect">
+                    <label for="map-vino-oloroso">Oloroso <br> cuando es bueno es impresionante</label>
+
+                    <area class="map-vino-palo-cortado" alt="palo-cortado" title="palo-cortado" coords="633,289,486,6"
+                        shape="rect">
+                    <label for="map-vino-palo-cortado">Palo Cortado<br>el secreto, el mejor de todos</label>
+
+                    <area class="map-vino-pale-cream" alt="pale-cream" title="pale-cream"
+                        coords="676,5,761,4,775,80,759,129,737,150,735,221,771,240,780,261,790,291,657,290,657,245,700,225,701,150,665,122,661,88"
+                        shape="poly">
+                    <label for="map-vino-pale-cream">Pale Cream, vino de Ingleses</label>
+
+                    <area class="map-vino-medium" alt="medium" title="medium" href=""
+                        coords="33,307,124,305,135,383,118,442,109,495,121,534,139,562,126,595,36,596,33,575,18,561,48,511,29,423,16,381,17,334"
+                        shape="poly">
+                    <label for="map-vino-medium">Medium, mezcla de varios</label>
+
+                    <area class="map-vino-cream" alt="cream" title="cream" coords="186,305,293,596" shape="rect">
+                    <label for="map-vino-cream">Cream, vino de Ingleses</label>
+
+                    <area class="map-vino-pedro-ximenez" alt="pedro-ximenez" title="pedro-ximenez"coords="479,599,321,313"
+                        shape="rect">
+                    <label for="map-vino--pedro-ximenez">Pedro Ximenez, el mas dulce</label>
+
+                    <area class="map-vino-moscatel" alt="moscatel" title="moscatel" 
+                        coords="516,310,602,307,619,390,600,440,575,459,575,524,608,543,620,577,612,602,499,594,507,544,535,530,539,451,504,417"
+                        shape="poly">
+                    <label for="map-vino-moscatel">Moscatel, muy dulce</label>
+
+                    <area class="map-vino-manzanilla" alt="manzanilla" title="manzanilla"
+                        coords="671,310,765,311,778,392,749,448,741,503,757,540,778,553,788,590,655,594,658,560,695,529,702,452,657,415"
+                        shape="poly">
+                    <label for="map-vino-manzanilla">Manzanilal de Sanlucar <br> de lo mejor para el verano</label>
+                </map>
+                <p class="text-center">Pasa el raton por encima para ver sus nombres y comentarios</p>
+            </div>
+
+
+        </article>
     </main>
     <footer>
         <p>Footer</p>

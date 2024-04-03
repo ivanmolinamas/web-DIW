@@ -1,46 +1,50 @@
-:root{
+:root {
     /* variables colores para el uso en la web*/
     --color-negro-fondo: #212529;
     --color-blanco-texto: #F8F9FA;
     --color-gris-texto: #737373
 }
-    
+
 
 /*
 
 */
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
-    font-weight:lighter;
+    font-weight: lighter;
 }
-.nav{
+
+.nav {
     height: 65px;
     display: flex;
     align-items: center;
     margin-left: 12px;
     margin-top: 13px;
 }
-.nav-list{
+
+.nav-list {
     display: flex;
     align-items: center;
     margin-left: 16px;
 }
-.nav-list > li >a{
+
+.nav-list>li>a {
     font-size: 15px;
     text-decoration: none;
     padding: 8px;
 }
 
-.nav > ul > li{
+.nav>ul>li {
     display: inline;
 }
 
-footer{
+footer {
     margin-top: 80px;
     padding: 20px;
     background-color: #212529;
@@ -48,9 +52,96 @@ footer{
     text-align: center;
 
 }
-.color-gris{
+
+.color-gris {
     color: var(--color-gris-texto);
 }
-.color-negro{
+
+.color-negro {
     color: var(--color-negro-fondo);
+}
+
+.text-center{
+    text-align: center;
+}
+.center{
+    margin: 0px auto;
+}
+
+/* mapa de vinos*/
+.mapa-div{
+    position: relative ;
+}
+label {
+    position: absolute;
+    display: none;
+    text-align: center;
+    font-size: large;
+    background-color: azure;
+    width: fit-content;
+    height: fit-content;
+    top: 0px;
+    left: 0px;
+    padding: 5px;
+}
+
+.map-vino-fino:hover + label {
+    display: inline-block;
+    border: 2px solid black;
+    top: 170px;
+    left: 30px;
+}
+.map-vino-amonillado:hover + label {
+    display: inline-block;
+    border: 2px solid black;
+    top: 170px;
+    left: 100px;
+}
+.map-vino-oloroso:hover + label {
+    display: inline-block;
+    border: 2px solid black;
+    top: 170px;
+    left: 300px;
+}
+.map-vino-palo-cortado:hover + label {
+    display: inline-block;
+    border: 2px solid black;
+    top: 170px;
+    left: 460px;
+}
+.map-vino-pale-cream:hover + label {
+    display: inline-block;
+    border: 2px solid black;
+    top: 170px;
+    left: 570px;
+}
+.map-vino-medium:hover + label {
+    display: inline-block;
+    border: 2px solid black;
+    top: 490px;
+    left: 20px;
+}
+.map-vino-cream:hover + label {
+    display: inline-block;
+    border: 2px solid black;
+    top: 490px;
+    left: 130px;
+}
+.map-vino-pedro-ximenez:hover + label {
+    display: inline-block;
+    border: 2px solid black;
+    top: 490px;
+    left: 290px;
+}
+.map-vino-moscatel:hover + label {
+    display: inline-block;
+    border: 2px solid black;
+    top: 490px;
+    left: 450px;
+}
+.map-vino-manzanilla:hover + label {
+    display: inline-block;
+    border: 2px solid black;
+    top: 490px;
+    left: 620px;
 }
