@@ -5,33 +5,25 @@
     --color-gris-texto: #737373
 }
 
-
-/*
-
-*/
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
     font-weight: lighter;
 }
 
+/* NAVEGACION */
 .nav {
     height: 65px;
     display: flex;
     align-items: center;
-    margin-left: 12px;
+    margin-left: 5px;
     margin-top: 13px;
 }
 
 .nav-list {
     display: flex;
     align-items: center;
-    margin-left: 16px;
+    margin-left: 5px;
 }
 
 .nav-list>li>a {
@@ -44,8 +36,11 @@ body {
     display: inline;
 }
 
+/* FIN NAVEGACION */
+
+/*  FOOTER   */
 footer {
-    margin-top: 80px;
+    padding-top: 80px;
     padding: 20px;
     background-color: #212529;
     color: var(--color-blanco-texto);
@@ -53,6 +48,7 @@ footer {
 
 }
 
+/* FIN  FOOTER   */
 .color-gris {
     color: var(--color-gris-texto);
 }
@@ -68,9 +64,11 @@ footer {
     margin: 0px auto;
 }
 
+
 /* mapa de vinos*/
 .mapa-div{
     position: relative ;
+    margin-left: 10px;
 }
 label {
     position: absolute;
@@ -145,3 +143,5 @@ label {
     top: 490px;
     left: 620px;
 }
+
+/*  FIN mapa de vinos*/
