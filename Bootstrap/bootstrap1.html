@@ -10,7 +10,7 @@
 
 <body>
   <!--            navbar               -->
-  <nav class="navbar navbar-expand-sm bg-body-tertiary">
+  <nav class="navbar navbar-expand-md bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="/index.html"><img src="/img/Logo.png" alt="logo del centro" width="150px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -62,7 +62,7 @@
   <!--            Titulo                       -->
 
   <div class="container-flex">
-    <h1 class="display-1 text-center">Vinos tintos</h1>
+    <h1 class="display-1 text-center">Vinos Tintos</h1>
   </div>
 
   <!--                   Carrousel                            -->
@@ -113,8 +113,24 @@
   </div>
   <!--                       fin carrousel                 -->
 
+  <!--   Parrafo de Texto     -->
+  <div class="container-sm mt-5">
+    <h2 class="displa-2 text-center">¿Que es el vino tinto?</h2>
+    <div class="row">
+      <div class="col m-2">
+        <p>Denominación de un vino elaborado con variedades de uva oscuras (de azules a negras). El vino tinto tiene una mayor proporción de fenoles, como el resveratrol, y una menor proporción de ácidos que el vino blanco. El color procede de las antocianinas contenidas principalmente en los hollejos de las uvas oscuras (es decir, no en la pulpa). Tras el despalillado (eliminación de los hollejos) y un ligero estrujado, suele llevarse a cabo la fermentación clásica en mosto, combinada con un periodo de maceración correspondientemente largo. La fermentación junto con los hollejos y la pulpa extrae los colorantes y los taninos de los hollejos y las pepitas de las bayas. Otros procesos alternativos o complementarios son la autovinificación, la maceración carbónica, el calentamiento del mosto, la rotofermentación y el remontado.</p>
+      </div>
+      
+      <p>https://glossaire.wein.plus/vino-tinto</p>
+    </div>
+    <div  class="row">
+      <div class="col text-center">
+        <a class="btn btn-success " href="/Bootstrap/bootstrap2.html" role="button">Que es y como hacen el vino blanco</a>
+      </div>
+    </div>
+  </div>
   <!--        list group         -->
-  <div class="conteiner-flex mt-4">
+  <div class="container-flex mt-5">
     <div class="row">
       <div class="col-4"></div>
       <div class="col-4">
@@ -140,7 +156,7 @@
     <div class="row justify-content-center">
       <div class="col-8">
         <div class="alert alert-success alert-dismissible fade show" role="alert">
-          <strong>Hey!,</strong> Septiembre es epoca de vendimia, buena epoca para visitar viñedos.
+          <strong>Sabias que...</strong> septiembre es epoca de vendimia, buena epoca para visitar viñedos.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       </div>
@@ -198,11 +214,26 @@
       </div>
     </div>
   </div>
+<!--          Botones              -->
+<div class="container-flex mt-5 ">
+  <div class="row">
+    <div class="col-4 text-center">
+      <a class="btn btn-primary" href="/Bootstrap/bootstrap2.html" role="button">Ir a pagina 2</a>
+    </div>
+    <div class="col-4 text-center">
+      <a class="btn btn-primary" href="/Bootstrap/bootstrap3.html" role="button">Ir a pagina 3</a>
+    </div>
+    <div class="col-4 text-center">
+      <a class="btn btn-primary" href="#" role="button">Link</a>
+    </div>
+  </div>
+</div>
+
   <!--                tablas             -->
   <div class="container md mt-5" id="tablas">
     <div class="row">
       <div class="col">
-        <h3 class="h3 mb-4">Tabla con las ...</h3>
+        <h3 class="h3 mb-4">Las 10 principales comunidades autonomas que mas vino producen</h3>
       </div>
     </div>
     <div class="row">
@@ -211,28 +242,71 @@
           <thead>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col">Comunidad autonoma</th>
+              <th scope="col">Hectolitros</th>
+              <th scope="col">Principal Denominacion de Origen</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td>Castilla La Mancha</td>
+              <td>18.584,13</td>
+              <td>La Mancha</td>
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
+              <td>Extremadura</td>
+              <td>3.247</td>
+              <td>Rivera del Guadiana</td>
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
+              <td>Cataluña</td>
+              <td>2.707</td>
+              <td>Penedés, Priorat</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Castilla y Leon</td>
+              <td>2.294,5</td>
+              <td>DO Toro</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>La Rioja</td>
+              <td>2.084,7</td>
+              <td>Rioja</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>C. Valenciana</td>
+              <td>1.969,6</td>
+              <td>Valencia</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Aragón</td>
+              <td>1.969,6</td>
+              <td>Cariñena, Campo de Borja</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Region de Murcia</td>
+              <td>718</td>
+              <td>Jumilla, Bullas</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Pais Vasco</td>
+              <td>695</td>
+              <td>Txakolí</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>Andalucia</td>
+              <td>659,3</td>
+              <td>Jerez - Manzanilla de S. Lúcar</td>
             </tr>
           </tbody>
         </table>
