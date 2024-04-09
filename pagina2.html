@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de CSS</title>
+    <link href="/CSS/normalize.css" rel="stylesheet" type="text/css">
     <link href="/CSS/style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -15,18 +16,27 @@
             <a class="navbar-brand" href="/index.html"><img src="/img/Logo.png" alt="logo del centro" width="150px"></a>
             <ul class="nav-list">
                 <li><a class="color-negro" aria-current="page" href="/index.html">Inicio</a></li>
-                <li><a class="color-gris" href="/pagina1.html">CSS</a></li>
-                <li><a class="color-gris" href="/Bootstrap/bootstrap1.html">BootStrap</a></li>
+                <li><a class="color-gris" href="/Bootstrap/bootstrap1.html">Vino Tinto</a></li>
+                <li><a class="color-gris" href="/Bootstrap/bootstrap2.html">Vino Blanco</a></li>
+                <li><a class="color-gris" href="/pagina1.html">Vinos Generosos</a></li>
                 <li><a class="color-gris" href="/Bootstrap/bootstrap5.html">Sobre mi</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Pagina de CSS</h1>
+        <h1 class="text-center">Mas info Vino Tinto</h1>
+        <h2>Pagina de CSS</h2>
+        
 
         <p>Contenido:</p>
         <ul>
+            <li>
+                Imagen con notas D.O.
+            </li>
+            <li>
+                Mapa imagenes sin map
+            </li>
             <li>
                 Animación basada en una hoja de Sprites que tenga relación con el tema del sitio
             </li>
@@ -37,6 +47,24 @@
                 Eventos con selectores por pseudoclase dinámica (al menos 3 distintos)
             </li>
         </ul>
+
+        <div>
+            <h3>Mapa de distintas D.O. de Vinos en España</h3>
+            <div class="mapa-do" id="mapa-do">
+                <img src="/img/mapa-do.JPG" alt="mapa D.O. España">
+                <ul class="cuadro">
+                    <li class="nota1"><p>La Mancha, la gran productora de España</p></li>
+                    <li class="nota2"><p>Rioja, primera D.O.</p></li>
+                    <li class="nota3"><p>Rivera del Duero, D.O. Con mucha fuerza</p></li>
+                    <li class="nota4"><p>Penedes, productora de vinos de gran calidad</p></li>
+                    <li class="nota5"><p>Somontano, D.O. con mucha variedad de viñas</p></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
     </main>
     <footer>
         <p>Footer</p>
