@@ -61,7 +61,7 @@
 
   <!--            Titulo                       -->
 
-  <div class="container-flex">
+  <div class="container-flex mb-4 mt-3">
     <h1 class="display-1 text-center">Vinos Tintos</h1>
   </div>
 
@@ -113,84 +113,105 @@
   </div>
   <!--                       fin carrousel                 -->
 
-  <!--   Parrafo de Texto     -->
-  <div class="container-sm mt-5">
-    <h2 class="displa-2 text-center">¿Que es el vino tinto?</h2>
-    <div class="row">
-      <div class="col m-2">
-        <p>Denominación de un vino elaborado con variedades de uva oscuras (de azules a negras). El vino tinto tiene una
-          mayor proporción de fenoles, como el resveratrol, y una menor proporción de ácidos que el vino blanco. El
-          color procede de las antocianinas contenidas principalmente en los hollejos de las uvas oscuras (es decir, no
-          en la pulpa). Tras el despalillado (eliminación de los hollejos) y un ligero estrujado, suele llevarse a cabo
-          la fermentación clásica en mosto, combinada con un periodo de maceración correspondientemente largo. La
-          fermentación junto con los hollejos y la pulpa extrae los colorantes y los taninos de los hollejos y las
-          pepitas de las bayas. Otros procesos alternativos o complementarios son la autovinificación, la maceración
-          carbónica, el calentamiento del mosto, la rotofermentación y el remontado.</p>
-      </div>
-
-      <p>https://glossaire.wein.plus/vino-tinto</p>
-    </div>
-    <div class="row">
-      <div class="col text-center">
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                ¿Cuantas variedades de uvas hay?
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>Más de 10.000 variedades!</strong> Pero solo unas pocas han conseguido una disntincion y popularidad entre la gente, y el abanico de variedades que podemos encontrar en el mercado es mas "pequeño", hay variedades que las usan para mezclar y asi conseguir otros sabores diferentes que aligeran o dan caracter a los vinos.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                ¿Que significa joven, crianza, reserva...?
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                ¿Cuanto tiempo aguanta un vino antes de ponerse malo?
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <!--        list group         -->
   <div class="container-flex mt-5">
     <div class="row">
       <div class="col-4"></div>
       <div class="col-4">
         <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-            Vinos Tintos
+          <a class="list-group-item list-group-item-action disabled" aria-disabled="true">Indice de la pagina</a>
+          <a href="#vintoTinto" class="list-group-item list-group-item-action active" aria-current="true">
+            ¿Que es el tinto?
           </a>
-          <a href="#tarjetas" class="list-group-item list-group-item-action">Tarjetas</a>
-          <a href="#tablas" class="list-group-item list-group-item-action">Tablas</a>
+          <a href="#preguntasBasciasTinto" class="list-group-item list-group-item-action">Preguntas clasicas</a>
+          <a href="#tiposTinto" class="list-group-item list-group-item-action">Categorias de tinto</a>
+          <a href="#denominaciones" class="list-group-item list-group-item-action">La Denominaciones de Origen</a>
+          <a href="#tablas" class="list-group-item list-group-item-action">Tabla produccion de vino por C.A.</a>
           <a href="#imagenes" class="list-group-item list-group-item-action">Galeria de imagenes</a>
-          <a class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
+
         </div>
         <div class="col-4"></div>
       </div>
-
     </div>
+
+
+    <!--   Parrafo de Texto     -->
+    <div class="container-sm mt-5" id="vintoTinto">
+      <h2 class="displa-2 text-center">¿Que es el vino tinto?</h2>
+      <div class="row">
+        <div class="col m-2">
+          <p>Denominación de un vino elaborado con variedades de uva oscuras (de azules a negras). El vino tinto tiene
+            una
+            mayor proporción de fenoles, como el resveratrol, y una menor proporción de ácidos que el vino blanco. El
+            color procede de las antocianinas contenidas principalmente en los hollejos de las uvas oscuras (es decir,
+            no
+            en la pulpa). Tras el despalillado (eliminación de los hollejos) y un ligero estrujado, suele llevarse a
+            cabo
+            la fermentación clásica en mosto, combinada con un periodo de maceración correspondientemente largo. La
+            fermentación junto con los hollejos y la pulpa extrae los colorantes y los taninos de los hollejos y las
+            pepitas de las bayas. Otros procesos alternativos o complementarios son la autovinificación, la maceración
+            carbónica, el calentamiento del mosto, la rotofermentación y el remontado.</p>
+        </div>
+
+        <p>https://glossaire.wein.plus/vino-tinto</p>
+      </div>
+
+      <!--   acordeon desplegable  -->
+      <div class="row" id="preguntasBasciasTinto">
+        <div class="col-8 offset-2 text-center">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  ¿Cuantas variedades de uvas hay?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Más de 10.000 variedades!</strong> Pero solo unas pocas han conseguido una disntincion y
+                  popularidad entre la gente, y el abanico de variedades que podemos encontrar en el mercado es mas
+                  "pequeño", hay variedades que las usan para mezclar y asi conseguir otros sabores diferentes que
+                  aligeran o dan caracter a los vinos.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ¿Que significa joven, crianza, reserva...?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Son los diferentes tipos de vino.</strong> Mas abajo encontraras una breve expliación de cada
+                  uno de estos vinos para que aprendas a diferenciarlos. Es muy sencillo, <a
+                    href="#tiposTinto">Descubrelos!</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ¿Cuanto tiempo aguanta un vino antes de ponerse malo?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Es dificil dar un tiempo exacto...</strong> depende de la calidad de la uva, del tipo de vino,
+                  ya que los vinos jovenes estan echo para beberlos en un plazo corto y los grandes reserva peuden estar
+                  15 años en la botella y seguir con una calidad excelente. En resumen, los jovenes son de beber en un
+                  plazo de 2 o 3 años, y los reserva los puedes aguantar hasta 10 años sin perder sus cualidades.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
 
@@ -208,76 +229,133 @@
   </div>
   <!--        CARDS             -->
 
-  <div class="container-flex mt-5 bg-secondary p-4" id="tarjetas">
+  <div class="container-flex mt-5 bg-secondary p-4" id="tiposTinto">
+    <h3 class="display-3 text-center mb-4">Los diferentes tipos de vino tinto</h3>
     <!-- primera row-->
     <div class="row">
-      <div class="col">
+      <div class="col-sm-12 col-md-6 col-xl-3">
         <div class="card m-2 mx-auto d-block" style="width: 18rem;">
-          <img src="/img/bodega1.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Bodegas en Aragon</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Joven</h5>
+            <p class="card-text">
+              Esta categoria corresponde a los vinos con menor tiempo de envejecimiento en barrica, incluso algunos no
+              pasan ni por una barrica. En general vino llamado roble pasa entre 3 y 6 meses en barrica.
+            </p>
           </div>
         </div>
 
       </div>
-      <div class="col">
+      <div class="col-sm-12 col-md-6 col-xl-3">
         <div class="card m-2 mx-auto d-block" style="width: 18rem;">
-          <img src="/img/bodega1.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Bodegas de la Valdepeñas</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- segunda row-->
-    <div class="row">
-      <div class="col-6">
-        <div class="card m-2 mx-auto d-block" style="width: 18rem;">
-          <img src="/img/bodega1.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Bodegas en Aragón</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Crianza</h5>
+            <p class="card-text">
+              Los crianza son aquellos que han pasado por un envejecimiento en barrica de entre 6 y 12 meses y un
+              envejecimiento de al menos 24 meses.
+            </p>
           </div>
         </div>
       </div>
 
-      <div class="col-6">
+
+      <div class="col-sm-12 col-md-6 col-xl-3">
         <div class="card m-2 mx-auto d-block" style="width: 18rem;">
-          <img src="/img/bodega1.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Bodegas en Rivera del Duero</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Reserva</h5>
+            <p class="card-text">
+              Los reserva deben estar al menos un tiempo de 12 meses en barrica, y un periodo de envejecimiento de al
+              menos 3 años.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-xl-3">
+        <div class="card m-2 mx-auto d-block" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Gran Reserva</h5>
+            <p class="card-text">
+              Estos, la categoria mas prestigiosa en los tintos, en la mayoria de regiones epsañolas, debe estar al
+              menos 18 meses en barrica, y unos 5 años de envejecimiento.
+            </p>
           </div>
         </div>
       </div>
     </div>
+
   </div>
   <!--          Botones              -->
-  <div class="container-flex mt-5 ">
-    <div class="col text-center">
-      <a class="btn btn-primary" href="/pagina2.html" role="button">Ver mapa con distintas D.O.</a>
+
+
+
+
+  <div class="container-flex mt-5 " id="denominaciones">
+    <h3 class="h3 text-center mb-3">Diferentes Denominaciones de Origen en el vino tinto</h3>
+    <div class="row text-center">
+      <div class="col-8 offset-2">
+        <p>
+          Un vino con denominacion de origen es aquel que obtiene un sello de garantia que certifica que este, ha sido
+          producido, de manera entera, tanto la cosecha como la elaboración en bodega, en una región vinícola
+          determinada, y que el proceso de elaboracion se ha realizado con unos criterio de calidad que el consejo
+          regulador dicta.
+        </p>
+      </div>
+      <div class="row mt-3">
+        <h4>Niveles de Denominacion de Origen en España</h4>
+        <div class="col-6 offset-3">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Denominacion de Origen Calificada (DOCa)</li>
+            <li class="list-group-item">Denominacion de Origen (DO)</li>
+            <li class="list-group-item">Vino de calidad con indicación geográfica (VC)</li>
+            <li class="list-group-item">Vino de pago (VP)</li>
+            <li class="list-group-item">La mencion de IGP en españa corresponde con vinos dse la tierra (VT)</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="row mt-3">
+      <h4 class="h4 text-center">D.O. más importantes en España</h4>
+      <div class="col-8 offset-2 text-center">
+        <p>
+          Rioja es la denominación de origen de mas prestigio a nivel internacional, pero el mayor valor historico y la
+          singularidad son los vinos de Jerez.
+          Otras principales D.O son Ribera del Duero, Priorat y la propia rioja.
+        </p>
+        <p>
+          En el siguiente enlace puedes ver mas informacion con mapas para obtener mas información y orientarte con
+          ella.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p>
+
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <a class="btn btn-primary" href="/pagina2.html" role="button">Ver mapa con distintas D.O.</a>
+      </div>
     </div>
   </div>
-  </div>
+
+
 
   <!--                tablas             -->
   <div class="container md mt-5" id="tablas">
     <div class="row">
       <div class="col">
-        <h3 class="h3 mb-4">Las 10 principales comunidades autonomas que mas vino producen</h3>
+        <h3 class="h3 mb-4 text-center">Las 10 principales comunidades autonomas que mas vino producen</h3>
       </div>
     </div>
     <div class="row">
-      <div class="col">
-        <table class="table">
+      <div class="col-8 offset-2">
+        <table class="table table-hover">
           <thead>
-            <tr>
+            <tr class="table-info">
               <th scope="col">#</th>
               <th scope="col">Comunidad autonoma</th>
               <th scope="col">Hectolitros</th>
@@ -307,7 +385,7 @@
               <th scope="row">4</th>
               <td>Castilla y Leon</td>
               <td>2.294,5</td>
-              <td>DO Toro</td>
+              <td>Toro</td>
             </tr>
             <tr>
               <th scope="row">5</th>
@@ -355,7 +433,7 @@
   <div class="container mt-5 " id="imagenes">
     <div class="row">
       <div class="col">
-        <h3 class="h3 mb-4">Galeria de imagenes</h3>
+        <h3 class="h3 mb-4 text-center">Galeria de imagenes</h3>
       </div>
     </div>
     <div class="row ">
@@ -365,18 +443,11 @@
       <div class="col">
         <img src="/img/bodega5.jpeg" class="img-thumbnail mx-auto d-block" alt="...">
       </div>
-      <div class="row">
-        <div class="col">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ipsa at. Modi eius, magnam
-            aspernatur
-            itaque maxime reprehenderit maiores provident quos, quibusdam atque nihil consectetur sit ratione alias
-            cupiditate a.</p>
-        </div>
-        <div class="col">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nobis autem, est quam sit veniam
-            quas quibusdam obcaecati, ipsam molestiae et magnam tempora, ex sequi odio doloribus cumque deleniti a.
-          </p>
-        </div>
+      <div class="col">
+        <img src="/img/bodega5.jpeg" class="img-thumbnail mx-auto d-block" alt="...">
+      </div>
+      <div class="col">
+        <img src="/img/bodega5.jpeg" class="img-thumbnail mx-auto d-block" alt="...">
       </div>
     </div>
     <div class="row ">
@@ -386,20 +457,28 @@
       <div class="col">
         <img src="/img/bodega5.jpeg" class="img-thumbnail mx-auto d-block" alt="...">
       </div>
-      <div class="row">
-        <div class="col">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ipsa at. Modi eius, magnam
-            aspernatur
-            itaque maxime reprehenderit maiores provident quos, quibusdam atque nihil consectetur sit ratione alias
-            cupiditate a.</p>
-        </div>
-        <div class="col">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nobis autem, est quam sit veniam
-            quas quibusdam obcaecati, ipsam molestiae et magnam tempora, ex sequi odio doloribus cumque deleniti a.
-          </p>
-        </div>
+      <div class="col">
+        <img src="/img/bodega5.jpeg" class="img-thumbnail mx-auto d-block" alt="...">
+      </div>
+      <div class="col">
+        <img src="/img/bodega5.jpeg" class="img-thumbnail mx-auto d-block" alt="...">
       </div>
     </div>
+    <div class="row ">
+      <div class="col">
+        <img src="/img/bodega5.jpeg" class="img-thumbnail mx-auto d-block" alt="...">
+      </div>
+      <div class="col">
+        <img src="/img/bodega5.jpeg" class="img-thumbnail mx-auto d-block" alt="...">
+      </div>
+      <div class="col">
+        <img src="/img/bodega5.jpeg" class="img-thumbnail mx-auto d-block" alt="...">
+      </div>
+      <div class="col">
+        <img src="/img/bodega5.jpeg" class="img-thumbnail mx-auto d-block" alt="...">
+      </div>
+    </div>
+  </div>
 
   </div>
 
@@ -415,19 +494,8 @@
     </div>
 
   </div>
-  </div>
 
 
-  <!-- migas de pan-->
-  <div class="container-fluid mt-5">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Bootstrap</li>
-      </ol>
-    </nav>
-
-  </div>
 
 
   <!--                 Footer                -->

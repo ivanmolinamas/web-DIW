@@ -51,9 +51,9 @@
 
     <!--            Titulo                       -->
 
-    <div class="container-flex">
+    <div class="container-flex mb-3 mt-3">
         <h1 class="display-1 text-center">Mundo de vinos</h1>
-        <h2 class="h2 text-center">La web con información de los vinos</h2>
+        <h2 class="h2 text-center">La web con información de los diferentes vinos</h2>
     </div>
 
     <!--                   Carrousel                            -->
@@ -119,8 +119,6 @@
         </div>
     </div>
 
-    </div>
-
     <!--        CARDS             -->
 
     <div class="container-lg mt-5 bg-secondary p-3 text-center" id="tarjetas">
@@ -133,35 +131,43 @@
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="card mx-auto d-block m-2" style="width: 18rem;">
-                    <img src="/img/bodega3.jpg" class="card-img-top" alt="...">
+                    <img src="/img/vino-tinto-LOW.jpg" class="card-img-top" alt="copa de vino tinto">
                     <div class="card-body">
                         <h5 class="card-title">Vintos tintos</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Aprende mas sobre tintos</a>
+                        <p class="card-text">
+                            Vino procedente mayormente de mosto de uvas tintas, el envejecimiento se realiza en barrica.
+                            Es el vino mas famoso y el primero que suele pensar la gente cuando le hablan de vino.
+                        </p>
+                        <a href="/Bootstrap/bootstrap1.html" class="btn btn-primary">Aprende mas sobre tintos</a>
                     </div>
                 </div>
 
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="card mx-auto d-block m-2" style="width: 18rem;">
-                    <img src="/img/bodega2.jpeg" class="card-img-top" alt="...">
+                    <img src="/img/vino-blanco-LOW.jpg" class="card-img-top" alt="copa de vino blanco">
                     <div class="card-body">
                         <h5 class="card-title">Vintos blancos</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Saber mas de blancos</a>
+                        <p class="card-text">
+                            Vino producido por la fermentación de diferentes tipos de uvas blancas, estos son vinos
+                            jovenes que no suelen pasar por barril, son vinos que van bien con el pescado y suelen
+                            servierse frios.
+                        </p>
+                        <a href="/Bootstrap/bootstrap2.html" class="btn btn-primary">Saber mas de blancos</a>
                     </div>
                 </div>
 
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="card mx-auto d-block m-2" style="width: 18rem;">
-                    <img src="/img/bodega5.jpeg" class="card-img-top" alt="...">
+                    <img src="/img/copa-generoso-LOW.jpg" class="card-img-top" alt="copa de vino manzanilla">
                     <div class="card-body">
                         <h5 class="card-title">Vintos generosos</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <p class="card-text">
+                            El vino generoso es un vino que se le añade alcohol de la fermentación de la
+                            uva para aumentar la graduación con la idea de protegerlo de los microorganismos duarnte las
+                            largas crianzas en bota.
+                        </p>
                         <a href="/pagina1.html" class="btn btn-primary">Descubre los generosos</a>
                     </div>
                 </div>
@@ -173,7 +179,7 @@
     <!--     collapse    -->
     <div class="container mt-5">
         <div class="row">
-            <div class="col">
+            <div class="col-sm-12 col-md-6 mt-2">
                 <p>
                     <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
                         data-bs-target="#vino-naranja-desplegable" aria-expanded="false"
@@ -183,42 +189,58 @@
                 </p>
                 <div style="min-height: 120px;">
                     <div class="collapse collapse-horizontal" id="vino-naranja-desplegable">
-                        <div class="card card-body" style="width: 300px;">
-                            This is some placeholder content for a horizontal collapse. It's hidden by default and shown
-                            when triggered.
+                        <div class="card card-body" style="width: 350px;">
+                            El vino brisado o vino blanco brisado, conocido en algunos países como vino naranja debido a
+                            su color, es un tipo de vino elaborado con cepas blancas cuyo mosto ha fermentado junto
+                            con sus hollejos, como si fuera un vino tinto.
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-sm-12 col-md-6 mt-2">
                 <p>
                     <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#cava-desplegable" aria-expanded="false"
-                        aria-controls="collapseWidthExample">
+                        data-bs-target="#cava-desplegable" aria-expanded="false" aria-controls="collapseWidthExample">
                         ¿El cava tambien es vino?
                     </button>
                 </p>
                 <div style="min-height: 120px;">
                     <div class="collapse collapse-horizontal" id="cava-desplegable">
-                        <div class="card card-body" style="width: 300px;">
-                            This is some placeholder content for a horizontal collapse. It's hidden by default and shown
-                            when triggered.
+                        <div class="card card-body" style="width: 350px;">
+                            Si, el cava es un tipo de vino, concretamente un vino espumoso caracteristico por sus
+                            burbujas y su color brillante y dorado. El nombre de cava viene por las antiguas bodegas
+                            donde se almacenaba que se les llamava "cavas".
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     </div>
 
 
+    <!--   texto infomativo     -->
+
+    <div class="container-sm mt-3">
+        <div class="row justify-content-center">
+            <div class="col-10 m-2">
+                <p>
+                    En esta web encontraras información sobre vinos, los tipos y sus diferfencias, tambien mapas con las
+                    distintas D.O.
+                    que hay en España y la producción de vino que se elabora en España. Tambien encontraras informacion
+                    sobre el propietario de la web
+                    y un formuario para ponerte en contanto conmigo.
+                </p>
+            </div>
+        </div>
+    </div>
+
     <!--                 Footer                -->
-    <footer class="container-fluid bg-dark mt-5 pt-5 pb-5">
+    <footer class="container-fluid bg-dark mt-5 pt-5 pb-3">
         <div class="container text-center">
             <div class="col">
                 <div class="row">
-                    <p class="text-light">Footer</p>
-                    <p class="text-light">Ivan Molina Mas</p>
+                    <p class="text-light">Web sobre el Vino - Proyecto pagina web - Curso DIW 2023-24</p>
+                    <p class="text-light">Ivan Molina Mas - 2024</p>
                     <p class="text-light">Desarrollado con Bootstrap</p>
                 </div>
             </div>

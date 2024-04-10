@@ -149,6 +149,7 @@ label {
 //////////////////////////////////////////////////
 */
 /* Mapa D.O. en vinos tintos*/
+/*
 #mapa-do{
     width: 900px;
 }
@@ -164,7 +165,7 @@ ul.cuadro li {
     display: none;
     position: absolute;
     border: medium solid rgb(102, 47, 47);
-    /*background: url("esta_imagen_no_existe");*/
+    
 }
 ul.cuadro li p {
     margin: 10px 0 0 0;
@@ -248,5 +249,5 @@ ul.cuadro li.nota5 {
     color: rgb(255, 255, 255);
 }
 
-
+*/
 /* FIN mapa D.O. en tintos*/
