@@ -66,185 +66,192 @@
 		<h1 class="display-1 text-center">Vino Blanco</h1>
 	</div>
 
-<!--            Aqui puede ir una imagen     -->
+	<!--            Aqui puede ir una imagen     -->
 
-
-
-
-<!--        list group         -->
-<div class="container-flex mt-5">
-    <div class="row">
-      <div class="col-4"></div>
-      <div class="col-4">
-        <div class="list-group">
-          <a class="list-group-item list-group-item-action disabled" aria-disabled="true">Indice de la pagina</a>
-          <a href="#vintoBlanco" class="list-group-item list-group-item-action active" aria-current="true">
-            ¿Que es el blanco?
-          </a>
-          <a href="#preguntasBasciasBlanco" class="list-group-item list-group-item-action">Preguntas clasicas</a>
-          <a href="#top10" class="list-group-item list-group-item-action">Mejores 10 vinos blancos</a>
-          <a href="#imagenes" class="list-group-item list-group-item-action">Galeria de imagenes</a>
-
-        </div>
-        <div class="col-4"></div>
-      </div>
-    </div>
-
-
-	<!--      Titulo 2   -->
-	<div class="container mt-5" id="vintoBlanco">
-		<h2 class="h2 text-center">Que es el vino blanco</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quidem error sunt facere eveniet
-			recusandae, aspernatur inventore officiis odit odio aperiam esse minus quisquam placeat aliquam molestias
-			ullam? Illo, quo.</p>
+	<div class="container-fluid">
+		<img src="/img/bodega1.png" class="img-fluid" alt="...">
 	</div>
 
 
-	<!--     collapse    -->
-	<div class="container mt-5" id="preguntasBasciasBlanco">
+	<!--        list group         -->
+	<div class="container-flex mt-5">
 		<div class="row">
-			<div class="col">
-				<div class="d-flex justify-content-center">
-					<a class="btn btn-primary mx-2" data-bs-toggle="collapse" href="#multiCollapseExample1"
-						role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Desplegar primer
-						elemento</a>
-					<button class="btn btn-primary mx-2" type="button" data-bs-toggle="collapse"
-						data-bs-target="#multiCollapseExample2" aria-expanded="false"
-						aria-controls="multiCollapseExample2">Desplegar segundo elemento</button>
-					<button class="btn btn-primary mx-2" type="button" data-bs-toggle="collapse"
-						data-bs-target=".multi-collapse" aria-expanded="false"
-						aria-controls="multiCollapseExample1 multiCollapseExample2">Cerrar ambos elementos</button>
+			<div class="col-4"></div>
+			<div class="col-4">
+				<div class="list-group">
+					<a class="list-group-item list-group-item-action disabled" aria-disabled="true">Indice de la
+						pagina</a>
+					<a href="#vintoBlanco" class="list-group-item list-group-item-action active" aria-current="true">
+						¿Que es el blanco?
+					</a>
+					<a href="#preguntasBasciasBlanco" class="list-group-item list-group-item-action">Preguntas
+						clasicas</a>
+					<a href="#top10" class="list-group-item list-group-item-action">Mejores 10 vinos blancos</a>
+					<a href="#imagenes" class="list-group-item list-group-item-action">Galeria de imagenes</a>
+
 				</div>
-				<div class="row mt-3">
-					<div class="col">
-						<div class="collapse multi-collapse" id="multiCollapseExample1">
-							<div class="card card-body">
-								Some placeholder content for the first collapse component of this multi-collapse
-								example. This panel is hidden by default but revealed when the user activates the
-								relevant trigger.
+				<div class="col-4"></div>
+			</div>
+		</div>
+
+
+		<!--      Titulo 2   -->
+		<div class="container mt-5" id="vintoBlanco">
+			<h2 class="h2 text-center">Que es el vino blanco</h2>
+			<p>
+				El vino blanco es una bebida producida mediante la fermentación alcohólica de diferentes tipos de uvas
+				blancas. Puede beberse tanto solo como acompañado de comida, y tradicionalmente se ha asociado con el
+				maridaje de pescados, mariscos y algunas carnes blancas.
+			</p>
+			<p>
+				Las uvas blancas que producen principalmente vinos blancos son de color verde o amarillo, una variedad
+				muy extendida en el mundo, por lo cual este vino es producido en muchas zonas del planeta. Algunas
+				variedades son muy conocidas, como la chardonnay, sauvignon y la riesling. También hay variedades de uva
+				negra, como la pinot noir, utilizadas para producir vino blanco o champán.
+			</p>
+		</div>
+
+
+		<!--     collapse    -->
+		<div class="container mt-5" id="preguntasBasciasBlanco">
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<a class="btn btn-primary mx-2" data-bs-toggle="collapse" href="#pregunta1"
+							role="button" aria-expanded="false" aria-controls="pregunta1">¿Pasa por barrica el vino blanco?</a>
+						<button class="btn btn-primary mx-2" type="button" data-bs-toggle="collapse"
+							data-bs-target="#pregunta2" aria-expanded="false"
+							aria-controls="pregunta2">¿El color "blanco" es por la uva?</button>
+						<button class="btn btn-primary mx-2" type="button" data-bs-toggle="collapse"
+							data-bs-target=".multi-collapse" aria-expanded="false"
+							aria-controls="pregunta1 pregunta2">Cerrar ambos elementos</button>
+					</div>
+					<div class="row mt-3">
+						<div class="col">
+							<div class="collapse multi-collapse" id="pregunta1">
+								<div class="card card-body">
+									La crianza en barrica esta destinada a aquellos vinos que se le establece un tiempo de maduración largo.
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="collapse multi-collapse" id="pregunta2">
+								<div class="card card-body">
+									Pues en parte si y en parte no, porsupuesto que ayuda el color de la uva, pero la razón principal de su color es que no ha fermetando con el ollejo a diferencia que si lo hace el vino tinto.
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col">
-						<div class="collapse multi-collapse" id="multiCollapseExample2">
-							<div class="card card-body">
-								Some placeholder content for the second collapse component of this multi-collapse
-								example. This panel is hidden by default but revealed when the user activates the
-								relevant trigger.
-							</div>
-						</div>
+				</div>
+			</div>
+		</div>
+
+		<!--     tabla       -->
+
+		<div class="container mt-5" id="top10">
+			<h3 class="h3 text-center">Mejores 10 vinos blancos segun la región</h3>
+			<div class="row">
+				<div class="col-8 offset-2">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Denominacion de Origen</th>
+								<th scope="col">Tipo de uva</th>
+								<th scope="col">Nombre del vino</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Rías Baixas</td>
+								<td>Albariño</td>
+								<td>Nanclares y Prieto, A graña</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Ribeiro</td>
+								<td>treixadura, godello, albariño, torrontés y loureira</td>
+								<td>Viña Mein Blanco</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Bierzo</td>
+								<td>Palomino, Doña Blanca</td>
+								<td>Fuentes del Silencio, Mataperezosa</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>Arabako Txakolina</td>
+								<td>Txakolí</td>
+								<td>Bat Gara, Txakolí Uno</td>
+							</tr>
+							<tr>
+								<th scope="row">5</th>
+								<td>Navarra</td>
+								<td>Garnacha blanca</td>
+								<td>Viña Zorzal</td>
+							</tr>
+							<tr>
+								<th scope="row">6</th>
+								<td>Penedés</td>
+								<td>Xarel-lo</td>
+								<td>Enric Soler, Improvisació</td>
+							</tr>
+							<tr>
+								<th scope="row">7</th>
+								<td>Sierras de Málaga</td>
+								<td>Moscatel y Pedro Ximén de la Alejandría</td>
+								<td>Viñedos Verticales, Filitas y Lutitas</td>
+							</tr>
+							<tr>
+								<th scope="row">8</th>
+								<td>Jerez, que no DO Jerez</td>
+								<td>Palomino sobremadura</td>
+								<td>Williams & Humbert, Finolis en Rama</td>
+							</tr>
+							<tr>
+								<th scope="row">9</th>
+								<td>Castilla y León</td>
+								<td>Verdeja</td>
+								<td>Bodegas Menade, La Misión</td>
+							</tr>
+							<tr>
+								<th scope="row">10</th>
+								<td>Rioja</td>
+								<td>Viura y Malvasía</td>
+								<td>Bodegas López-Heredia, Viña Tondonia, Reserva, Blanco</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+		</div>
+
+
+
+
+
+
+		<!--                 Footer                -->
+		<footer class="container-fluid bg-dark mt-5">
+			<div class="container text-center">
+				<div class="col">
+					<div class="row">
+						<p class="text-light">Footer</p>
+						<p class="text-light">Ivan Molina Mas</p>
+						<p class="text-light">Desarrollado con Bootstrap</p>
 					</div>
 				</div>
+
 			</div>
-		</div>
-	</div>
+		</footer>
 
-	<!--     tabla       -->
-
-	<div class="container mt-5" id="top10">
-		<h3 class="h3 text-center">Mejores 10 vinos blancos segun la región</h3>
-		<div class="row">
-			<div class="col-8 offset-2">
-				<table class="table table-hover">
-					<thead>
-						<tr>
-							<th scope="col">#</th>
-							<th scope="col">Denominacion de Origen</th>
-							<th scope="col">Tipo de uva</th>
-							<th scope="col">Nombre del vino</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td>Rías Baixas</td>
-							<td>Albariño</td>
-							<td>Nanclares y Prieto, A graña</td>
-						</tr>
-						<tr>
-							<th scope="row">2</th>
-							<td>Ribeiro</td>
-							<td>treixadura, godello, albariño, torrontés y loureira</td>
-							<td>Viña Mein Blanco</td>
-						</tr>
-						<tr>
-							<th scope="row">3</th>
-							<td>Bierzo</td>
-							<td>Palomino, Doña Blanca</td>
-							<td>Fuentes del Silencio, Mataperezosa</td>
-						</tr>
-						<tr>
-							<th scope="row">4</th>
-							<td>Arabako Txakolina</td>
-							<td>Txakolí</td>
-							<td>Bat Gara, Txakolí Uno</td>
-						</tr>
-						<tr>
-							<th scope="row">5</th>
-							<td>Navarra</td>
-							<td>Garnacha blanca</td>
-							<td>Viña Zorzal</td>
-						</tr>
-						<tr>
-							<th scope="row">6</th>
-							<td>Penedés</td>
-							<td>Xarel-lo</td>
-							<td>Enric Soler, Improvisació</td>
-						</tr>
-						<tr>
-							<th scope="row">7</th>
-							<td>Sierras de Málaga</td>
-							<td>Moscatel y Pedro Ximén de la Alejandría</td>
-							<td>Viñedos Verticales, Filitas y Lutitas</td>
-						</tr>
-						<tr>
-							<th scope="row">8</th>
-							<td>Jerez, que no DO Jerez</td>
-							<td>Palomino sobremadura</td>
-							<td>Williams & Humbert, Finolis en Rama</td>
-						</tr>
-						<tr>
-							<th scope="row">9</th>
-							<td>Castilla y León</td>
-							<td>Verdeja</td>
-							<td>Bodegas Menade, La Misión</td>
-						</tr>
-						<tr>
-							<th scope="row">10</th>
-							<td>Rioja</td>
-							<td>Viura y Malvasía</td>
-							<td>Bodegas López-Heredia, Viña Tondonia, Reserva, Blanco</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-
-	</div>
-
-
-
-
-
-
-	<!--                 Footer                -->
-	<footer class="container-fluid bg-dark mt-5">
-		<div class="container text-center">
-			<div class="col">
-				<div class="row">
-					<p class="text-light">Footer</p>
-					<p class="text-light">Ivan Molina Mas</p>
-					<p class="text-light">Desarrollado con Bootstrap</p>
-				</div>
-			</div>
-
-		</div>
-	</footer>
-
-	<!-- script Bootstrap -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-		crossorigin="anonymous"></script>
+		<!-- script Bootstrap -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+			crossorigin="anonymous"></script>
 </body>
 
 </html>
