@@ -211,22 +211,56 @@
         </div>
       </div>
     </div>
-
-
-
-
   </div>
   <!-- alert   -->
   <div class="container-md mt-5">
     <div class="row justify-content-center">
       <div class="col-8">
         <div class="alert alert-success alert-dismissible fade show" role="alert">
-          <strong>Sabias que...</strong> septiembre es epoca de vendimia, buena epoca para visitar viñedos.
+          Cada mes puedes ver una recomendación de vino, ¡Pulsa el botón rojo para verla!
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       </div>
     </div>
   </div>
+
+
+  <!--                ventana modal            -->
+  <div class="container mt-3">
+    <!-- Button trigger modal -->
+
+    <div class="row">
+      <div class="col text-center">
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#tintoMes">
+          Vino recomendando del mes
+        </button>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="tintoMes" tabindex="-1" aria-labelledby="tintoMesLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="tintoMesLabel">Vino tinto del mes</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h3> Este mes el vino recomendado es:</h3>
+            <p>Una botella buena de Somontano</p>
+            <img class="img-fluid" src="/img/copa-generoso-LOW.jpg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!--        CARDS             -->
 
   <div class="container-fluid mt-5 bg-secondary p-4" id="tiposTinto">
@@ -284,11 +318,8 @@
     </div>
 
   </div>
-  <!--          Botones              -->
 
-
-
-
+  <!--      listas y texto        -->
   <div class="container-fluid mt-5 " id="denominaciones">
     <h3 class="h3 text-center mb-3">Diferentes Denominaciones de Origen en el vino tinto</h3>
     <div class="row text-center">
@@ -337,7 +368,7 @@
     </div>
     <div class="row">
       <div class="col text-center">
-        <a class="btn btn-primary" href="/pagina2.html" role="button">Ver mapa con distintas D.O.</a>
+        <a class="btn btn-success" href="/pagina2.html" role="button">Ver mapa con distintas D.O.</a>
       </div>
     </div>
   </div>
@@ -345,7 +376,7 @@
 
 
   <!--                tablas             -->
-  <div class="container md mt-5" id="tablas">
+  <div class="container md mt-5 d-none d-md-block" id="tablas">
     <div class="row">
       <div class="col">
         <h3 class="h3 mb-4 text-center">Las 10 principales comunidades autonomas que mas vino producen</h3>
@@ -427,8 +458,20 @@
         </table>
       </div>
     </div>
-
   </div>
+
+  <!-- alert   -->
+  <div class="container-md mt-5">
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <div class="alert alert-primary" role="alert">
+          <strong>Sabias que... </strong>Septiembre es una buena fecha para visitar viñedos ya que es epoca de vendimia.
+        </div>
+
+      </div>
+    </div>
+  </div>
+
   <!--          galeria de imagenes     -->
   <div class="container mt-5 " id="imagenes">
     <div class="row">
