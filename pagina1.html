@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de CSS</title>
     <link href="/CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="/CSS/normalize.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -24,32 +25,56 @@
     </header>
 
     <main>
+        <!--        migas de pan      -->
+
+        <div class="container">
+            <nav aria-label="migas-separador">
+                <ol class="migas">
+                    <li class="migas-item"><a href="/index.html">Inicio</a></li>
+                    <li class="migas-item active" aria-current="page">Vino Tinto</li>
+                </ol>
+            </nav>
+
+        </div>
+
+
+        <!--         titulo  -->
         <h1 class="text-center">Vinos Generosos</h1>
-        <h2 class="text-center">Pagina de CSS</h2>
 
-       
-<!-- imagen de cabecera--> 
+        <!-- imagen de cabecera-->
 
-<div class="imagen-cabecera">
-    <p class="texto-cabecera-imagen">
-        Bodegas en Jerez de la Frontera
-    </p>
-</div>
+        <div class="imagen-cabecera">
+            <p class="texto-cabecera-imagen">
+                Bodegas en Jerez de la Frontera<br>
+                <span class="subtitulo">Las catedrales del vino</span>
+            </p>
+        </div>
 
-<p>Contenido:</p>
-<ul>
-    <li>Imagen con notas (al menos 3 notas sobre una misma imagen y de forma similar al ejercicio de
-        “animales marinos”).</li>
-    <li>Mapa de imagenes sin hacer uso de la etiqueta map donde al colocarnos encima de un elemento,
-        éste cambiará de color (de forma similar al ejercicio de “animales marinos”) </li>
-</ul>
+        <div class="container-indice">
+            <ul class="lista-indice-ul">
+                <li class="primer-indice"><a class="lista-indice" href="#">¿Que es el generoso?</a></li>
+                <li><a class="lista-indice" href="#">Preguntas frecuentes</a></li>
+                <li><a class="lista-indice" href="#">Tipos de generosos</a></li>
+                <li><a class="lista-indice" href="#">elemento</a></li>
+                <li><a class="lista-indice" href="#">elemento</a></li>
+            </ul>
+        </div>
 
 
-<!-- Mapa de tipos de vino-->
-        <article>
-            <h2 class="text-center">Tipos de vinos</h2>        
+        <p>Contenido:</p>
+        <ul>
+            <li>Imagen con notas (al menos 3 notas sobre una misma imagen y de forma similar al ejercicio de
+                “animales marinos”).</li>
+            <li>Mapa de imagenes sin hacer uso de la etiqueta map donde al colocarnos encima de un elemento,
+                éste cambiará de color (de forma similar al ejercicio de “animales marinos”) </li>
+        </ul>
 
-<!-- Mapa de imágenes haciendo uso de la etiqueta <map>, definiendo al menos 4 áreas, 2 de ellas
+
+        <!-- Mapa de tipos de vino-->
+        <article class="container-center">
+            <h2 class="text-center">Tipos de vinos</h2>
+
+            <!-- Mapa de imágenes haciendo uso de la etiqueta <map>, definiendo al menos 4 áreas, 2 de ellas
                     deben ser poligonales (de forma similar al ejercicio de “animales marinos”)-->
             <div class="mapa-div">
                 <h4 class="text-center">Diferentes vinos de Jerez</h4>
@@ -86,11 +111,11 @@
                     <area class="map-vino-cream" alt="cream" title="cream" coords="186,305,293,596" shape="rect">
                     <label for="map-vino-cream">Cream, vino de Ingleses</label>
 
-                    <area class="map-vino-pedro-ximenez" alt="pedro-ximenez" title="pedro-ximenez"coords="479,599,321,313"
-                        shape="rect">
+                    <area class="map-vino-pedro-ximenez" alt="pedro-ximenez" title="pedro-ximenez"
+                        coords="479,599,321,313" shape="rect">
                     <label for="map-vino--pedro-ximenez">Pedro Ximenez, el mas dulce</label>
 
-                    <area class="map-vino-moscatel" alt="moscatel" title="moscatel" 
+                    <area class="map-vino-moscatel" alt="moscatel" title="moscatel"
                         coords="516,310,602,307,619,390,600,440,575,459,575,524,608,543,620,577,612,602,499,594,507,544,535,530,539,451,504,417"
                         shape="poly">
                     <label for="map-vino-moscatel">Moscatel, muy dulce</label>

@@ -2,14 +2,48 @@
     /* variables colores para el uso en la web*/
     --color-negro-fondo: #212529;
     --color-blanco-texto: #F8F9FA;
-    --color-gris-texto: #737373
+    --color-gris-texto: #737373;
+    --color-azul-fondo: #cfe2ff;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
-    font-weight: lighter;
+    font-weight:lighter;
 }
+
+h1{
+    font-weight: 300;
+    font-size: 4rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*  migas de pan  */
+.container{
+    margin-left: 0px;
+    font-weight:lighter;
+    font-size: 1rem;
+}
+ol.migas{
+    display: flex;
+    list-style-type: none;
+    margin-left: 12px;
+    padding-left: 0px;
+    color: var(--color-gris-texto);
+}
+ol.migas > li::after{
+    content: "/";
+    margin-left: 10px;
+    margin-right: 10px;
+}
+ol.migas > li:last-child::after{
+    content: "";
+}
+ol.migas > li > a{
+    color: blue;
+}
+
 
 /* NAVEGACION */
 .nav {
@@ -37,6 +71,37 @@ body {
 }
 
 /* FIN NAVEGACION */
+
+/*  lista indice  */
+.container-indice{
+    width: 380px;
+    text-align: center;
+    margin: 0 auto;
+}
+.lista-indice-ul{
+    list-style-type: none;
+    margin-top: 40px;
+}
+.lista-indice{
+    text-decoration: none;
+    color: var(--color-gris-texto);
+}   
+.lista-indice-ul > li {
+    padding: 10px 0px;
+    border-bottom: 1px solid black;
+}
+.primer-indice{
+    background-color: var(--color-azul-fondo);
+}
+
+.container-center{
+    margin: 0 auto;
+}
+.lista-indice-ul > li:hover{
+    background-color: rgb(194, 194, 194);
+}
+
+
 
 /*  FOOTER   */
 footer {
@@ -161,7 +226,9 @@ label {
 }
 
 
-
+.texto-cabecera-imagen > .subtitulo{
+    font-size: medium;
+}
 
 
 
