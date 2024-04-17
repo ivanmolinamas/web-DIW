@@ -144,6 +144,47 @@ label {
     left: 620px;
 }
 
+.imagen-cabecera{
+    background-image: url(/img/bodega2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center ;
+    background-size:cover;
+    height: 500px;
+}
+
+.texto-cabecera-imagen{
+    color: white;
+    position: relative;
+    top: 430px;
+    text-align: center;
+    font-size: large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  FIN mapa de vinos*/
 /*
 //////////////////////////////////////////////////
