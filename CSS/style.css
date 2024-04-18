@@ -280,7 +280,43 @@ label {
 }
 
 
+/*           sprite         */
 
+.sprite-vino{
+    margin: 0 auto;
+    width: 400px;
+    background-color: red;
+    padding: 120px;
+}
+
+.sprite-vino a{
+    display: inline-block;
+    width: 115px;
+    height: 115px;
+    margin: 10px;
+    border: 1px solid orange;
+
+
+    /* Tiempo que dura la transición */
+    -o-transition: all .8s;
+    /* Opera */
+    -moz-transition: all .8s;
+    /* Firefox */
+    -webkit-transition: all .8s;
+    /* Chrome, Safari */
+    -ms-transition: all .8s;
+    /* Internet Explorer 9 o superior */
+    
+}
+
+.sprite-vino a.barril{
+    
+    background: url(/img/sprites/css_sprites.png);
+
+}
+
+
+/*       FIN  sprite         */
 
 
 
