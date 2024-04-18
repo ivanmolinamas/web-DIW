@@ -111,7 +111,7 @@ ol.migas > li > a{
 
 .container-preguntas{
     width: 80%;
-    height: max-content;
+    height: 130px;
     margin: 40px auto;
     text-align: center;
 
@@ -127,24 +127,30 @@ ol.migas > li > a{
     display: none;
     background-color: lightblue;
     padding: 20px 5px;
+    border-radius: 10px;
 }
 #collapse2{
     display: none;
     background-color: lightblue;
     padding: 20px 5px;
+    border-radius: 10px;
 }
-#pregunta1{
+#pregunta1, #pregunta2{
     background-color: var(--color-azul-fondo);
     padding: 10px 20px;
     width: max-content;
     display: inline;
+    border-radius: 10px;
 }
+/*
 #pregunta2{
     background-color: var(--color-azul-fondo);
     padding: 10px 20px;
     width: max-content;
     display: inline;
-}
+    border-radius: 10px;
+}*/
+
 #pregunta1:hover ~ #collapse1{
     display: block;
 }
@@ -310,15 +316,33 @@ label {
     */
     
 }
-
+.info{
+    background-color: var(--color-azul-fondo);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+ .info-1, .info-2, .info-3{
+    display: none;
+    font-weight: bold;
+    background-color: var(--color-azul-fondo);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
 .sprite-vino a.barril{
     background: url(/img/sprites/css_sprites.png);
     background-position: 0px 0px;
 
 }
+
 .sprite-vino a.barril:hover{
     background: url(/img/sprites/css_sprites.png);
     background-position: 0px -120px;
+}
+.sprite-vino a.barril:hover ~ .info{
+    display: none;
+}
+.sprite-vino a.barril:hover ~ .info-1{
+    display: block;
 }
 .sprite-vino a.botella{
     background: url(/img/sprites/css_sprites.png);
@@ -329,6 +353,13 @@ label {
     background: url(/img/sprites/css_sprites.png);
     background-position: -110px -120px;
 }
+.sprite-vino a.botella:hover ~ .info{
+    display: none;
+}
+.sprite-vino a.botella:hover ~ .info-2{
+    display: block;
+}
+
 .sprite-vino a.otro{
     background: url(/img/sprites/css_sprites.png);
     background-position: -240px 0px;
@@ -337,6 +368,12 @@ label {
 .sprite-vino a.otro:hover{
     background: url(/img/sprites/css_sprites.png);
     background-position: -240px -120px;
+}
+.sprite-vino a.otro:hover ~ .info{
+    display: none;
+}
+.sprite-vino a.otro:hover ~ .info-3{
+    display: block;
 }
 
 
