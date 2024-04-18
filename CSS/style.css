@@ -108,8 +108,48 @@ ol.migas > li > a{
     text-align: center;
 }
 
+.container-preguntas{
+    width: 80%;
+    height: max-content;
+    margin: 40px auto;
+    text-align: center;
 
+}
+.margin-superior{
+    padding: 40px;
 
+}
+
+/*    desplegables       */
+
+#collapse1{
+    display: none;
+    background-color: lightblue;
+    padding: 20px 5px;
+}
+#collapse2{
+    display: none;
+    background-color: lightblue;
+    padding: 20px 5px;
+}
+#pregunta1{
+    background-color: var(--color-azul-fondo);
+    padding: 10px 20px;
+    width: max-content;
+    display: inline;
+}
+#pregunta2{
+    background-color: var(--color-azul-fondo);
+    padding: 10px 20px;
+    width: max-content;
+    display: inline;
+}
+#pregunta1:hover ~ #collapse1{
+    display: block;
+}
+#pregunta2:hover ~ #collapse2{
+    display: block;
+}
 
 
 /*  FOOTER   */
