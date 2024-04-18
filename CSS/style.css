@@ -284,9 +284,8 @@ label {
 
 .sprite-vino{
     margin: 0 auto;
-    width: 400px;
-    background-color: red;
-    padding: 120px;
+    width: max-content;
+
 }
 
 .sprite-vino a{
@@ -294,25 +293,47 @@ label {
     width: 115px;
     height: 115px;
     margin: 10px;
-    border: 1px solid orange;
+    
 
 
     /* Tiempo que dura la transición */
-    -o-transition: all .8s;
+    -o-transition: all .5s;
     /* Opera */
-    -moz-transition: all .8s;
+    -moz-transition: all .5s;
     /* Firefox */
-    -webkit-transition: all .8s;
+    -webkit-transition: all .5s;
     /* Chrome, Safari */
-    -ms-transition: all .8s;
+    -ms-transition: all .5s;
     /* Internet Explorer 9 o superior */
     
 }
 
 .sprite-vino a.barril{
-    
     background: url(/img/sprites/css_sprites.png);
+    background-position: 0px 0px;
 
+}
+.sprite-vino a.barril:hover{
+    background: url(/img/sprites/css_sprites.png);
+    background-position: 0px -120px;
+}
+.sprite-vino a.botella{
+    background: url(/img/sprites/css_sprites.png);
+    background-position: -110px 0px;
+
+}
+.sprite-vino a.botella:hover{
+    background: url(/img/sprites/css_sprites.png);
+    background-position: -110px -120px;
+}
+.sprite-vino a.otro{
+    background: url(/img/sprites/css_sprites.png);
+    background-position: -240px 0px;
+
+}
+.sprite-vino a.otro:hover{
+    background: url(/img/sprites/css_sprites.png);
+    background-position: -240px -120px;
 }
 
 
