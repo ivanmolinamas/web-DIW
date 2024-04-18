@@ -100,6 +100,15 @@ ol.migas > li > a{
 .lista-indice-ul > li:hover{
     background-color: rgb(194, 194, 194);
 }
+/*   generales    */
+.container-general{
+    width: 90%;
+    margin-top: 45px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
 
 
 
