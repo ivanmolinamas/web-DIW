@@ -99,7 +99,56 @@ ol.migas > li > a{
 .lista-indice-ul > li:hover{
     background-color: rgb(194, 194, 194);
 }
+/*   generales    */
+.container-general{
+    width: 90%;
+    margin-top: 45px;
+    margin: 0 auto;
+    text-align: center;
+}
 
+.container-preguntas{
+    width: 80%;
+    height: max-content;
+    margin: 40px auto;
+    text-align: center;
+
+}
+.margin-superior{
+    padding: 40px;
+
+}
+
+/*    desplegables       */
+
+#collapse1{
+    display: none;
+    background-color: lightblue;
+    padding: 20px 5px;
+}
+#collapse2{
+    display: none;
+    background-color: lightblue;
+    padding: 20px 5px;
+}
+#pregunta1{
+    background-color: var(--color-azul-fondo);
+    padding: 10px 20px;
+    width: max-content;
+    display: inline;
+}
+#pregunta2{
+    background-color: var(--color-azul-fondo);
+    padding: 10px 20px;
+    width: max-content;
+    display: inline;
+}
+#pregunta1:hover ~ #collapse1{
+    display: block;
+}
+#pregunta2:hover ~ #collapse2{
+    display: block;
+}
 
 
 /*  FOOTER   */
@@ -230,7 +279,64 @@ label {
 }
 
 
+/*           sprite         */
 
+.sprite-vino{
+    margin: 0 auto;
+    width: max-content;
+
+}
+
+.sprite-vino a{
+    display: inline-block;
+    width: 115px;
+    height: 115px;
+    margin: 10px;
+    
+
+
+    /* Tiempo que dura la transición */
+    -o-transition: all .5s;
+    /* Opera */
+    -moz-transition: all .5s;
+    /* Firefox */
+    -webkit-transition: all .5s;
+    /* Chrome, Safari */
+    -ms-transition: all .5s;
+    /* Internet Explorer 9 o superior */
+    
+}
+
+.sprite-vino a.barril{
+    background: url(/img/sprites/css_sprites.png);
+    background-position: 0px 0px;
+
+}
+.sprite-vino a.barril:hover{
+    background: url(/img/sprites/css_sprites.png);
+    background-position: 0px -120px;
+}
+.sprite-vino a.botella{
+    background: url(/img/sprites/css_sprites.png);
+    background-position: -110px 0px;
+
+}
+.sprite-vino a.botella:hover{
+    background: url(/img/sprites/css_sprites.png);
+    background-position: -110px -120px;
+}
+.sprite-vino a.otro{
+    background: url(/img/sprites/css_sprites.png);
+    background-position: -240px 0px;
+
+}
+.sprite-vino a.otro:hover{
+    background: url(/img/sprites/css_sprites.png);
+    background-position: -240px -120px;
+}
+
+
+/*       FIN  sprite         */
 
 
 
