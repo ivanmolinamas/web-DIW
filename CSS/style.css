@@ -1,9 +1,14 @@
 :root {
     /* variables colores para el uso en la web*/
     --color-negro-fondo: #212529;
+    --color-negro-texto:#212529;
     --color-blanco-texto: #F8F9FA;
     --color-gris-texto: #737373;
     --color-azul-fondo: #cfe2ff;
+    --boton-verde:#198754;
+    --boton-azul:#0d6efd;
+    --bonton-verde-activo:#157347;
+    --bonton-azul-activo:#0b5ed7;
 }
 
 body {
@@ -121,26 +126,49 @@ ol.migas > li > a{
 
 }
 
+.boton-saber{
+    padding: 13px 25px;
+    color: var(--color-blanco-texto);
+    text-decoration: none;
+    background-color: var(--boton-verde);
+    border-radius: 10px;
+    transition: background-color .5s; /* Define la transición para el color de fondo */
+}
+.boton-saber:hover{
+    background-color: var(--bonton-verde-activo);
+}
 /*    desplegables       */
 
 #collapse1{
     display: none;
     background-color: lightblue;
-    padding: 20px 5px;
+    padding: 20px 15px;
     border-radius: 10px;
 }
 #collapse2{
     display: none;
     background-color: lightblue;
-    padding: 20px 5px;
+    padding: 20px 15px;
     border-radius: 10px;
 }
+#pregunta1{
+   margin-right: 30px; 
+}
 #pregunta1, #pregunta2{
-    background-color: var(--color-azul-fondo);
+    background-color: var(--boton-azul);
     padding: 10px 20px;
+    
     width: max-content;
     display: inline;
     border-radius: 10px;
+    color: var(--color-blanco-texto);
+    transition: background-color .5s; 
+}
+#pregunta1:hover{
+    background-color: var(--bonton-azul-activo);
+}
+#pregunta2:hover{
+    background-color: var(--bonton-azul-activo);
 }
 /*
 #pregunta2{
@@ -202,71 +230,74 @@ label {
     display: none;
     text-align: center;
     font-size: large;
-    background-color: azure;
+    background-color: var(--color-azul-fondo);
+    border-radius: 10px;
+    padding: 20px 15px;
     width: fit-content;
     height: fit-content;
     top: 0px;
     left: 0px;
     padding: 5px;
+    color: var(--color-negro-texto);
 }
 
 .map-vino-fino:hover + label {
     display: inline-block;
-    border: 2px solid black;
+    padding: 5px 15px;
     top: 170px;
     left: 30px;
 }
 .map-vino-amonillado:hover + label {
     display: inline-block;
-    border: 2px solid black;
+    padding: 5px 15px;
     top: 170px;
     left: 100px;
 }
 .map-vino-oloroso:hover + label {
     display: inline-block;
-    border: 2px solid black;
+    padding: 5px 15px;
     top: 170px;
     left: 300px;
 }
 .map-vino-palo-cortado:hover + label {
     display: inline-block;
-    border: 2px solid black;
+    padding: 5px 15px;
     top: 170px;
     left: 460px;
 }
 .map-vino-pale-cream:hover + label {
     display: inline-block;
-    border: 2px solid black;
+    padding: 5px 15px;
     top: 170px;
     left: 570px;
 }
 .map-vino-medium:hover + label {
     display: inline-block;
-    border: 2px solid black;
+    padding: 5px 15px;
     top: 490px;
     left: 20px;
 }
 .map-vino-cream:hover + label {
     display: inline-block;
-    border: 2px solid black;
+    padding: 5px 15px;
     top: 490px;
     left: 130px;
 }
 .map-vino-pedro-ximenez:hover + label {
     display: inline-block;
-    border: 2px solid black;
+    padding: 5px 15px;
     top: 490px;
     left: 290px;
 }
 .map-vino-moscatel:hover + label {
     display: inline-block;
-    border: 2px solid black;
+    padding: 5px 15px;
     top: 490px;
     left: 450px;
 }
 .map-vino-manzanilla:hover + label {
     display: inline-block;
-    border: 2px solid black;
+    padding: 5px 15px;
     top: 490px;
     left: 620px;
 }
