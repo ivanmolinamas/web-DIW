@@ -28,14 +28,17 @@
 
 .menu-items {
     position: absolute;
-    top: 100%;
+    top: 10px;
     left: 0;
     background-color: #fff;
     padding: 20px 0;
-    width: 120px;
+    width: 200px;
     opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
+    /*pointer-events: none;*/
+    overflow: hidden;
+    transform: translateY(0%);
+    transition: transform 0.3s ease;
+    margin-top: 10px;
 }
 
 .menu-items li {
@@ -43,11 +46,15 @@
 }
 
 .menu-items li a {
+    font-family: Arial, Helvetica, sans-serif;
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: black;
+    color: #9c9999;
     transition: background-color 0.3s ease;
+}
+.menu-items li:first-child a{
+    color: black;
 }
 
 .menu-items li a:hover {
