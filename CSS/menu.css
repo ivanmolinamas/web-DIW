@@ -10,17 +10,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 20px;
+    width: 23px;
+    height: 18px;
     position: relative;
     z-index: 1;
+    border: 0.8px solid #c3c1c1;
+    border-radius: 10px;
+    padding:10px 15px;
 }
 
 .bar {
-    background-color: black;
-    height: 3px;
+    background-color: #9f9f9f;
+    height: 1.5px;
     width: 100%;
-    transition: transform 0.3s ease;
+
 }
 
 .menu-items {
@@ -28,9 +31,7 @@
     top: 100%;
     left: 0;
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    padding: 10px 0;
+    padding: 20px 0;
     width: 120px;
     opacity: 0;
     pointer-events: none;
@@ -53,18 +54,21 @@
     background-color: #f0f0f0;
 }
 
-#toggle:checked + .toggle-btn .bar:nth-child(1) {
-    transform: translateY(11px) rotate(45deg);
+#toggle:checked + .toggle-btn  {
+    border: 4px solid #8e8b8b;
+    /*
+    transform: translateY(10px) rotate(45deg);
+    */
 }
-
+/*
 #toggle:checked + .toggle-btn .bar:nth-child(2) {
     opacity: 0;
 }
 
 #toggle:checked + .toggle-btn .bar:nth-child(3) {
-    transform: translateY(-6px) rotate(-45deg);
+    /*transform: translateY(-6px) rotate(-45deg); 
 }
-
+*/
 #toggle:checked ~ .menu-items {
     opacity: 1;
     pointer-events: auto;
