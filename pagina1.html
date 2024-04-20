@@ -108,21 +108,28 @@
         <!--   desplegables con uso de Pseudoclases  -->
 
         <!-- 
-            estos desplegables se pueden realizar con javascript con botones y eventlisteners
-            pero ya que en esta clase se usa CSS aplico los temas vistos para usar el contenido aprendido.
+           eventos con pseudoclase 
         -->
 
         <div class="container-preguntas">
 
-            <p id="pregunta1">¿Que es la manzanilla?</p>
-            <p id="pregunta2">¿Son vinos blancos?</p>
+            <input type="checkbox" id="pregunta1">
+            <label for="pregunta1" class="pregunta">¿Que es la manzanilla?</label>
 
-            <p id="collapse1">
+            <input type="checkbox" id="pregunta2">
+            <label for="pregunta2" class="pregunta">¿Son vinos blancos?</label>
+
+           
+<!--
+            <p id="pregunta2">¿Son vinos blancos?</p>
+            <p id="pregunta3"></p>
+ -->
+            <p class="collapse" id="collapse1">
                 El vino manzanilla, es un tipo de vino, que podria decirse que es igual que el vino fino, pero la
                 diferencia es que la manzanilla solo se puede hacer en Sanlucar de Barrameda por las caracteristicas
                 ambientales que tiene, de estar junto al mar en la desembocadura del rio Guadalquivir.
             </p>
-            <p id="collapse2">
+            <p class="collapse" id="collapse2">
                 Anque el fino y la manzanilla nos puedan parecer vinos blancos, la forma de crianza es totalmente
                 diferente, además de ser los vinos mas secos (sin azucar) que hay en el mundo.
             </p>
@@ -137,7 +144,7 @@
             <a href="#" class="otro"></a>
             <p class="info">Pasa el raton por encima para ver detalles según el dibujo</p>
             <p class="info-1">Los toneles se disponen en tresbolillo con 3 y 4 alturas</p>
-            <p class="info-2">Para sevir el generoso se suele usar el catavinos</p>
+            <p class="info-2">Para sevir el vino generoso se suele usar el catavinos</p>
             <p class="info-3">La uva reina en D.O. Jerez es la Palomino y en D.O. Montilla Moriles es Pedro Ximenez</p>
         </div>
         
@@ -151,7 +158,7 @@
 
         <!-- Mapa de tipos de vino-->
         <div>
-            <h2 class="text-center">Los diferentes tipos de vinos</h2>
+            <h3 class="text-center">Los diferentes tipos de vinos</h2>
 
             <div class="centrado-map">
                 <!-- Mapa de imágenes haciendo uso de la etiqueta <map>, definiendo al menos 4 áreas, 2 de ellas
@@ -160,7 +167,7 @@
                 <div class="mapa-div">
                     <h4 class="text-center">Diferentes vinos de Jerez</h4>
                     <map name="image-map">
-                        <img src="/img/tipos_vino.jpg" usemap="#image-map">
+                        <img class="size-map" src="/img/tipos_vino.jpg" usemap="#image-map">
 
                         <area class="map-vino-fino" alt="fino" title="fino"
                             coords="33,7,123,6,138,91,104,143,95,183,97,222,136,248,132,263,106,286,57,287,46,271,24,257,28,238,62,224,63,148,34,125,21,97,28,23,31,15,32,6"
@@ -212,6 +219,44 @@
             </div>
         </div>
 
+        <!-- Mapa de imágenes sin hacer uso de la etiqueta <map> -->
+
+            <div class="container-soleras">
+
+                <h3 class="text-center">Sistema de soleras y criaderas</h3>
+                <p class="text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nisi pariatur iure blanditiis aspernatur minima suscipit tempora voluptatibus ab non, sapiente quae maiores odio nihil exercitationem perspiciatis. Delectus, accusantium sunt!
+                </p>
+                <div class="centrado-map">
+                    <div id="contenedor-soleras">
+                    <div class="primera-criadera"></div>
+                    <div class="segunda-criadera"></div>
+                    <div class="tercera-criadera"></div>
+                </div>
+                </div>
+                
+            </div>
+
+
+        <!--    galeria de imagenes    -->
+        <div class="container-galeria">
+            <h3 class="text-center">Imagenes de bodegas en Jerez</h3>
+            <div class="">
+                <div class="grid-galeria">
+                <img src="/img/galeria/generoso/Bodega01.jpg" alt="imagen de bodegas Lustau" class="imagen-galeria">
+                <img src="/img/galeria/generoso/Bodega02.jpg" alt="imagen de bodegas Tio Mateo" class="imagen-galeria">
+                <img src="/img/galeria/generoso/Bodega03.jpg" alt="imagen de bodegas William Humbert" class="imagen-galeria">
+                <img src="/img/galeria/generoso/Bodega04.jpg" alt="imagen de bodegas La Mezquita" class="imagen-galeria">
+                <img src="/img/galeria/generoso/Bodega05.jpg" alt="imagen de bodegas calles Tio Pepe" class="imagen-galeria">
+                <img src="/img/galeria/generoso/Bodega06.jpg" alt="imagen de bodegas Cayetano del Pino" class="imagen-galeria">
+                <img src="/img/galeria/generoso/Bodega07.jpg" alt="imagen de bodegas La Concha de Tio Pepe" class="imagen-galeria">
+            </div>
+
+            </div>
+            
+
+
+        </div>
 
     </main>
     <footer>

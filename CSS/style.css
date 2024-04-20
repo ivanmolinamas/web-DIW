@@ -114,13 +114,7 @@ ol.migas > li > a{
     text-align: center;
 }
 
-.container-preguntas{
-    width: 80%;
-    height: 130px;
-    margin: 40px auto;
-    text-align: center;
 
-}
 .margin-superior{
     padding: 40px;
 
@@ -137,24 +131,34 @@ ol.migas > li > a{
 .boton-saber:hover{
     background-color: var(--bonton-verde-activo);
 }
+
+
 /*    desplegables       */
 
-#collapse1{
+.container-preguntas{
+    width: 80%;
+    height: 180px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.collapse{
     display: none;
-    background-color: lightblue;
+    border: 1px solid var(--color-gris-texto);
     padding: 20px 15px;
     border-radius: 10px;
+    background-color: var(--color-azul-fondo);
 }
-#collapse2{
+
+
+.container-preguntas input{
     display: none;
-    background-color: lightblue;
-    padding: 20px 15px;
-    border-radius: 10px;
 }
-#pregunta1{
+
+.pregunta:first{
    margin-right: 30px; 
 }
-#pregunta1, #pregunta2{
+.pregunta{
     background-color: var(--boton-azul);
     padding: 10px 20px;
     
@@ -164,33 +168,94 @@ ol.migas > li > a{
     color: var(--color-blanco-texto);
     transition: background-color .5s; 
 }
-#pregunta1:hover{
+.container-preguntas label:hover{
     background-color: var(--bonton-azul-activo);
 }
-#pregunta2:hover{
-    background-color: var(--bonton-azul-activo);
-}
-/*
-#pregunta2{
-    background-color: var(--color-azul-fondo);
-    padding: 10px 20px;
-    width: max-content;
-    display: inline;
-    border-radius: 10px;
-}*/
 
-#pregunta1:hover ~ #collapse1{
+#pregunta1:checked ~ #collapse1,
+#pregunta2:checked ~ #collapse2{
     display: block;
 }
-#pregunta2:hover ~ #collapse2{
-    display: block;
+
+/*  galeria */
+.container-galeria{
+   background-color:#737373;
+   margin-top: 45px;
+   margin-bottom: 30px;
+   padding: 30px 0px;
 }
+.grid-container{
+    display: flex;
+    justify-content: center;
+    padding: 45px 0px;
+}
+
+.grid-galeria{
+    display: grid;
+    width: 100%;
+    column-gap: 15px;
+    row-gap: 15px;
+    justify-content:center;
+}
+
+.imagen-galeria{
+    max-width: 90%;
+    padding: 4px;
+    background-color: var(--color-blanco-texto);
+    border: 1px solid var(--color-gris-texto);
+    border-radius: 10px;
+}
+
+/* para ver hasta 990px*/
+@media (max-width:800px) {
+    .grid-galeria{
+        grid-template-columns: 90% ;
+    }
+}
+
+/* para ver mas de 990px*/
+
+@media (min-width:801px) and (max-width:1200px) {
+    .grid-galeria{
+        grid-template-columns: 45% 45%;
+    }
+}
+
+@media (min-width:1201px) {
+    .grid-galeria{
+        grid-template-columns: 23% 23% 23% 23%;
+    }
+}
+
+
+
+
+/*  fin galeria */
+
+
+/*  mapa imagenes criaderas y soleras    */
+.container-soleras{
+    background-color: #737373;
+  padding: 40px 0px;
+}
+
+#contenedor-soleras{
+    width: 765px;
+    height: 400px;
+    background-image: url(/img/sprites/criaderas_soleras.jpg);
+    background-color: #157347;
+}
+
+/* fin mapa imagenes criaderas y soleras    */
+
+
 
 
 /*  FOOTER   */
 footer {
     padding-top: 80px;
     padding: 20px;
+    margin-top: 40px;
     background-color: #212529;
     color: var(--color-blanco-texto);
     text-align: center;
@@ -220,12 +285,15 @@ footer {
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
 }
+.size-map{
+    width: 100%;
+}
 .mapa-div{
     position: relative ;
     width: max-content; 
     text-align: center;
 }
-label {
+.mapa-div label {
     position: absolute;
     display: none;
     text-align: center;
