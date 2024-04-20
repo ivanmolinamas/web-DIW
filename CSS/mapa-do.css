@@ -1,8 +1,15 @@
 
 
 /* Mapa D.O. en vinos tintos*/
+.container-do{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #mapa-do{
     width: 900px;
+    position: relative;
 }
 #mapa-do > img {
     position: relative;

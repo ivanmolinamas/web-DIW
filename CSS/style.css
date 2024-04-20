@@ -1,14 +1,16 @@
 :root {
     /* variables colores para el uso en la web*/
     --color-negro-fondo: #212529;
-    --color-negro-texto:#212529;
+    --color-gris-fondo: #6c757d;
+    --color-negro-texto: #212529;
     --color-blanco-texto: #F8F9FA;
     --color-gris-texto: #737373;
     --color-azul-fondo: #cfe2ff;
-    --boton-verde:#198754;
-    --boton-azul:#0d6efd;
-    --bonton-verde-activo:#157347;
-    --bonton-azul-activo:#0b5ed7;
+    --boton-verde: #198754;
+    --boton-azul: #0d6efd;
+    --bonton-verde-activo: #157347;
+    --bonton-azul-activo: #0b5ed7;
+    --color-azul-textoEnlace: #0d6efd;
 }
 
 body {
@@ -16,36 +18,40 @@ body {
     line-height: 1.5;
 }
 
-h1{
-    font-weight:lighter;
+h1 {
+    font-weight: lighter;
     font-size: 4em;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
 /*  migas de pan  */
-.container{
+.container {
     margin-left: 0px;
-    font-weight:lighter;
+    font-weight: lighter;
     font-size: 1rem;
 }
-ol.migas{
+
+ol.migas {
     display: flex;
     list-style-type: none;
     margin-left: 12px;
     padding-left: 0px;
     color: var(--color-gris-texto);
 }
-ol.migas > li::after{
+
+ol.migas>li::after {
     content: "/";
     margin-left: 10px;
     margin-right: 10px;
 }
-ol.migas > li:last-child::after{
+
+ol.migas>li:last-child::after {
     content: "";
 }
-ol.migas > li > a{
-    color: blue;
+
+ol.migas>li>a {
+    color: var(--color-azul-textoEnlace);
 }
 
 
@@ -77,72 +83,98 @@ ol.migas > li > a{
 /* FIN NAVEGACION */
 
 /*  lista indice  */
-.container-indice{
+.container-indice {
     width: 380px;
     text-align: center;
     margin: 0 auto;
 }
-.lista-indice-ul{
+
+.lista-indice-ul {
     list-style-type: none;
     margin-top: 40px;
 }
-.lista-indice{
+
+.lista-indice {
     text-decoration: none;
     color: var(--color-gris-texto);
-}   
-.lista-indice-ul > li {
+}
+
+.lista-indice-ul>li {
     padding: 10px 0px;
     border-bottom: 1px solid black;
 }
-.primer-indice{
-    /*background-color: var(--color-azul-fondo);*/
-}
 
-.container-center{
+
+.container-center {
     margin: 0 auto;
 }
-.lista-indice-ul > li:hover{
+
+.lista-indice-ul>li:hover {
     background-color: var(--color-azul-fondo);
     /*
     background-color: rgb(226, 226, 226);*/
 }
+
 /*   generales    */
-.container-general{
+.container-general {
     width: 90%;
-    margin-top: 45px;
+   /* margin-top: 45px;*/
     margin: 0 auto;
     text-align: center;
 }
 
+.container-grande{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px;
+    padding-bottom: 30px;
+}
 
-.margin-superior{
+.margin-superior {
     padding: 40px;
 
 }
+.fondo-gris{
+    background-color: #6c757d;
+}
 
-.boton-saber{
+.boton-saber {
     padding: 13px 25px;
     color: var(--color-blanco-texto);
     text-decoration: none;
     background-color: var(--boton-verde);
     border-radius: 10px;
-    transition: background-color .5s; /* Define la transición para el color de fondo */
+    transition: background-color .5s;
+    /* Define la transición para el color de fondo */
 }
-.boton-saber:hover{
+
+.boton-saber:hover {
     background-color: var(--bonton-verde-activo);
 }
 
 
+
+.imagen-velo{
+    width: 60%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+
+
 /*    desplegables       */
 
-.container-preguntas{
+.container-preguntas {
     width: 80%;
     height: 180px;
     margin: 40px auto;
     text-align: center;
 }
 
-.collapse{
+.collapse {
     display: none;
     border: 1px solid var(--color-gris-texto);
     padding: 20px 15px;
@@ -151,54 +183,56 @@ ol.migas > li > a{
 }
 
 
-.container-preguntas input{
+.container-preguntas input {
     display: none;
 }
 
-.pregunta:first{
-   margin-right: 30px; 
+.pregunta:first {
+    margin-right: 30px;
 }
-.pregunta{
+
+.pregunta {
     background-color: var(--boton-azul);
     padding: 10px 20px;
-    
+
     width: max-content;
     display: inline;
     border-radius: 10px;
     color: var(--color-blanco-texto);
-    transition: background-color .5s; 
+    transition: background-color .5s;
 }
-.container-preguntas label:hover{
+
+.container-preguntas label:hover {
     background-color: var(--bonton-azul-activo);
 }
 
-#pregunta1:checked ~ #collapse1,
-#pregunta2:checked ~ #collapse2{
+#pregunta1:checked~#collapse1,
+#pregunta2:checked~#collapse2 {
     display: block;
 }
 
 /*  galeria */
-.container-galeria{
-   background-color:#737373;
-   margin-top: 45px;
-   margin-bottom: 30px;
-   padding: 30px 0px;
+.container-galeria {
+    margin-top: 45px;
+    margin-bottom: 30px;
+    padding: 30px 0px;
 }
-.grid-container{
+
+.grid-container {
     display: flex;
     justify-content: center;
     padding: 45px 0px;
 }
 
-.grid-galeria{
+.grid-galeria {
     display: grid;
     width: 100%;
     column-gap: 15px;
     row-gap: 15px;
-    justify-content:center;
+    justify-content: center;
 }
 
-.imagen-galeria{
+.imagen-galeria {
     max-width: 90%;
     padding: 4px;
     background-color: var(--color-blanco-texto);
@@ -208,21 +242,21 @@ ol.migas > li > a{
 
 /* para ver hasta 990px*/
 @media (max-width:800px) {
-    .grid-galeria{
-        grid-template-columns: 90% ;
+    .grid-galeria {
+        grid-template-columns: 90%;
     }
 }
 
 /* para ver mas de 990px*/
 
 @media (min-width:801px) and (max-width:1200px) {
-    .grid-galeria{
+    .grid-galeria {
         grid-template-columns: 45% 45%;
     }
 }
 
 @media (min-width:1201px) {
-    .grid-galeria{
+    .grid-galeria {
         grid-template-columns: 23% 23% 23% 23%;
     }
 }
@@ -234,17 +268,67 @@ ol.migas > li > a{
 
 
 /*  mapa imagenes criaderas y soleras    */
-.container-soleras{
+.container-soleras {
     background-color: #737373;
-  padding: 40px 0px;
+    padding: 40px 0px;
+}
+.centrado-solera{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
 }
 
-#contenedor-soleras{
+#contenedor-soleras {
     width: 765px;
     height: 400px;
-    background-image: url(/img/sprites/criaderas_soleras.jpg);
-    background-color: #157347;
+    background-image: url(/img/sprites/criaderas_soleras-bn.jpg);
+    position: relative;
 }
+
+#contenedor-soleras div {
+    position: absolute;
+}
+
+#primera-criadera {
+    width: 720px;
+    height: 110px;
+    top: 260px;
+    left: 40px;
+}
+
+#segunda-criadera {
+    width: 715px;
+    height: 110px;
+    top: 143px;
+    left: 40px;
+}
+
+#tercera-criadera {
+    width: 715px;
+    height: 110px;
+    top: 28px;
+    left: 40px;
+}
+
+#primera-criadera:hover {
+    background: url(/img/sprites/criaderas_soleras.jpg) -40px 140px;
+}
+
+#segunda-criadera:hover {
+    background: url(/img/sprites/criaderas_soleras.jpg) -40px -143px;
+}
+
+#tercera-criadera:hover {
+    background: url(/img/sprites/criaderas_soleras.jpg) -40px -28px;
+}
+.container-text-soleras{
+    width: 70%;
+    margin: 10px auto;
+}
+
 
 /* fin mapa imagenes criaderas y soleras    */
 
@@ -271,28 +355,34 @@ footer {
     color: var(--color-negro-fondo);
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
-.center{
+
+.center {
     margin: 0 auto;
 }
 
 
 /* mapa de vinos*/
-.centrado-map{
+.centrado-map {
     display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
 }
-.size-map{
+
+.size-map {
     width: 100%;
 }
-.mapa-div{
-    position: relative ;
-    width: max-content; 
+
+.mapa-div {
+    position: relative;
+    width: max-content;
     text-align: center;
 }
+
 .mapa-div label {
     position: absolute;
     display: none;
@@ -309,76 +399,85 @@ footer {
     color: var(--color-negro-texto);
 }
 
-.map-vino-fino:hover + label {
+.map-vino-fino:hover+label {
     display: inline-block;
     padding: 5px 15px;
     top: 170px;
     left: 30px;
 }
-.map-vino-amonillado:hover + label {
+
+.map-vino-amonillado:hover+label {
     display: inline-block;
     padding: 5px 15px;
     top: 170px;
     left: 100px;
 }
-.map-vino-oloroso:hover + label {
+
+.map-vino-oloroso:hover+label {
     display: inline-block;
     padding: 5px 15px;
     top: 170px;
     left: 300px;
 }
-.map-vino-palo-cortado:hover + label {
+
+.map-vino-palo-cortado:hover+label {
     display: inline-block;
     padding: 5px 15px;
     top: 170px;
     left: 460px;
 }
-.map-vino-pale-cream:hover + label {
+
+.map-vino-pale-cream:hover+label {
     display: inline-block;
     padding: 5px 15px;
     top: 170px;
     left: 570px;
 }
-.map-vino-medium:hover + label {
+
+.map-vino-medium:hover+label {
     display: inline-block;
     padding: 5px 15px;
     top: 490px;
     left: 20px;
 }
-.map-vino-cream:hover + label {
+
+.map-vino-cream:hover+label {
     display: inline-block;
     padding: 5px 15px;
     top: 490px;
     left: 130px;
 }
-.map-vino-pedro-ximenez:hover + label {
+
+.map-vino-pedro-ximenez:hover+label {
     display: inline-block;
     padding: 5px 15px;
     top: 490px;
     left: 290px;
 }
-.map-vino-moscatel:hover + label {
+
+.map-vino-moscatel:hover+label {
     display: inline-block;
     padding: 5px 15px;
     top: 490px;
     left: 450px;
 }
-.map-vino-manzanilla:hover + label {
+
+.map-vino-manzanilla:hover+label {
     display: inline-block;
     padding: 5px 15px;
     top: 490px;
     left: 620px;
 }
 
-.imagen-cabecera{
+.imagen-cabecera {
     background-image: url(/img/bodega2.jpeg);
     background-repeat: no-repeat;
-    background-position: center center ;
-    background-size:cover;
+    background-position: center center;
+    background-size: cover;
     height: 500px;
 }
 
-.texto-cabecera-imagen{
+.texto-cabecera-imagen {
     color: white;
     position: relative;
     top: 430px;
@@ -387,25 +486,25 @@ footer {
 }
 
 
-.texto-cabecera-imagen > .subtitulo{
+.texto-cabecera-imagen>.subtitulo {
     font-size: medium;
 }
 
 
 /*           sprite         */
 
-.sprite-vino{
+.sprite-vino {
     margin: 0 auto;
     width: max-content;
 
 }
 
-.sprite-vino a{
+.sprite-vino a {
     display: inline-block;
     width: 115px;
     height: 115px;
     margin: 10px;
-    
+
 
 
     /* Tiempo que dura la transición 
@@ -413,65 +512,79 @@ footer {
     /* Firefox 
     -webkit-transition: all .5s;
     */
-    
+
 }
-.info{
+
+.info {
     background-color: var(--color-azul-fondo);
     padding: 10px 15px;
     border-radius: 10px;
 }
- .info-1, .info-2, .info-3{
+
+.info-1,
+.info-2,
+.info-3 {
     display: none;
     font-weight: bold;
     background-color: var(--color-azul-fondo);
     padding: 10px 15px;
     border-radius: 10px;
 }
-.sprite-vino a.barril{
+
+.sprite-vino a.barril {
     background: url(/img/sprites/css_sprites.png);
     background-position: 0px 0px;
 
 }
 
-.sprite-vino a.barril:hover{
+.sprite-vino a.barril:hover {
     background: url(/img/sprites/css_sprites.png);
     background-position: 0px -120px;
 }
-.sprite-vino a.barril:hover ~ .info{
+
+.sprite-vino a.barril:hover~.info {
     display: none;
 }
-.sprite-vino a.barril:hover ~ .info-1{
+
+.sprite-vino a.barril:hover~.info-1 {
     display: block;
 }
-.sprite-vino a.botella{
+
+.sprite-vino a.botella {
     background: url(/img/sprites/css_sprites.png);
     background-position: -110px 0px;
 
 }
-.sprite-vino a.botella:hover{
+
+.sprite-vino a.botella:hover {
     background: url(/img/sprites/css_sprites.png);
     background-position: -110px -120px;
 }
-.sprite-vino a.botella:hover ~ .info{
+
+.sprite-vino a.botella:hover~.info {
     display: none;
 }
-.sprite-vino a.botella:hover ~ .info-2{
+
+.sprite-vino a.botella:hover~.info-2 {
     display: block;
 }
 
-.sprite-vino a.otro{
+.sprite-vino a.otro {
     background: url(/img/sprites/css_sprites.png);
     background-position: -240px 0px;
 
 }
-.sprite-vino a.otro:hover{
+
+.sprite-vino a.otro:hover {
     background: url(/img/sprites/css_sprites.png);
     background-position: -240px -120px;
 }
-.sprite-vino a.otro:hover ~ .info{
+
+.sprite-vino a.otro:hover~.info {
     display: none;
 }
-.sprite-vino a.otro:hover ~ .info-3{
+
+.sprite-vino a.otro:hover~.info-3 {
     display: block;
 }
 
@@ -487,10 +600,11 @@ footer {
     width: 190px;
     height: 224px;
     background-position: 10px -18px;
-    
+
 }
+
 /*con hover se activa la anumacion, que dura 0.750s cada paso y tiene 8 pasos*/
-.sprite-botella:hover{
+.sprite-botella:hover {
     animation: moveBoy 0.750s steps(12, end) infinite;
 }
 
@@ -498,6 +612,7 @@ footer {
     from {
         background-position: 0px
     }
+
     /* configuro el final del sprite*/
     to {
         background-position: -2700px;

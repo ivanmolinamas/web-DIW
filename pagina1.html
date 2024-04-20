@@ -31,7 +31,7 @@
             <nav aria-label="migas-separador">
                 <ol class="migas">
                     <li class="migas-item"><a href="/index.html">Inicio</a></li>
-                    <li class="migas-item active" aria-current="page">Vino Tinto</li>
+                    <li class="migas-item active" aria-current="page">Vinos generosos</li>
                 </ol>
             </nav>
 
@@ -119,8 +119,8 @@
             <input type="checkbox" id="pregunta2">
             <label for="pregunta2" class="pregunta">¿Son vinos blancos?</label>
 
-           
-<!--
+
+            <!--
             <p id="pregunta2">¿Son vinos blancos?</p>
             <p id="pregunta3"></p>
  -->
@@ -147,7 +147,7 @@
             <p class="info-2">Para sevir el vino generoso se suele usar el catavinos</p>
             <p class="info-3">La uva reina en D.O. Jerez es la Palomino y en D.O. Montilla Moriles es Pedro Ximenez</p>
         </div>
-        
+
         <!--    srpite muñeco botella vino   -->
         <div class="text-center">
             <p>Pasa el ratón por encima para ver el efecto</p>
@@ -160,82 +160,112 @@
         <div>
             <h3 class="text-center">Los diferentes tipos de vinos</h2>
 
-            <div class="centrado-map">
-                <!-- Mapa de imágenes haciendo uso de la etiqueta <map>, definiendo al menos 4 áreas, 2 de ellas
+                <div class="centrado-map">
+                    <!-- Mapa de imágenes haciendo uso de la etiqueta <map>, definiendo al menos 4 áreas, 2 de ellas
                     deben ser poligonales (de forma similar al ejercicio de “animales marinos”)-->
 
-                <div class="mapa-div">
-                    <h4 class="text-center">Diferentes vinos de Jerez</h4>
-                    <map name="image-map">
-                        <img class="size-map" src="/img/tipos_vino.jpg" usemap="#image-map">
+                    <div class="mapa-div">
+                        <h4 class="text-center">Diferentes vinos de Jerez</h4>
+                        <map name="image-map">
+                            <img class="size-map" src="/img/tipos_vino.jpg" usemap="#image-map">
 
-                        <area class="map-vino-fino" alt="fino" title="fino"
-                            coords="33,7,123,6,138,91,104,143,95,183,97,222,136,248,132,263,106,286,57,287,46,271,24,257,28,238,62,224,63,148,34,125,21,97,28,23,31,15,32,6"
-                            shape="poly">
-                        <label for="map-vino-fino">Fino, el origen</label>
+                            <area class="map-vino-fino" alt="fino" title="fino"
+                                coords="33,7,123,6,138,91,104,143,95,183,97,222,136,248,132,263,106,286,57,287,46,271,24,257,28,238,62,224,63,148,34,125,21,97,28,23,31,15,32,6"
+                                shape="poly">
+                            <label for="map-vino-fino">Fino, el origen</label>
 
-                        <area class="map-vino-amonillado" alt="amontillado" title="amontillado"
-                            coords="194,6,283,4,295,92,260,147,256,221,296,244,315,272,305,289,168,291,167,264,184,242,218,225,223,149,178,97"
-                            shape="poly">
-                        <label for="map-vino-amonillado">Amontillado, la mezcla entre Fino y Oloroso</label>
+                            <area class="map-vino-amonillado" alt="amontillado" title="amontillado"
+                                coords="194,6,283,4,295,92,260,147,256,221,296,244,315,272,305,289,168,291,167,264,184,242,218,225,223,149,178,97"
+                                shape="poly">
+                            <label for="map-vino-amonillado">Amontillado, la mezcla entre Fino y Oloroso</label>
 
-                        <area class="map-vino-oloroso" alt="oloroso" title="oloroso" coords="343,7,459,290"
-                            shape="rect">
-                        <label for="map-vino-oloroso">Oloroso <br> cuando es bueno es impresionante</label>
+                            <area class="map-vino-oloroso" alt="oloroso" title="oloroso" coords="343,7,459,290"
+                                shape="rect">
+                            <label for="map-vino-oloroso">Oloroso <br> cuando es bueno es impresionante</label>
 
-                        <area class="map-vino-palo-cortado" alt="palo-cortado" title="palo-cortado"
-                            coords="633,289,486,6" shape="rect">
-                        <label for="map-vino-palo-cortado">Palo Cortado<br>el secreto, el mejor de todos</label>
+                            <area class="map-vino-palo-cortado" alt="palo-cortado" title="palo-cortado"
+                                coords="633,289,486,6" shape="rect">
+                            <label for="map-vino-palo-cortado">Palo Cortado<br>el secreto, el mejor de todos</label>
 
-                        <area class="map-vino-pale-cream" alt="pale-cream" title="pale-cream"
-                            coords="676,5,761,4,775,80,759,129,737,150,735,221,771,240,780,261,790,291,657,290,657,245,700,225,701,150,665,122,661,88"
-                            shape="poly">
-                        <label for="map-vino-pale-cream">Pale Cream, vino de Ingleses</label>
+                            <area class="map-vino-pale-cream" alt="pale-cream" title="pale-cream"
+                                coords="676,5,761,4,775,80,759,129,737,150,735,221,771,240,780,261,790,291,657,290,657,245,700,225,701,150,665,122,661,88"
+                                shape="poly">
+                            <label for="map-vino-pale-cream">Pale Cream, vino de Ingleses</label>
 
-                        <area class="map-vino-medium" alt="medium" title="medium" 
-                            coords="33,307,124,305,135,383,118,442,109,495,121,534,139,562,126,595,36,596,33,575,18,561,48,511,29,423,16,381,17,334"
-                            shape="poly">
-                        <label for="map-vino-medium">Medium, mezcla de varios</label>
+                            <area class="map-vino-medium" alt="medium" title="medium"
+                                coords="33,307,124,305,135,383,118,442,109,495,121,534,139,562,126,595,36,596,33,575,18,561,48,511,29,423,16,381,17,334"
+                                shape="poly">
+                            <label for="map-vino-medium">Medium, mezcla de varios</label>
 
-                        <area class="map-vino-cream" alt="cream" title="cream" coords="186,305,293,596" shape="rect">
-                        <label for="map-vino-cream">Cream, vino de Ingleses</label>
+                            <area class="map-vino-cream" alt="cream" title="cream" coords="186,305,293,596"
+                                shape="rect">
+                            <label for="map-vino-cream">Cream, vino de Ingleses</label>
 
-                        <area class="map-vino-pedro-ximenez" alt="pedro-ximenez" title="pedro-ximenez"
-                            coords="479,599,321,313" shape="rect">
-                        <label for="map-vino--pedro-ximenez">Pedro Ximenez, el mas dulce</label>
+                            <area class="map-vino-pedro-ximenez" alt="pedro-ximenez" title="pedro-ximenez"
+                                coords="479,599,321,313" shape="rect">
+                            <label for="map-vino--pedro-ximenez">Pedro Ximenez, el mas dulce</label>
 
-                        <area class="map-vino-moscatel" alt="moscatel" title="moscatel"
-                            coords="516,310,602,307,619,390,600,440,575,459,575,524,608,543,620,577,612,602,499,594,507,544,535,530,539,451,504,417"
-                            shape="poly">
-                        <label for="map-vino-moscatel">Moscatel, muy dulce</label>
+                            <area class="map-vino-moscatel" alt="moscatel" title="moscatel"
+                                coords="516,310,602,307,619,390,600,440,575,459,575,524,608,543,620,577,612,602,499,594,507,544,535,530,539,451,504,417"
+                                shape="poly">
+                            <label for="map-vino-moscatel">Moscatel, muy dulce</label>
 
-                        <area class="map-vino-manzanilla" alt="manzanilla" title="manzanilla"
-                            coords="671,310,765,311,778,392,749,448,741,503,757,540,778,553,788,590,655,594,658,560,695,529,702,452,657,415"
-                            shape="poly">
-                        <label for="map-vino-manzanilla">Manzanilal de Sanlucar <br> de lo mejor para el verano</label>
-                    </map>
-                    <p class="text-center">Pasa el raton por encima para ver sus nombres y comentarios</p>
+                            <area class="map-vino-manzanilla" alt="manzanilla" title="manzanilla"
+                                coords="671,310,765,311,778,392,749,448,741,503,757,540,778,553,788,590,655,594,658,560,695,529,702,452,657,415"
+                                shape="poly">
+                            <label for="map-vino-manzanilla">Manzanilal de Sanlucar <br> de lo mejor para el
+                                verano</label>
+                        </map>
+                        <p class="text-center">Pasa el ratón por encima para ver sus nombres y comentarios</p>
+                    </div>
                 </div>
-            </div>
         </div>
 
         <!-- Mapa de imágenes sin hacer uso de la etiqueta <map> -->
 
-            <div class="container-soleras">
+        <div class="container-soleras">
 
-                <h3 class="text-center">Sistema de soleras y criaderas</h3>
-                <p class="text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nisi pariatur iure blanditiis aspernatur minima suscipit tempora voluptatibus ab non, sapiente quae maiores odio nihil exercitationem perspiciatis. Delectus, accusantium sunt!
-                </p>
-                <div class="centrado-map">
-                    <div id="contenedor-soleras">
-                    <div class="primera-criadera"></div>
-                    <div class="segunda-criadera"></div>
-                    <div class="tercera-criadera"></div>
-                </div>
-                </div>
-                
+            <h3 class="text-center">Sistema de soleras y criaderas</h3>
+            <div class="text-center container-text-soleras">
+                 <p >
+                El sistema de solera y criaderas es muy interesante, ya que en los vinos de este tipo, no hay fecha ya
+                que con este sitema los vinos se mezclan unas añadas con otras, dando lugar a este vino tan interesate.
+            </p>
+            <p>
+                <strong>La solera</strong> son las botas donde se saca el vino para embotellar o consumir. Estas botas se rellenan con la
+                primera criadera, haciendo que vino mas joven se mezcle y le de juventud para el velo de flor a un vnio
+                mas antiguo.
+            </p>
+
+            <p>
+                <strong>La pimera criadera</strong>  es el nivel donde se lleva el vino a la solera y se rellan con la 2º criadera,
+                mezclando vinos mas jovenes con mas antiguos.
+            </p>
+            <p>
+                En <strong>la segunda criadera</strong> (puede haber mas criaderas, semempieza por la más alta) es donde se añade el
+                vino cosechado ese año. y es mezclado con vino de otros años.
+            </p>
+
+            <p>
+                Este sistema de soleras y criaderas es todo un arte, y es el enologo y el jefe de la bodega quien se
+                encarga de ir mezclando los vinos y cuando hacerlo, ya que no todas las botas aportan los mismos sabores
+                y olores, pudiendo sacar vinos de grandisima calidad y unicos.
+            </p>
             </div>
+           
+
+            <div class="centrado-solera">
+                <div id="contenedor-soleras">
+                    <div id="primera-criadera"></div>
+                    <div id="segunda-criadera"></div>
+                    <div id="tercera-criadera"></div>
+
+
+                </div>
+            </div>
+
+        </div>
+
 
 
         <!--    galeria de imagenes    -->
@@ -243,19 +273,28 @@
             <h3 class="text-center">Imagenes de bodegas en Jerez</h3>
             <div class="">
                 <div class="grid-galeria">
-                <img src="/img/galeria/generoso/Bodega01.jpg" alt="imagen de bodegas Lustau" class="imagen-galeria">
-                <img src="/img/galeria/generoso/Bodega02.jpg" alt="imagen de bodegas Tio Mateo" class="imagen-galeria">
-                <img src="/img/galeria/generoso/Bodega03.jpg" alt="imagen de bodegas William Humbert" class="imagen-galeria">
-                <img src="/img/galeria/generoso/Bodega04.jpg" alt="imagen de bodegas La Mezquita" class="imagen-galeria">
-                <img src="/img/galeria/generoso/Bodega05.jpg" alt="imagen de bodegas calles Tio Pepe" class="imagen-galeria">
-                <img src="/img/galeria/generoso/Bodega06.jpg" alt="imagen de bodegas Cayetano del Pino" class="imagen-galeria">
-                <img src="/img/galeria/generoso/Bodega07.jpg" alt="imagen de bodegas La Concha de Tio Pepe" class="imagen-galeria">
+                    <img src="/img/galeria/generoso/Bodega01.jpg" alt="imagen de bodegas Lustau" class="imagen-galeria">
+                    <img src="/img/galeria/generoso/Bodega02.jpg" alt="imagen de bodegas Tio Mateo"
+                        class="imagen-galeria">
+                    <img src="/img/galeria/generoso/Bodega08.jpg" alt="imagen de bodegas La Concha de Tio Pepe"
+                        class="imagen-galeria">
+                    <img src="/img/galeria/generoso/Bodega10.jpg" alt="imagen de bodegas La Concha de Tio Pepe"
+                        class="imagen-galeria">
+                    <img src="/img/galeria/generoso/Bodega03.jpg" alt="imagen de bodegas William Humbert"
+                        class="imagen-galeria">
+                    <img src="/img/galeria/generoso/Bodega04.jpg" alt="imagen de bodegas La Mezquita"
+                        class="imagen-galeria">
+                    <img src="/img/galeria/generoso/Bodega09.jpg" alt="imagen de bodegas La Concha de Tio Pepe"
+                        class="imagen-galeria">
+                    <img src="/img/galeria/generoso/Bodega05.jpg" alt="imagen de bodegas calles Tio Pepe"
+                        class="imagen-galeria">
+                    <img src="/img/galeria/generoso/Bodega06.jpg" alt="imagen de bodegas Cayetano del Pino"
+                        class="imagen-galeria">
+                    <img src="/img/galeria/generoso/Bodega07.jpg" alt="imagen de bodegas La Concha de Tio Pepe"
+                        class="imagen-galeria">
+
+                </div>
             </div>
-
-            </div>
-            
-
-
         </div>
 
     </main>
