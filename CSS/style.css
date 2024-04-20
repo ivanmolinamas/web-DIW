@@ -118,6 +118,7 @@ ol.migas>li>a {
         border: 0.8px solid #c3c1c1;
         border-radius: 10px;
         padding:10px 15px;
+        margin-right: 15px;
     } 
     .bar {
         background-color: #9f9f9f;
@@ -201,7 +202,6 @@ ol.migas>li>a {
 /*   generales    */
 .container-general {
     width: 90%;
-
     margin: 0 auto;
     text-align: center;
     padding-bottom: 35px;
