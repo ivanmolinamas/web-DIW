@@ -2,18 +2,35 @@
 
 /* Mapa D.O. en vinos tintos*/
 .container-do{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+
 }
 #mapa-do{
     width: 900px;
     position: relative;
 }
+#info-dispositivos{
+    display: none;
+    color: red;
+    font-size: 1.5em;
+    background-color: var(--color-azul-fondo);
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+@media (max-width:800px) {
+    #mapa-do {
+       display: none;
+       
+    }
+    #info-dispositivos{
+        display: inline;
+    }
+}
 #mapa-do > img {
     position: relative;
-    width: 900px;
+    width: 800px;
 }
 #mapa-do:hover ul.cuadro li {
     display: block;
@@ -35,41 +52,41 @@ ul.cuadro li p {
     top: 100%;
 }
 ul.cuadro li:hover p {
-    display: block;
+    display: inline;
 }
 ul.cuadro li.nota1 {
     width: 140px;
     height: 110px;
-    top: 700px;
-    left: 480px;
+    top: 220px;
+    left: 420px;
 }
 ul.cuadro li.nota2 {
     width: 80px;
     height: 50px;
-    top: 545px;
-    left: 550px;
+    top: 80px;
+    left: 480px;
 }
 ul.cuadro li.nota3 {
     width: 90px;
     height: 50px;
-    top: 580px;
-    left: 480px;
+    top: 110px;
+    left: 410px;
 }
 ul.cuadro li.nota4 {
     width: 30px;
     height: 30px;
-    top: 600px;
-    left: 740px;
+    top: 130px;
+    left: 660px;
 }
 ul.cuadro li.nota5 {
     width: 40px;
     height: 35px;
-    top: 560px;
-    left: 680px;
+    top: 95px;
+    left: 600px;
 }
 .nota1:hover p {
     display: block;
-    height: 50px;
+    height: 80px;
     width: 140px;
     top: -10px;
     left: 150px;
@@ -77,28 +94,28 @@ ul.cuadro li.nota5 {
 
 .nota2:hover p {
     display: block;
-    height: 30px;
+    height: 45px;
     width: 130px;
     top: -10px;
     left: 85px;
 }
 .nota3:hover p {
     display: block;
-    height: 80px;
+    height: 100px;
     width: 100px;
     top: -10px;
     left: -120px;
 }
 .nota4:hover p {
     display: block;
-    height: 80px;
+    height: 100px;
     width: 100px;
     top: -10px;
     left: 35px;
 }
 .nota5:hover p {
     display: block;
-    height: 80px;
+    height: 90px;
     width: 120px;
     top: -110px;
     left: 20px;
@@ -106,6 +123,7 @@ ul.cuadro li.nota5 {
 .cuadro > li > p {
     color: rgb(255, 255, 255);
 }
+
 
 
 /* FIN mapa D.O. en tintos*/

@@ -1,0 +1,115 @@
+/* Mapa D.O. en vinos tintos */
+.container-do {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mapa-do {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+}
+
+#mapa-do > img {
+    width: 100%;
+    height: auto;
+}
+
+ul.cuadro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.cuadro li {
+    position: absolute;
+    border: medium solid rgb(102, 47, 47);
+    background: rgb(165, 86, 86);
+    opacity: 0.85;
+}
+
+ul.cuadro li p {
+    margin: 10px;
+    padding: 0.3em;
+    color: rgb(255, 255, 255);
+}
+
+/* Definir las posiciones de las notas */
+.nota1 {
+    width: 140px;
+    height: 110px;
+    top: 30%;
+    left: 40%;
+}
+ul.cuadro li.nota2 {
+    width: 80px;
+    height: 50px;
+    top: 545px;
+    left: 550px;
+}
+ul.cuadro li.nota3 {
+    width: 90px;
+    height: 50px;
+    top: 580px;
+    left: 480px;
+}
+ul.cuadro li.nota4 {
+    width: 30px;
+    height: 30px;
+    top: 600px;
+    left: 740px;
+}
+ul.cuadro li.nota5 {
+    width: 40px;
+    height: 35px;
+    top: 560px;
+    left: 680px;
+}
+.nota1:hover p {
+    display: block;
+    height: 50px;
+    width: 140px;
+    top: -10px;
+    left: 150px;
+}
+
+.nota2:hover p {
+    display: block;
+    height: 30px;
+    width: 130px;
+    top: -10px;
+    left: 85px;
+}
+.nota3:hover p {
+    display: block;
+    height: 80px;
+    width: 100px;
+    top: -10px;
+    left: -120px;
+}
+.nota4:hover p {
+    display: block;
+    height: 80px;
+    width: 100px;
+    top: -10px;
+    left: 35px;
+}
+.nota5:hover p {
+    display: block;
+    height: 80px;
+    width: 120px;
+    top: -110px;
+    left: 20px;
+}
+.cuadro > li > p {
+    color: rgb(255, 255, 255);
+}
+
+
+/* FIN mapa D.O. en tintos*/
