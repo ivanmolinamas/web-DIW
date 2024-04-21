@@ -2,6 +2,7 @@
     /* variables colores para el uso en la web*/
     --color-negro-fondo: #212529;
     --color-gris-fondo: #6c757d;
+    --color-grisClaro-fondo: #f8f9fa;
     --color-negro-texto: #212529;
     --color-blanco-texto: #F8F9FA;
     --color-gris-texto: #737373;
@@ -12,6 +13,8 @@
     --bonton-azul-activo: #0b5ed7;
     --color-azul-textoEnlace: #0d6efd;
 }
+
+/*   generales    */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -35,6 +38,96 @@ h3 {
 h4{
     font-size: 2em;
 }
+
+.container-general {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 35px;
+    padding-top: 10px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.container-grande {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px;
+    padding-bottom: 30px;
+}
+
+.container-texto-70 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.margin-superior {
+    padding: 40px;
+
+}
+
+.fondo-gris {
+    background-color: #6c757d;
+}
+.centrar{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.boton-saber {
+    padding: 13px 25px;
+    
+    color: var(--color-blanco-texto);
+    text-decoration: none;
+    background-color: var(--boton-verde);
+    border-radius: 10px;
+    transition: background-color .5s;
+}
+
+.boton-saber:hover {
+    background-color: var(--bonton-verde-activo);
+}
+
+
+.imagen-velo {
+    width: 60%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.boton{
+    background-color: var(--boton-azul);
+    padding: 10px 20px;
+    margin: 0px 30px;
+    text-decoration: none;
+    width: max-content;
+    display: inline;
+    border-radius: 10px;
+    color: var(--color-blanco-texto);
+    transition: background-color .5s;
+}
+
+.color-gris {
+    color: var(--color-gris-texto);
+}
+
+.color-negro {
+    color: var(--color-negro-fondo);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+
+
 
 /*  migas de pan  */
 .container {
@@ -133,7 +226,6 @@ ol.migas>li>a {
         border: 0.8px solid var(--color-gris-fondo);
         border-radius: 10px;
         transition: border 0.3s ease;
-
         padding: 10px 15px;
         margin-right: 12px;
         margin-top: 12px;
@@ -189,6 +281,8 @@ ol.migas>li>a {
 
 /* FIN NAVEGACION */
 
+
+
 /*  lista indice  */
 .container-indice {
     width: 380px;
@@ -218,72 +312,7 @@ ol.migas>li>a {
 
 .lista-indice-ul>li:hover {
     background-color: var(--color-azul-fondo);
-    /*
-    background-color: rgb(226, 226, 226);*/
 }
-
-/*   generales    */
-.container-general {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 35px;
-    padding-top: 10px;
-}
-
-.text-justify {
-    text-align: justify;
-}
-
-.container-grande {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 0px;
-    padding-bottom: 30px;
-}
-
-.container-texto-70 {
-    width: 70%;
-    margin: 0 auto;
-}
-
-.margin-superior {
-    padding: 40px;
-
-}
-
-.fondo-gris {
-    background-color: #6c757d;
-}
-.centrar{
-    text-align: center;
-    margin-bottom: 40px;
-}
-.boton-saber {
-    padding: 13px 25px;
-    
-    color: var(--color-blanco-texto);
-    text-decoration: none;
-    background-color: var(--boton-verde);
-    border-radius: 10px;
-    transition: background-color .5s;
-}
-
-.boton-saber:hover {
-    background-color: var(--bonton-verde-activo);
-}
-
-
-.imagen-velo {
-    width: 60%;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-
-
 
 /*    desplegables       */
 
@@ -293,6 +322,11 @@ ol.migas>li>a {
     height: max-content;
     margin: 40px auto;
     text-align: center;
+   
+}
+.padre-preguntas{
+     background-color: var(--color-gris-fondo);
+     padding: 35px 0px;
 }
 
 .collapse {
@@ -315,7 +349,6 @@ ol.migas>li>a {
 .pregunta {
     background-color: var(--boton-azul);
     padding: 10px 20px;
-
     width: max-content;
     display: inline;
     border-radius: 10px;
@@ -332,7 +365,8 @@ ol.migas>li>a {
     display: block;
 }
 
-/*  galeria */
+
+/*        galeria              */
 .container-galeria {
     margin-top: 45px;
     margin-bottom: 30px;
@@ -382,15 +416,14 @@ ol.migas>li>a {
     }
 }
 
-
-
-
 /*  fin galeria */
+
+
 
 
 /*  mapa imagenes criaderas y soleras    */
 .container-soleras {
-    background-color: #737373;
+    background-color: var(--color-gris-fondo);
     padding: 40px 0px;
 }
 
@@ -462,38 +495,155 @@ ol.migas>li>a {
 /* fin mapa imagenes criaderas y soleras    */
 
 
+/*    ventana modal   */
+
+/*Efecto*/
+.modalmask {
+    position: fixed;
+    font-family: Arial, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(112, 111, 111, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalmask:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+/*Formato de la ventana*/
+.modalbox{
+    width: 400px;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: var(--color-blanco-texto);
+    border-radius:3px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+     
+}
+
+/*Movimientos*/
+.movedown {
+    margin: 0 auto;
+}
+.rotate {
+    margin: 10% auto;
+    -webkit-transform: scale(-5,-5);
+    transform: scale(-5,-5);
+}
+.resize {
+    margin: 10% auto;
+    width:0;
+    height:0;
+ 
+}
+.modalmask:target .movedown{       
+    margin:10% auto;
+}
+.modalmask:target .rotate{     
+    transform: rotate(360deg) scale(1,1);
+        -webkit-transform: rotate(360deg) scale(1,1);
+}
+ 
+.modalmask:target .resize{
+    width:400px;
+    height:200px;
+}
+
+.close {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.barra {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-gris-fondo);
+    transition: transform 0.3s ease;
+}
+
+.close:hover .barra{
+    background-color: var(--color-negro-texto);
+}
+
+
+#barra1 {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+#barra2 {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+}
+.moddal-titulo{
+    margin: 2px;
+    font-size: 1.2rem;
+    color: var(--color-negro-texto);
+}
+.moddal-titulo2{
+    font-size: 1.5rem;
+}
+.moddal-image{
+    width: 400px;
+}
+.separador-moddal{
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-gris-fondo);
+    margin: 5px 0px;
+}
+.moddal-bajo{
+    display: flex;
+    justify-content: flex-end;
+}
+.boton-cerrar-modal{
+    background-color: var(--color-gris-fondo);
+    color: var(--color-blanco-texto);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+
+}
 
 
 /*  FOOTER   */
 footer {
-    padding-top: 80px;
-    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 45px;
     margin-top: 40px;
-    background-color: #212529;
+    background-color: var(--color-negro-fondo);
     color: var(--color-blanco-texto);
     text-align: center;
 
 }
 
+footer a{
+    color: var(--color-blanco-texto);
+}
+
+
 /* FIN  FOOTER   */
-.color-gris {
-    color: var(--color-gris-texto);
-}
-
-.color-negro {
-    color: var(--color-negro-fondo);
-}
-
-.text-center {
-    text-align: center;
-}
-
-.center {
-    margin: 0 auto;
-}
 
 
-/* mapa de vinos*/
+/*     mapa de vinos    */
 .centrado-map {
     display: flex;
     justify-content: center;
@@ -606,7 +756,7 @@ footer {
 }
 
 .texto-cabecera-imagen {
-    color: white;
+    color: var(--color-blanco-texto);
     position: relative;
     top: 430px;
     text-align: center;
@@ -738,210 +888,135 @@ footer {
 }
 
 
-/*       sprite botella andante        */
+/*    fin   sprite botella andante        */
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  FIN mapa de vinos*/
-/*
-//////////////////////////////////////////////////
-*/
 /* Mapa D.O. en vinos tintos*/
-/*
-#mapa-do{
-    width: 900px;
-}
-#mapa-do > img {
-    position: relative;
-    width: 900px;
-}
-#mapa-do:hover ul.cuadro li {
-    display: block;
-}
-ul.cuadro li {
-    list-style: none;
-    display: none;
-    position: absolute;
-    border: medium solid rgb(102, 47, 47);
+.container-do{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
-}
-ul.cuadro li p {
-    margin: 10px 0 0 0;
-    padding: 0.3em;
-    display: none;
-    background: rgb(165, 86, 86);
-    opacity: 0.85;
-    position: absolute;
-    top: 100%;
-}
-ul.cuadro li:hover p {
-    display: block;
-}
-ul.cuadro li.nota1 {
-    width: 140px;
-    height: 110px;
-    top: 700px;
-    left: 480px;
-}
-ul.cuadro li.nota2 {
-    width: 80px;
-    height: 50px;
-    top: 545px;
-    left: 550px;
-}
-ul.cuadro li.nota3 {
-    width: 90px;
-    height: 50px;
-    top: 580px;
-    left: 480px;
-}
-ul.cuadro li.nota4 {
-    width: 30px;
-    height: 30px;
-    top: 600px;
-    left: 740px;
-}
-ul.cuadro li.nota5 {
-    width: 40px;
-    height: 35px;
-    top: 560px;
-    left: 680px;
-}
-.nota1:hover p {
-    display: block;
-    height: 50px;
-    width: 140px;
-    top: -10px;
-    left: 150px;
-}
-
-.nota2:hover p {
-    display: block;
-    height: 30px;
-    width: 130px;
-    top: -10px;
-    left: 85px;
-}
-.nota3:hover p {
-    display: block;
-    height: 80px;
-    width: 100px;
-    top: -10px;
-    left: -120px;
-}
-.nota4:hover p {
-    display: block;
-    height: 80px;
-    width: 100px;
-    top: -10px;
-    left: 35px;
-}
-.nota5:hover p {
-    display: block;
-    height: 80px;
-    width: 120px;
-    top: -110px;
-    left: 20px;
-}
-.cuadro > li > p {
-    color: rgb(255, 255, 255);
-}
-
-*/
-/* FIN mapa D.O. en tintos*/
-
-
-
-/* reserva nav*/
-
-/*
-
-@media (max-width:800px) {
-
-    .nav {
-    
-        flex-direction: row;
-        justify-content: space-between;
+    }
+    #mapa-do{
+        width: 900px;
         position: relative;
     }
-
-    .nav-list {
+    #info-dispositivos{
         display: none;
-    }
-
-    .toggle-btn {
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 23px;
-        height: 18px;
-        position: relative;
-        border: 0.8px solid #c3c1c1;
+        color: red;
+        font-size: 1.5em;
+        background-color: var(--color-azul-fondo);
+        padding: 15px 20px;
         border-radius: 10px;
-        padding: 10px 15px;
-        margin-right: 15px;
     }
-
-    .bar {
-        background-color: #9f9f9f;
-        height: 1.5px;
-        width: 100%;
+    @media (max-width:800px) {
+        #mapa-do {
+           display: none;
+           
+        }
+        #info-dispositivos{
+            display: inline;
+        }
     }
-
-    #toggle:checked+.toggle-btn {
-        border: 4px solid #8e8b8b;
+    #mapa-do > img {
+        position: relative;
+        width: 800px;
     }
-
-    .nav-list li a {
-        font-family: Arial, Helvetica, sans-serif;
+    #mapa-do:hover ul.cuadro li {
         display: block;
-        padding: 10px;
-        text-decoration: none;
-        color: #9c9999;
-        transition: background-color 0.3s ease;
     }
-
-    .nav-list li:first-child a {
-        color: black;
-    }
-
-    .nav-list li a:hover {
-        background-color: #f0f0f0;
-    }
-
-    #toggle:checked~.nav-list {
-        height: 200px;
-        pointer-events: auto;
+    ul.cuadro li {
+        list-style: none;
+        display: none;
         position: absolute;
-        top: 65px;
-        left: 0;
-        background-color: #fff;
-        padding: 10px;
-        width: 500px;
-        overflow: hidden;
-        transform: translateY(0%);
-        transition: max-height 0.5s ease;
-        margin-top: 10px;
-        display: inline-block;
-
+        border: medium solid rgb(102, 47, 47);
+        /*background: url("esta_imagen_no_existe");*/
     }
-}
-
-*/
+    ul.cuadro li p {
+        margin: 10px 0 0 0;
+        padding: 0.3em;
+        display: none;
+        background: rgb(165, 86, 86);
+        opacity: 0.85;
+        position: absolute;
+        top: 100%;
+    }
+    ul.cuadro li:hover p {
+        display: inline;
+    }
+    ul.cuadro li.nota1 {
+        width: 140px;
+        height: 110px;
+        top: 220px;
+        left: 420px;
+    }
+    ul.cuadro li.nota2 {
+        width: 80px;
+        height: 50px;
+        top: 80px;
+        left: 480px;
+    }
+    ul.cuadro li.nota3 {
+        width: 90px;
+        height: 50px;
+        top: 110px;
+        left: 410px;
+    }
+    ul.cuadro li.nota4 {
+        width: 30px;
+        height: 30px;
+        top: 130px;
+        left: 660px;
+    }
+    ul.cuadro li.nota5 {
+        width: 40px;
+        height: 35px;
+        top: 95px;
+        left: 600px;
+    }
+    .nota1:hover p {
+        display: block;
+        height: 80px;
+        width: 140px;
+        top: -10px;
+        left: 150px;
+    }
+    
+    .nota2:hover p {
+        display: block;
+        height: 45px;
+        width: 130px;
+        top: -10px;
+        left: 85px;
+    }
+    .nota3:hover p {
+        display: block;
+        height: 100px;
+        width: 100px;
+        top: -10px;
+        left: -120px;
+    }
+    .nota4:hover p {
+        display: block;
+        height: 100px;
+        width: 100px;
+        top: -10px;
+        left: 35px;
+    }
+    .nota5:hover p {
+        display: block;
+        height: 90px;
+        width: 120px;
+        top: -110px;
+        left: 20px;
+    }
+    .cuadro > li > p {
+        color: rgb(255, 255, 255);
+    }
+    
+    
+    
+    /* FIN mapa D.O. en tintos*/
