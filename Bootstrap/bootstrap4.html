@@ -12,28 +12,25 @@
 	<!--   nav           -->
 	<nav class="navbar navbar-expand-md bg-body-tertiary">
 		<div class="container-fluid">
-		  <a class="navbar-brand" href="/index.html"><img src="/img/Logo.png" alt="logo del centro" width="150px"></a>
-		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-			aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			<div class="navbar-nav">
-			  <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
-			  <a class="nav-link" href="/Bootstrap/bootstrap1.html">Vino Tinto</a>
-			  <a class="nav-link" href="/Bootstrap/bootstrap2.html">Vino Blanco</a>
-			  <a class="nav-link" href="/pagina1.html">Vinos Generosos</a>
-			  <a class="nav-link" href="/Bootstrap/bootstrap5.html">Sobre mi</a>
-		  </div>
-		  </div>
+			<a class="navbar-brand" href="/index.html"><img src="/img/Logo.png" alt="logo del centro" width="150px"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+					<a class="nav-link" href="/Bootstrap/bootstrap1.html">Vino Tinto</a>
+					<a class="nav-link" href="/Bootstrap/bootstrap2.html">Vino Blanco</a>
+					<a class="nav-link" href="/pagina1.html">Vinos Generosos</a>
+					<a class="nav-link" href="/Bootstrap/bootstrap5.html">Sobre mi</a>
+				</div>
+			</div>
 		</div>
-	  </nav>
+	</nav>
 	<!--Formulario de contacto o solicitud de información (con al menos 4 campos)-->
-	<!--Opcional: Otros elementos de Bootstrap que el alumno/a considere necesario para el desarrollo de
-       su sitio Web.-->
-
 	<!-- migas de pan-->
-	<div class="container-fluid">
+	<div class="container-fluid d-none d-md-block">
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
@@ -47,8 +44,8 @@
 		<h1 class="h1 text-center">Contacto</h1>
 	</div>
 
-	<!--     formulario       -->
-	<!--Formulario de contacto o solicitud de información (con al menos 4 campos)-->
+	
+	<!-- Alerta -->
 	<div class="container-md">
 		<div class="row justify-content-center">
 			<div class="col-7">
@@ -57,10 +54,9 @@
 					<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 				</div>
 			</div>
-
 		</div>
 
-
+		<!--     formulario       -->
 		<div class="row">
 			<div class="col-3">
 				<img src="/img/bodega5.jpeg" class="img-thumbnail mx-auto d-block mt-5" alt="...">
@@ -68,53 +64,52 @@
 			<div class="col-7">
 				<form>
 					<div class="mb-3">
-						<label for="input example" class="form-label">Nombre</label>
-						<input class="form-control" type="text" placeholder="Nombre" aria-label="input example">
+						<label for="nombre" class="form-label">Nombre</label>
+						<input class="form-control" type="text" placeholder="Nombre" aria-label="nombre">
 					</div>
 					<div class="mb-3">
-						<label for="exampleInputEmail1" class="form-label">Email address</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-							placeholder="email">
-						<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+						<label for="email" class="form-label">Email</label>
+						<input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+							placeholder="email@correo.com">
+
 					</div>
 					<div class="mb-3">
-						<label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						<label for="comentario" class="form-label">Comentario</label>
+						<textarea class="form-control" id="comentario" rows="3"
+						placeholder="Escribe aqui tus comentarios, dudas..."></textarea>
 					</div>
 					<select class="form-select form-select-sm" aria-label="Small select example">
-						<option selected>Open this select menu</option>
-						<option value="1">One</option>
-						<option value="2">Two</option>
-						<option value="3">Three</option>
+						<option selected>Tipo de comentario</option>
+						<option value="ino">Sobre el vino</option>
+						<option value="web">Sobre la web</option>
+						<option value="personal">Personal</option>
+						<option value="otro">Otros...</option>
 					</select>
 
 					<div class="mb-3 form-check">
-						<input type="checkbox" class="form-check-input" id="exampleCheck1">
-						<label class="form-check-label" for="exampleCheck1">Check me out</label>
+						<input type="checkbox" class="form-check-input" id="newsletter" checked>
+						<label class="form-check-label" for="newsletter" >Además deseo inscribirme en la newsletter</label>
 					</div>
-					<button type="submit" class="btn btn-primary">Submit</button>
+					<button type="submit" class="btn btn-primary" disabled>Submit</button>
 				</form>
 			</div>
 		</div>
-
-
-
-
 	</div>
 
 
 
+
 	<!--                 Footer                -->
-	<footer class="container-fluid bg-dark mt-5">
+	<footer class="container-fluid bg-dark mt-5 pt-5 pb-5">
 		<div class="container text-center">
 			<div class="col">
 				<div class="row">
-					<p class="text-light">Footer</p>
-					<p class="text-light">Ivan Molina Mas</p>
-					<p class="text-light">Desarrollado con Bootstrap</p>
+					<p ><a class="text-light" href="/Bootstrap/bootstrap4.html">Pagina de conctacto</a></p>
+					<p class="text-light">Desarrollado por <a class="text-light" href="https://www.linkedin.com/in/ivanmolinamas/">Ivan Molina Mas</a> </p>
+					<p class="text-light">Pagina desarrollada con Bootstrap</p>
+					<p class="text-light">Para proyecto en clase Desarrollo Interfaces Web año - 2024 - Los Enlaces</p>
 				</div>
 			</div>
-
 		</div>
 	</footer>
 

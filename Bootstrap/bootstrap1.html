@@ -10,7 +10,7 @@
 
 <body>
   <!--            navbar               -->
-  <nav class="navbar navbar-expand-md bg-body-tertiary">
+  <nav class="navbar navbar-expand-md bg-body-tertiary ">
     <div class="container-fluid">
       <a class="navbar-brand" href="/index.html"><img src="/img/Logo.png" alt="logo del centro" width="150px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -29,34 +29,14 @@
     </div>
   </nav>
 
-  <!-- Grupos de listas al menos 2 y que presenten distinto sascpetos-->
-  <!-- tablas, al menos 2 y que presenten distinto sascpetos-->
-  <!-- Display, las tablas no se mostraran en la version movil-->
-  <!-- Galeria de imagenes-->
-  <!-- Cards, al menos 4 tarjetas con imagen y texto y que presenten distintos aspectos-->
-
-  <!-- Carousel (al menos 2 con mínimo 4 imágenes en cada una de ellas y que presenten aspectos distintos).-->
-  <!--Collapse (en al menos 3 elementos)-->
-
-
-  <!--Botones (al menos 3 y que presenten aspectos distintos)-->
-  <!--Alertas (al menos 4, 2 de ellas con ventana y botón de cierre)-->
-  <!--Ventana modal-->
-
-  <!-- Botones tiene dos -->
-  <!--Formulario de contacto o solicitud de información (con al menos 4 campos)-->
-  <!--Opcional: Otros elementos de Bootstrap que el alumno/a considere necesario para el desarrollo de
-       su sitio Web.-->
-
   <!-- migas de pan-->
-  <div class="container-fluid">
+  <div class="container-fluid d-none d-md-block">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
         <li class="breadcrumb-item active" aria-current="page">Vino Tinto</li>
       </ol>
     </nav>
-
   </div>
 
   <!--            Titulo                       -->
@@ -373,7 +353,18 @@
     </div>
   </div>
 
+<!-- alert   -->
+<div class="container-md mt-5 d-sm-block d-md-none ">
+  <h3 class="h3 text-center">Mejores 10 vinos blancos segun la región</h3>
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <div class="alert alert-danger" role="alert">
+        <strong>Sabias que... </strong>Septiembre es una buena fecha para visitar viñedos ya que es epoca de vendimia.
+      </div>
 
+    </div>
+  </div>
+  </div>
 
   <!--                tablas             -->
   <div class="container md mt-5 d-none d-md-block" id="tablas">
@@ -537,20 +528,19 @@
 
 
 
-
-  <!--                 Footer                -->
-  <footer class="container-fluid bg-dark mt-2 pt-5 pb-5">
-    <div class="container text-center">
-      <div class="col">
-        <div class="row">
-          <p class="text-light">Footer</p>
-          <p class="text-light">Ivan Molina Mas</p>
-          <p class="text-light">Desarrollado con Bootstrap</p>
-        </div>
-      </div>
-
-    </div>
-  </footer>
+	<!--                 Footer                -->
+	<footer class="container-fluid bg-dark mt-5 pt-5 pb-5">
+		<div class="container text-center">
+			<div class="col">
+				<div class="row">
+					<p ><a class="text-light" href="/Bootstrap/bootstrap4.html">Pagina de conctacto</a></p>
+					<p class="text-light">Desarrollado por <a class="text-light" href="https://www.linkedin.com/in/ivanmolinamas/">Ivan Molina Mas</a> </p>
+					<p class="text-light">Pagina desarrollada con Bootstrap</p>
+					<p class="text-light">Para proyecto en clase Desarrollo Interfaces Web año - 2024 - Los Enlaces</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
   <!-- script Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

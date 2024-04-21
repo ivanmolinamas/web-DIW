@@ -32,6 +32,9 @@ h2 {
 h3 {
     font-size: 2em;
 }
+h4{
+    font-size: 2em;
+}
 
 /*  migas de pan  */
 .container {
@@ -78,7 +81,7 @@ ol.migas>li>a {
         height: 65px;
         display: flex;
         align-items: center;
-        margin-left: 5px;
+        margin-left: 10px;
         margin-top: 13px;
     }
 
@@ -102,6 +105,7 @@ ol.migas>li>a {
     #toggle {
         display: none;
     }
+
     .bar {
         display: none;
     }
@@ -167,10 +171,12 @@ ol.migas>li>a {
         transition: color 0.5s ease;
         font-weight: lighter;
     }
+
     .nav-list li a:hover {
         color: var(--color-negro-texto);
     }
-    .nav-list li:first-child a{
+
+    .nav-list li:first-child a {
         color: var(--color-negro-texto);
     }
 
@@ -218,11 +224,15 @@ ol.migas>li>a {
 
 /*   generales    */
 .container-general {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 35px;
     padding-top: 10px;
+}
+
+.text-justify {
+    text-align: justify;
 }
 
 .container-grande {
@@ -234,6 +244,11 @@ ol.migas>li>a {
     padding-bottom: 30px;
 }
 
+.container-texto-70 {
+    width: 70%;
+    margin: 0 auto;
+}
+
 .margin-superior {
     padding: 40px;
 
@@ -242,21 +257,23 @@ ol.migas>li>a {
 .fondo-gris {
     background-color: #6c757d;
 }
-
+.centrar{
+    text-align: center;
+    margin-bottom: 40px;
+}
 .boton-saber {
     padding: 13px 25px;
+    
     color: var(--color-blanco-texto);
     text-decoration: none;
     background-color: var(--boton-verde);
     border-radius: 10px;
     transition: background-color .5s;
-    /* Define la transición para el color de fondo */
 }
 
 .boton-saber:hover {
     background-color: var(--bonton-verde-activo);
 }
-
 
 
 .imagen-velo {
@@ -271,8 +288,9 @@ ol.migas>li>a {
 /*    desplegables       */
 
 .container-preguntas {
-    width: 80%;
-    height: 180px;
+    width: 70%;
+    max-width: 600px;
+    height: max-content;
     margin: 40px auto;
     text-align: center;
 }
@@ -436,7 +454,7 @@ ol.migas>li>a {
 }
 
 .container-text-soleras {
-    width: 70%;
+    width: 60%;
     margin: 10px auto;
 }
 
@@ -580,7 +598,7 @@ footer {
 }
 
 .imagen-cabecera {
-    background-image: url(/img/bodega2.jpeg);
+    background-image: url(/img/generosos02.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -606,7 +624,6 @@ footer {
 .sprite-vino {
     margin: 0 auto;
     width: max-content;
-
 }
 
 .sprite-vino a {
@@ -614,15 +631,6 @@ footer {
     width: 115px;
     height: 115px;
     margin: 10px;
-
-
-
-    /* Tiempo que dura la transición 
-    -o-transition: all .5s;*/
-    /* Firefox 
-    -webkit-transition: all .5s;
-    */
-
 }
 
 .info {

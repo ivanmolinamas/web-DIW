@@ -29,27 +29,8 @@
 		</div>
 	  </nav>
 
-	<!-- Grupos de listas al menos 2 y que presenten distinto sascpetos-->
-	<!-- tablas, al menos 2 y que presenten distinto sascpetos-->
-	<!-- Display, las tablas no se mostraran en la version movil-->
-	<!-- Galeria de imagenes-->
-	<!-- Cards, al menos 4 tarjetas con imagen y texto y que presenten distintos aspectos-->
-
-	<!-- Carousel (al menos 2 con mínimo 4 imágenes en cada una de ellas y que presenten aspectos distintos).-->
-	<!--Collapse (en al menos 3 elementos)-->
-
-
-	<!--Botones (al menos 3 y que presenten aspectos distintos)-->
-	<!--Alertas (al menos 4, 2 de ellas con ventana y botón de cierre)-->
-	<!--Ventana modal-->
-
-	<!-- Botones tiene dos -->
-	<!--Formulario de contacto o solicitud de información (con al menos 4 campos)-->
-	<!--Opcional: Otros elementos de Bootstrap que el alumno/a considere necesario para el desarrollo de
-       su sitio Web.-->
-
 	<!-- migas de pan-->
-	<div class="container-fluid">
+	<div class="container-fluid d-none d-md-block">
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
@@ -162,17 +143,6 @@
 			</div>
 		</div>
 	</div>
-  <!-- alert   -->
-  <div class="container-md mt-5">
-    <div class="row justify-content-center">
-      <div class="col-8">
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-          Cada mes puedes ver una recomendación de vino, ¡Pulsa el botón amarillo para verla!
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!--                ventana modal            -->
 	<div class="container mt-2">
@@ -197,7 +167,7 @@
 					<div class="modal-body">
 						<h3> Este mes el vino recomendado es:</h3>
 						<p>Una botella buena de Txakolí</p>
-						<img class="img-fluid" src="/img/copa-generoso-LOW.jpg">
+						<img class="img-fluid" src="/img/copa-generoso-LOW.jpg" alt="copa de vino generoso">
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -206,6 +176,18 @@
 			</div>
 		</div>
 	</div>
+	  <!-- alert   -->
+	  <div class="container-md mt-5 d-sm-block d-md-none ">
+		<h3 class="h3 text-center">Mejores 10 vinos blancos segun la región</h3>
+		<div class="row justify-content-center">
+		  <div class="col-8">
+			<div class="alert alert-danger alert-dismissible fade show mt-3" role="alert">
+			  La tabla  con los mejores vinos no esta disponible en versión movil o pantallas tan reducidas
+			  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
+		  </div>
+		</div>
+	  </div>
 	
 
 	<!--     tabla       -->
@@ -464,16 +446,16 @@
 
 
 	<!--                 Footer                -->
-	<footer class="container-fluid bg-dark mt-5 pt-5">
+	<footer class="container-fluid bg-dark mt-5 pt-5 pb-5">
 		<div class="container text-center">
 			<div class="col">
 				<div class="row">
-					<p class="text-light">Footer</p>
-					<p class="text-light">Ivan Molina Mas</p>
-					<p class="text-light">Desarrollado con Bootstrap</p>
+					<p ><a class="text-light" href="/Bootstrap/bootstrap4.html">Pagina de conctacto</a></p>
+					<p class="text-light">Desarrollado por <a class="text-light" href="https://www.linkedin.com/in/ivanmolinamas/">Ivan Molina Mas</a> </p>
+					<p class="text-light">Pagina desarrollada con Bootstrap</p>
+					<p class="text-light">Para proyecto en clase Desarrollo Interfaces Web año - 2024 - Los Enlaces</p>
 				</div>
 			</div>
-
 		</div>
 	</footer>
 
