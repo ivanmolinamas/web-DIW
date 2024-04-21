@@ -24,12 +24,15 @@ h1 {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-h2{
+
+h2 {
     font-size: 3em;
 }
-h3{
+
+h3 {
     font-size: 2em;
 }
+
 /*  migas de pan  */
 .container {
     margin-left: 0px;
@@ -38,11 +41,12 @@ h3{
 }
 
 @media (max-width:800px) {
-.container{
-    display: none;
-}
+    .container {
+        display: none;
+    }
 
 }
+
 ol.migas {
     display: flex;
     list-style-type: none;
@@ -66,47 +70,54 @@ ol.migas>li>a {
 }
 
 
+
 /* NAVEGACION */
-.nav {
-    height: 65px;
-    display: flex;
-    align-items: center;
-    margin-left: 5px;
-    margin-top: 13px;
-}
-
-.nav-list {
-    display: flex;
-    align-items: center;
-    margin-left: 5px;
-}
-
-.nav-list>li>a {
-    font-size: 15px;
-    text-decoration: none;
-    padding: 8px;
-}
-
-.nav>ul>li {
-    display: inline;
-}
-#toggle{
-    display: none;
-}
-/* navegaciion responsive*/
-
-@media (max-width:800px) {
-
+/* estilos especificos para pantallas mayores a 801px */
+@media (min-width:801px) {
     .nav {
-        /*ponemos logo y boton en los extremos*/
-        flex-direction: row;
-        justify-content:space-between;
-        position: relative;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+        margin-top: 13px;
     }
+
     .nav-list {
- 
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+    }
+
+    .nav-list>li>a {
+        font-size: 15px;
+        text-decoration: none;
+        padding: 8px;
+    }
+
+    .nav>ul>li {
+        display: inline;
+    }
+
+    /* ocultamos menu sandwitch  */
+    #toggle {
         display: none;
     }
+    .bar {
+        display: none;
+    }
+}
+
+/* estilos especificos para menos a 800px de pantalla*/
+@media (max-width:800px) {
+    .nav {
+        margin-left: 12px;
+        margin-top: 13px;
+    }
+
+    #toggle {
+        display: none;
+    }
+
     .toggle-btn {
         cursor: pointer;
         display: flex;
@@ -115,52 +126,58 @@ ol.migas>li>a {
         width: 23px;
         height: 18px;
         position: relative;
-        border: 0.8px solid #c3c1c1;
+        border: 0.8px solid var(--color-gris-fondo);
         border-radius: 10px;
-        padding:10px 15px;
-        margin-right: 15px;
-    } 
+        transition: border 0.3s ease;
+
+        padding: 10px 15px;
+        margin-right: 12px;
+        margin-top: 12px;
+        float: right;
+    }
+
     .bar {
-        background-color: #9f9f9f;
+        background-color: var(--color-gris-fondo);
         height: 1.5px;
         width: 100%;
     }
-    #toggle:checked + .toggle-btn  {
-        border: 4px solid #8e8b8b;
+
+    #toggle:checked+.toggle-btn {
+        border: 4px solid var(--color-gris-fondo);
+        margin-right: 9px;
+        margin-top: 9px;
     }
+
+    .nav-list {
+        max-height: 0;
+        overflow: hidden;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    .nav-list li {
+        padding: 8px 0px;
+    }
+
     .nav-list li a {
-        font-family: Arial, Helvetica, sans-serif;
-        display: block;
-        padding: 10px;
         text-decoration: none;
-        color: #9c9999;
-        transition: background-color 0.3s ease;
+        color: var(--color-gris-texto);
+        transition: color 0.5s ease;
+        font-weight: lighter;
+    }
+    .nav-list li a:hover {
+        color: var(--color-negro-texto);
     }
     .nav-list li:first-child a{
-        color: black;
-    }
-    
-    .nav-list li a:hover {
-        background-color: #f0f0f0;
-    }
-    
-    #toggle:checked ~ .nav-list {
-        height: 200px;
-        pointer-events: auto;
-        position: absolute;
-        top: 65px;
-        left: 0;
-        background-color: #fff;
-        padding: 10px;
-        width: 500px;
-        overflow:hidden;
-        transform: translateY(0%);
-        transition: max-height 0.5s ease;
-        margin-top: 10px;
-        display: inline-block;
-
+        color: var(--color-negro-texto);
     }
 
+    #toggle:checked~.nav-list {
+        max-height: 230px;
+
+    }
 
 }
 
@@ -208,7 +225,7 @@ ol.migas>li>a {
     padding-top: 10px;
 }
 
-.container-grande{
+.container-grande {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -221,7 +238,8 @@ ol.migas>li>a {
     padding: 40px;
 
 }
-.fondo-gris{
+
+.fondo-gris {
     background-color: #6c757d;
 }
 
@@ -241,7 +259,7 @@ ol.migas>li>a {
 
 
 
-.imagen-velo{
+.imagen-velo {
     width: 60%;
     margin-top: 20px;
     border-radius: 10px;
@@ -357,7 +375,8 @@ ol.migas>li>a {
     background-color: #737373;
     padding: 40px 0px;
 }
-.centrado-solera{
+
+.centrado-solera {
     margin-top: 25px;
     display: flex;
     justify-content: center;
@@ -365,11 +384,13 @@ ol.migas>li>a {
     align-items: center;
     /* Centrar verticalmente */
 }
+
 @media (max-width:800px) {
     .centrado-solera {
-       display: none;
+        display: none;
     }
 }
+
 #contenedor-soleras {
     width: 765px;
     height: 400px;
@@ -413,7 +434,8 @@ ol.migas>li>a {
 #tercera-criadera:hover {
     background: url(/img/sprites/criaderas_soleras.jpg) -40px -28px;
 }
-.container-text-soleras{
+
+.container-text-soleras {
     width: 70%;
     margin: 10px auto;
 }
@@ -835,3 +857,83 @@ ul.cuadro li.nota5 {
 
 */
 /* FIN mapa D.O. en tintos*/
+
+
+
+/* reserva nav*/
+
+/*
+
+@media (max-width:800px) {
+
+    .nav {
+    
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .toggle-btn {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 23px;
+        height: 18px;
+        position: relative;
+        border: 0.8px solid #c3c1c1;
+        border-radius: 10px;
+        padding: 10px 15px;
+        margin-right: 15px;
+    }
+
+    .bar {
+        background-color: #9f9f9f;
+        height: 1.5px;
+        width: 100%;
+    }
+
+    #toggle:checked+.toggle-btn {
+        border: 4px solid #8e8b8b;
+    }
+
+    .nav-list li a {
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #9c9999;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-list li:first-child a {
+        color: black;
+    }
+
+    .nav-list li a:hover {
+        background-color: #f0f0f0;
+    }
+
+    #toggle:checked~.nav-list {
+        height: 200px;
+        pointer-events: auto;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        background-color: #fff;
+        padding: 10px;
+        width: 500px;
+        overflow: hidden;
+        transform: translateY(0%);
+        transition: max-height 0.5s ease;
+        margin-top: 10px;
+        display: inline-block;
+
+    }
+}
+
+*/
