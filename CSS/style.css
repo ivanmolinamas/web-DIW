@@ -445,7 +445,7 @@ ol.migas>li>a {
 #contenedor-soleras {
     width: 765px;
     height: 400px;
-    background-image: url(/img/sprites/criaderas_soleras-bn.jpg);
+    background-image: url(../img/sprites/criaderas_soleras-bn.jpg);
     position: relative;
 }
 
@@ -475,15 +475,15 @@ ol.migas>li>a {
 }
 
 #primera-criadera:hover {
-    background: url(/img/sprites/criaderas_soleras.jpg) -40px 140px;
+    background: url(../img/sprites/criaderas_soleras.jpg) -40px 140px;
 }
 
 #segunda-criadera:hover {
-    background: url(/img/sprites/criaderas_soleras.jpg) -40px -143px;
+    background: url(../img/sprites/criaderas_soleras.jpg) -40px -143px;
 }
 
 #tercera-criadera:hover {
-    background: url(/img/sprites/criaderas_soleras.jpg) -40px -28px;
+    background: url(../img/sprites/criaderas_soleras.jpg) -40px -28px;
 }
 
 .container-text-soleras {
@@ -748,7 +748,7 @@ footer a{
 }
 
 .imagen-cabecera {
-    background-image: url(/img/generosos02.jpg);
+    background-image: url(../img/generosos02.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -800,13 +800,13 @@ footer a{
 }
 
 .sprite-vino a.barril {
-    background: url(/img/sprites/css_sprites.png);
+    background: url(../img/sprites/css_sprites.png);
     background-position: 0px 0px;
 
 }
 
 .sprite-vino a.barril:hover {
-    background: url(/img/sprites/css_sprites.png);
+    background: url(../img/sprites/css_sprites.png);
     background-position: 0px -120px;
 }
 
@@ -819,13 +819,13 @@ footer a{
 }
 
 .sprite-vino a.botella {
-    background: url(/img/sprites/css_sprites.png);
+    background: url(../img/sprites/css_sprites.png);
     background-position: -110px 0px;
 
 }
 
 .sprite-vino a.botella:hover {
-    background: url(/img/sprites/css_sprites.png);
+    background: url(../img/sprites/css_sprites.png);
     background-position: -110px -120px;
 }
 
@@ -838,13 +838,13 @@ footer a{
 }
 
 .sprite-vino a.otro {
-    background: url(/img/sprites/css_sprites.png);
+    background: url(../img/sprites/css_sprites.png);
     background-position: -240px 0px;
 
 }
 
 .sprite-vino a.otro:hover {
-    background: url(/img/sprites/css_sprites.png);
+    background: url(../img/sprites/css_sprites.png);
     background-position: -240px -120px;
 }
 
@@ -864,7 +864,7 @@ footer a{
 
 .sprite-botella {
     display: inline-block;
-    background: url(/img/sprites/sprite-botella.png) no-repeat;
+    background: url(../img/sprites/sprite-botella.png) no-repeat;
     width: 190px;
     height: 224px;
     background-position: 10px -18px;
