@@ -840,16 +840,19 @@ footer a{
 .info-dispositivos{
     display: none;
 }
+.alert-gen{
+    display: none;
+}
 /* ocultamos el srpite y mostramos alerta
 no me es posible adaptar el srpite a pantallas mas pequeñas
 ademas en movil no hay "raton" para pasar por encima
 */
-@media (max-width:800px) {
+@media (max-width:768px) {
     
     .sprite-vino{
         display: none;
     }
-    .info-dispositivos{
+    #alert-gen{
         display: block;
     }
 }
@@ -987,7 +990,7 @@ ademas en movil no hay "raton" para pasar por encima
         width: 900px;
         position: relative;
     }
-    #info-dispositivos{
+    .info-dispositivos{
         display: none;
         color: red;
         width: fit-content;
@@ -1007,7 +1010,7 @@ además en movil no hay "raton" para pasar por encima y ver la información*/
            display: none;
            
         }
-        #info-dispositivos{
+        .info-dispositivos{
             display: block;
         }
     }
