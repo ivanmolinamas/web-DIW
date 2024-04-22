@@ -201,7 +201,7 @@ ol.migas>li>a {
 
 /* NAVEGACION */
 /* estilos especificos para pantallas mayores a 801px */
-@media (min-width:801px) {
+@media (min-width:769px) {
     .nav {
         height: 60px;
         display: flex;
@@ -240,7 +240,7 @@ ol.migas>li>a {
 }
 
 /* estilos especificos para menos a 800px de pantalla*/
-@media (max-width:800px) {
+@media (max-width:768px) {
     .nav {
         margin-left: 12px;
         margin-top: 13px;
