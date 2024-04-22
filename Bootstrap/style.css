@@ -1,0 +1,22 @@
+/* cambio de idioma  */
+#tituloIngles{
+    display: none;
+}
+
+#btningles:checked ~ #tituloIngles{
+    display: block;
+}
+#btningles:checked ~  #tituloCastellano{
+    display: none;
+}
+
+#contenidoIngles{
+    display: none;
+}
+
+#btningles:checked ~ div #contenidoIngles{
+    display: block;
+}
+#btningles:checked ~ div #contenidoCastellano{
+    display: none;
+}

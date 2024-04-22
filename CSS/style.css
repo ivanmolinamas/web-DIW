@@ -840,7 +840,7 @@ footer a{
 .info-dispositivos{
     display: none;
 }
-.alert-gen{
+#alert-gen{
     display: none;
 }
 /* ocultamos el srpite y mostramos alerta
@@ -991,7 +991,6 @@ ademas en movil no hay "raton" para pasar por encima
         position: relative;
     }
     .info-dispositivos{
-        display: none;
         color: red;
         width: fit-content;
         font-weight: bold;
@@ -1001,6 +1000,9 @@ ademas en movil no hay "raton" para pasar por encima
         margin: 35px auto;
         border-radius: 10px;
     }
+    #info-mapa{
+        display: none;
+    }
 /* ocultamos la vista en el movil, no me es posible (o no se hacerlo)
 adaptar todos las posiciones a una situacion responsive
 además en movil no hay "raton" para pasar por encima y ver la información*/
@@ -1008,9 +1010,8 @@ además en movil no hay "raton" para pasar por encima y ver la información*/
     @media (max-width:800px) {
         #mapa-do {
            display: none;
-           
         }
-        .info-dispositivos{
+        #info-mapa{
             display: block;
         }
     }
