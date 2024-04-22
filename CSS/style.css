@@ -12,6 +12,8 @@
     --bonton-verde-activo: #157347;
     --bonton-azul-activo: #0b5ed7;
     --color-azul-textoEnlace: #0d6efd;
+    --color-amarillo-boton: #ffc107;
+    --color-amarillo-boton-hover: #ffca2c;
 }
 
 /*   generales    */
@@ -134,6 +136,20 @@ h4{
     transition: background-color .5s;
 }
 
+.boton-vino-mes{
+    background-color: var(--color-amarillo-boton);
+    padding: 10px 20px;
+    margin: 0px 30px;
+    text-decoration: none;
+    width: max-content;
+    display: inline;
+    border-radius: 10px;
+    color: var(--color-negro-texto);
+    transition: background-color .5s;
+}
+.boton-vino-mes:hover{
+    background-color: var(--color-amarillo-boton-hover);
+}
 .color-gris {
     color: var(--color-gris-texto);
 }
