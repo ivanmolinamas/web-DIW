@@ -23,6 +23,7 @@ body {
     line-height: 1.5;
 }
 
+/* aspectos de titulos*/
 h1 {
     font-weight: lighter;
     font-size: 4em;
@@ -49,7 +50,7 @@ h4 {
     font-size: 2em;
 }
 
-/* tamaños para vista movil*/
+/* tamaños de titulo para vista movil*/
 @media (max-width: 800px) {
     h1 {
         font-size: 2.5em;
@@ -111,7 +112,6 @@ h4 {
 
 .margin-superior {
     padding: 40px;
-
 }
 
 .fondo-gris {
@@ -168,6 +168,31 @@ h4 {
     transition: background-color .5s;
 }
 
+
+/*imagen generosos estilo carrousel*/
+.imagen-cabecera {
+    background-image: url(../img/generosos02.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+}
+
+.texto-cabecera-imagen {
+    color: var(--color-blanco-texto);
+    position: relative;
+    top: 430px;
+    text-align: center;
+    font-size: large;
+}
+
+
+.texto-cabecera-imagen>.subtitulo {
+    font-size: medium;
+}
+
+
+/* estilos para dar color por clase*/
 .boton-vino-mes:hover {
     background-color: var(--color-amarillo-boton-hover);
 }
@@ -222,6 +247,7 @@ ol.migas {
     color: var(--color-gris-texto);
 }
 
+/*añadimos la barra para separar */
 ol.migas>li::after {
     content: "/";
     margin-left: 10px;
@@ -239,7 +265,10 @@ ol.migas>li>a {
 
 
 /* NAVEGACION */
-/* estilos especificos para pantallas mayores a 801px */
+
+/*se ha definido estilos separados para vista movil y completa para evitar fallos*/
+
+/* estilos especificos para pantallas mayores a 769px */
 @media (min-width:769px) {
     .nav {
         height: 60px;
@@ -280,7 +309,7 @@ ol.migas>li>a {
     }
 }
 
-/* estilos especificos para menos a 800px de pantalla*/
+/* estilos especificos para menos a 768px de pantalla*/
 @media (max-width:768px) {
     .nav {
         margin-left: 12px;
@@ -458,20 +487,16 @@ ol.migas>li>a {
 
 
 
-
 /*        galeria              */
+
+/*se define el container*/
 .container-galeria {
     margin-top: 45px;
     margin-bottom: 30px;
     padding: 30px 0px;
 }
 
-.grid-container {
-    display: flex;
-    justify-content: center;
-    padding: 45px 0px;
-}
-
+/* definimos la vista estilo grid*/
 .grid-galeria {
     display: grid;
     width: 95%;
@@ -498,7 +523,6 @@ ol.migas>li>a {
 }
 
 /* para ver mas de 769px y hasta 1200px se veran 3 columnas*/
-
 @media (min-width:769px) and (max-width:1200px) {
     .grid-galeria {
         grid-template-columns: 32% 32% 32%;
@@ -588,13 +612,12 @@ ol.migas>li>a {
     margin: 10px auto;
 }
 
-
 /* fin mapa imagenes criaderas y soleras    */
 
 
 /*    ventana modal   */
 
-/*Efecto*/
+/*efecto*/
 .modalmask {
     position: fixed;
     font-family: Arial, sans-serif;
@@ -616,7 +639,7 @@ ol.migas>li>a {
     pointer-events: auto;
 }
 
-/*Formato de la ventana*/
+/*formato de la ventana*/
 .modalbox {
     width: 400px;
     position: relative;
@@ -627,6 +650,12 @@ ol.migas>li>a {
     -moz-transition: all 500ms ease-in;
     transition: all 500ms ease-in;
 
+}
+/*tamaño para vista movil ocupe algo menos*/
+@media (max-width:768px) {
+    .modabox{
+        width: 90%;
+    }
 }
 
 /*Movimientos*/
@@ -660,7 +689,7 @@ ol.migas>li>a {
     width: 400px;
     height: 200px;
 }
-
+/*estilos de la ventana modal, bonton cerrar, titulos...*/
 .close {
     display: inline-block;
     width: 20px;
@@ -714,7 +743,7 @@ ol.migas>li>a {
 
 .separador-moddal {
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: var(--color-gris-fondo);
     margin: 5px 0px;
 }
@@ -742,9 +771,8 @@ footer {
     background-color: var(--color-negro-fondo);
     color: var(--color-blanco-texto);
     text-align: center;
-
 }
-
+/* cambiamos el color de los enlaces a blanco*/
 footer a {
     color: var(--color-blanco-texto);
 }
@@ -857,30 +885,10 @@ footer a {
     left: 620px;
 }
 
-.imagen-cabecera {
-    background-image: url(../img/generosos02.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 500px;
-}
-
-.texto-cabecera-imagen {
-    color: var(--color-blanco-texto);
-    position: relative;
-    top: 430px;
-    text-align: center;
-    font-size: large;
-}
-
-
-.texto-cabecera-imagen>.subtitulo {
-    font-size: medium;
-}
-
 
 /*           sprite         */
 
+/* ocultamos alerta */
 .info-dispositivos {
     display: none;
 }
@@ -894,7 +902,6 @@ no me es posible adaptar el srpite a pantallas mas pequeñas
 ademas en movil no hay "raton" para pasar por encima
 */
 @media (max-width:768px) {
-
     .sprite-vino {
         display: none;
     }
@@ -1004,7 +1011,7 @@ ademas en movil no hay "raton" para pasar por encima
 
 }
 
-/*con hover se activa la anumacion, que dura 0.750s cada paso y tiene 8 pasos*/
+/*con hover se activa la animacion, que dura 0.750s cada paso y tiene 8 pasos*/
 .sprite-botella:hover {
     animation: moveBoy 0.750s steps(12, end) infinite;
 }
@@ -1177,7 +1184,4 @@ ul.cuadro li.nota5 {
 .cuadro>li>p {
     color: rgb(255, 255, 255);
 }
-
-
-
 /* FIN mapa D.O. en tintos*/
