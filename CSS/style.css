@@ -653,7 +653,7 @@ ol.migas>li>a {
 }
 /*tamaño para vista movil ocupe algo menos*/
 @media (max-width:768px) {
-    .modabox{
+    .modalbox{
         width: 90%;
     }
 }
