@@ -4,97 +4,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinos generosos</title>
+    <title>Más informaicon vinos generosos</title>
     <link href="normalize.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <!--        NavBar       -->
-    <nav class="nav">
-        <a class="navbar-brand" href="../index.html"><img src="../img/Logo.png" alt="logo del centro" width="150px"></a>
-        <input type="checkbox" id="toggle">
-        <label for="toggle" class="toggle-btn">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </label>
-        <ul class="nav-list">
-            <li><a class="color-negro" aria-current="page" href="../index.html">Inicio</a></li>
-            <li><a class="color-gris" href="../Bootstrap/bootstrap1.html">Vino Tinto</a></li>
-            <li><a class="color-gris" href="../Bootstrap/bootstrap2.html">Vino Blanco</a></li>
-            <li><a class="color-gris" href="pagina1.html">Vinos Generosos</a></li>
-            <li><a class="color-gris" href="../Bootstrap/bootstrap5.html">Sobre mi</a></li>
-        </ul>
-    </nav>
+    <!--    header     -->
+    <header>
+        <!--        NavBar       -->
+        <nav class="nav">
+            <a class="navbar-brand" href="../index.html"><img src="../img/Logo.png" alt="logo del centro"
+                    width="150px"></a>
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="toggle-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="nav-list">
+                <li><a class="color-negro" aria-current="page" href="../index.html">Inicio</a></li>
+                <li><a class="color-gris" href="../Bootstrap/bootstrap1.html">Vino Tinto</a></li>
+                <li><a class="color-gris" href="../Bootstrap/bootstrap2.html">Vino Blanco</a></li>
+                <li><a class="color-gris" href="pagina1.html">Vinos Generosos</a></li>
+                <li><a class="color-gris" href="../Bootstrap/bootstrap5.html">Sobre mi</a></li>
+            </ul>
+        </nav>
 
-    <!--        migas de pan      -->
-
-    <div class="container d-none d-md-block">
-        <div aria-label="migas-separador">
-            <ol class="migas">
-                <li class="migas-item"><a href="../index.html">Inicio</a></li>
-                <li class="migas-item"><a href="pagina1.html">Vinos generosos</a></li>
-                <li class="migas-item active" aria-current="page">Más información</li>
-            </ol>
+        <!--        migas de pan      -->
+        <div class="container d-none d-md-block">
+            <div aria-label="migas-separador">
+                <ol class="migas">
+                    <li class="migas-item"><a href="../index.html">Inicio</a></li>
+                    <li class="migas-item"><a href="pagina1.html">Vinos generosos</a></li>
+                    <li class="migas-item active" aria-current="page">Más información</li>
+                </ol>
+            </div>
         </div>
-    </div>
-  <!-- titulo principal -->
-  <div>
-    <h1 class="h1-pequeño text-center">Mundo de vinos</h1>
-  </div>
-    <!--                titulo                -->
-    <h2 class="text-center">Más información sobre generosos</h2>
 
-    <!--               mas información     -->
-    <div class="container-general">
-        <h3 class="text-center padding-general titulo-flor">El velo de flor</h3>
-
-        <div class="container-texto-70">
-            <p class="text-justify">
-                El velo de flor es el nombre que se le da a la capa de levadura que hay encima del vino dentro de las
-                botas.
-                Esta levadura se encarga de transformar el alcohol de los azucares en la magia del vino generoso, tan
-                seco y con ese sabor único.
-            </p>
-            <p class="text-justify">
-                Estos vinos tienen una crianza de entre 4 años hata unos 12 años según el maestro bodegero, ya que para
-                que la levadura viva necesita alimento, y por eso se mezclan los vinos de unos años con otros.
-            </p>
-        </div>
+        <!-- titulo principal -->
         <div>
-            <img class="imagen-velo" src="../img/veloflor2.jpg" alt="velo de flor">
-            <figcaption> Imagen de una bota con el velo de flor</figcaption>
+            <h1 class="h1-pequeño text-center">Mundo de vinos</h1>
         </div>
-        <div>
-            <img class="imagen-velo" src="../img/veloflor.jpg" alt="velo de flor">
-            <figcaption>Detalle del velo de flor</figcaption>
+
+    </header>
+
+    <!--     main   -->
+    <main>
+        <!--                titulo                -->
+        <h2 class="text-center">Más información sobre generosos</h2>
+
+        <!--               mas información     -->
+        <div class="container-general">
+            <h3 class="text-center padding-general titulo-flor">El velo de flor</h3>
+            <div class="container-texto-70">
+                <p class="text-justify">
+                    El velo de flor es el nombre que se le da a la capa de levadura que hay encima del vino dentro de
+                    las
+                    botas.
+                    Esta levadura se encarga de transformar el alcohol de los azucares en la magia del vino generoso,
+                    tan
+                    seco y con ese sabor único.
+                </p>
+                <p class="text-justify">
+                    Estos vinos tienen una crianza de entre 4 años hata unos 12 años según el maestro bodegero, ya que
+                    para
+                    que la levadura viva necesita alimento, y por eso se mezclan los vinos de unos años con otros.
+                </p>
+            </div>
+            <div>
+                <img class="imagen-velo" src="../img/veloflor2.jpg" alt="velo de flor">
+                <figcaption> Imagen de una bota con el velo de flor</figcaption>
+            </div>
+            <div>
+                <img class="imagen-velo" src="../img/veloflor.jpg" alt="velo de flor">
+                <figcaption>Detalle del velo de flor</figcaption>
+            </div>
         </div>
-    </div>
 
-    <div class="container-grande fondo-gris">
-        <h3>El misterio del Palo Cortado</h3>
-        <p>Desscubre que es el Palo Cortado y porque es un misterio, aqui tienes el trailer del documental</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/y9kOivGGYyU?si=iRDD3rxmIBHHmS7G"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+        <!--    contenido multimedia-->
+        <div class="container-grande fondo-gris">
+            <h3>El misterio del Palo Cortado</h3>
+            <p>Desscubre que es el Palo Cortado y porque es un misterio, aqui tienes el trailer del documental</p>
+            <!-- video con controles -->
+            <video width="560" height="315" controls >
+                <source src="../media/fabricar-vino.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+              </video>
+        </div>
+        <!--    contenido multimedia-->
+        <div class="container-grande fondo-gris">
+            <h3>El misterio del Palo Cortado</h3>
+            <p>Desscubre que es el Palo Cortado y porque es un misterio, aqui tienes el trailer del documental</p>
+            <!-- video de youtube por ocupar menos tamaño -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/y9kOivGGYyU?si=iRDD3rxmIBHHmS7G"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
 
-    <div class="container-grande fondo-gris">
-        <h3>Podcast de rtve sobre vino</h3>
-        <p>El vino y el flamenco</p>
-        <audio controls>
-            <source src="../media/podcast2-flamencoyvino.mp3" type="audio/mp3">
-            Tu navegador no soporta la reproducion de audio. Prueba con cotro dispositivo.
-        </audio>
-        <p>Adopta un vino</p>
-        <audio controls>
-            <source src="../media/podcast1-adoptavino.mp3" type="audio/mp3">
-            Tu navegador no soporta la reproducion de audio. Prueba con cotro dispositivo.
-        </audio>
-       
-    </div>
+        <!--    contenido multimedia-->
+        <div class="container-grande fondo-gris">
+            <h3>Podcast de rtve sobre vino</h3>
+            <p>El vino y el flamenco</p>
+            <audio controls>
+                <source src="../media/podcast2-flamencoyvino.mp3" type="audio/mp3">
+                Tu navegador no soporta la reproducion de audio. Prueba con cotro dispositivo.
+            </audio>
+            <p>Adopta un vino</p>
+            <!-- aduio -->
+            <audio controls>
+                <source src="../media/podcast1-adoptavino.mp3" type="audio/mp3">
+                Tu navegador no soporta la reproducion de audio. Prueba con cotro dispositivo.
+            </audio>
+        </div>
+
+    </main>
+
 
     <!--        Foooter        -->
     <footer>

@@ -29,9 +29,11 @@ h1 {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.h1-pequeño{
+
+.h1-pequeño {
     font-size: 2.5em;
 }
+
 h2 {
     font-size: 3em;
     font-weight: lighter;
@@ -41,30 +43,39 @@ h3 {
     font-size: 2.5em;
     font-weight: lighter;
 }
-h4{
+
+h4 {
     font-size: 2em;
 }
+
 /* tamaños para vista movil*/
 @media (max-width: 800px) {
     h1 {
         font-size: 2.5em;
     }
-    
+
     h2 {
         font-size: 2em;
     }
-    
+
     h3 {
         font-size: 1.5em;
     }
-    h4{
+
+    h4 {
         font-size: 1.5em;
+    }
+
+    video, iframe {
+        width: 300px;
     }
 }
 
-.texto-justificado{
+
+.texto-justificado {
     text-align: justify;
 }
+
 .container-general {
     width: 80%;
     margin: 0 auto;
@@ -90,11 +101,13 @@ h4{
     width: 70%;
     margin: 0 auto;
 }
-.container-botones{
+
+.container-botones {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+
 .margin-superior {
     padding: 40px;
 
@@ -103,13 +116,15 @@ h4{
 .fondo-gris {
     background-color: #6c757d;
 }
-.centrar{
+
+.centrar {
     text-align: center;
     margin-bottom: 40px;
 }
+
 .boton-saber {
     padding: 13px 25px;
-    
+
     color: var(--color-blanco-texto);
     text-decoration: none;
     background-color: var(--boton-verde);
@@ -128,7 +143,7 @@ h4{
     border-radius: 10px;
 }
 
-.boton{
+.boton {
     background-color: var(--boton-azul);
     padding: 10px 20px;
     margin: 0px 30px;
@@ -140,7 +155,7 @@ h4{
     transition: background-color .5s;
 }
 
-.boton-vino-mes{
+.boton-vino-mes {
     background-color: var(--color-amarillo-boton);
     padding: 10px 20px;
     margin: 0px 30px;
@@ -151,9 +166,11 @@ h4{
     color: var(--color-negro-texto);
     transition: background-color .5s;
 }
-.boton-vino-mes:hover{
+
+.boton-vino-mes:hover {
     background-color: var(--color-amarillo-boton-hover);
 }
+
 .color-gris {
     color: var(--color-gris-texto);
 }
@@ -170,12 +187,13 @@ h4{
     margin: 0 auto;
 }
 
-.imagen-piramide{
+.imagen-piramide {
     width: auto;
 }
+
 /* tamaño para vista movil*/
 @media (max-width: 800px) {
-    .imagen-piramide{
+    .imagen-piramide {
         width: 75%;
     }
 }
@@ -242,9 +260,11 @@ ol.migas>li>a {
         padding: 8px;
         color: var(--color-gris-texto);
     }
-    .nav-list>li:first-child a{
+
+    .nav-list>li:first-child a {
         color: var(--color-negro-texto);
     }
+
     .nav>ul>li {
         display: inline;
     }
@@ -381,11 +401,13 @@ ol.migas>li>a {
     grid-template-rows: 40px auto;
     justify-content: space-around;
 }
-.padre-preguntas{
-     background-color: var(--color-gris-fondo);
-     padding: 35px 0px;
+
+.padre-preguntas {
+    background-color: var(--color-gris-fondo);
+    padding: 35px 0px;
 }
-.contenedor-collapse{
+
+.contenedor-collapse {
     display: flex;
     flex-direction: row;
 }
@@ -398,6 +420,7 @@ ol.migas>li>a {
     border-radius: 10px;
     background-color: var(--color-azul-fondo);
 }
+
 .container-preguntas input {
     display: none;
 }
@@ -415,10 +438,11 @@ ol.migas>li>a {
     color: var(--color-blanco-texto);
     transition: background-color .5s;
 }
+
 /* empequeñecemos la letra para que en vista movil no se pisten los botones*/
 @media (max-width:800px) {
-    .pregunta{
-        font-size:small;
+    .pregunta {
+        font-size: small;
     }
 }
 
@@ -426,8 +450,8 @@ ol.migas>li>a {
     background-color: var(--bonton-azul-activo);
 }
 
-#pregunta1:checked~ #collapse1,
-#pregunta2:checked~ #collapse2 {
+#pregunta1:checked~#collapse1,
+#pregunta2:checked~#collapse2 {
     display: block;
 }
 
@@ -463,6 +487,7 @@ ol.migas>li>a {
     border: 1px solid var(--color-gris-texto);
     border-radius: 10px;
 }
+
 /* se adapta el numero de columnas segun el tamaño de la pantalla*/
 /* para ver hasta 768px una columna*/
 @media (max-width:768px) {
@@ -478,10 +503,11 @@ ol.migas>li>a {
         grid-template-columns: 32% 32% 32%;
     }
 }
+
 /* a partir de 1201px 5 columnas*/
 @media (min-width:1201px) {
     .grid-galeria {
-        grid-template-columns: 20% 20% 20% 20% 20% ;
+        grid-template-columns: 20% 20% 20% 20% 20%;
     }
 }
 
@@ -577,56 +603,61 @@ ol.migas>li>a {
     left: 0;
     background: rgba(112, 111, 111, 0.8);
     z-index: 99999;
-    opacity:0;
+    opacity: 0;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     pointer-events: none;
 }
+
 .modalmask:target {
-    opacity:1;
+    opacity: 1;
     pointer-events: auto;
 }
 
 /*Formato de la ventana*/
-.modalbox{
+.modalbox {
     width: 400px;
     position: relative;
     padding: 5px 20px 13px 20px;
     background: var(--color-blanco-texto);
-    border-radius:3px;
+    border-radius: 3px;
     -webkit-transition: all 500ms ease-in;
     -moz-transition: all 500ms ease-in;
     transition: all 500ms ease-in;
-     
+
 }
 
 /*Movimientos*/
 .movedown {
     margin: 0 auto;
 }
+
 .rotate {
     margin: 10% auto;
-    -webkit-transform: scale(-5,-5);
-    transform: scale(-5,-5);
+    -webkit-transform: scale(-5, -5);
+    transform: scale(-5, -5);
 }
+
 .resize {
     margin: 10% auto;
-    width:0;
-    height:0;
- 
+    width: 0;
+    height: 0;
+
 }
-.modalmask:target .movedown{       
-    margin:10% auto;
+
+.modalmask:target .movedown {
+    margin: 10% auto;
 }
-.modalmask:target .rotate{     
-    transform: rotate(360deg) scale(1,1);
-        -webkit-transform: rotate(360deg) scale(1,1);
+
+.modalmask:target .rotate {
+    transform: rotate(360deg) scale(1, 1);
+    -webkit-transform: rotate(360deg) scale(1, 1);
 }
- 
-.modalmask:target .resize{
-    width:400px;
-    height:200px;
+
+.modalmask:target .resize {
+    width: 400px;
+    height: 200px;
 }
 
 .close {
@@ -637,6 +668,7 @@ ol.migas>li>a {
     position: relative;
     cursor: pointer;
 }
+
 .barra {
     position: absolute;
     width: 100%;
@@ -645,7 +677,7 @@ ol.migas>li>a {
     transition: transform 0.3s ease;
 }
 
-.close:hover .barra{
+.close:hover .barra {
     background-color: var(--color-negro-texto);
 }
 
@@ -659,32 +691,39 @@ ol.migas>li>a {
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
 }
-.modal-header{
+
+.modal-header {
     display: flex;
     justify-content: space-between;
 }
-.moddal-titulo{
+
+.moddal-titulo {
     margin: 2px;
     font-size: 1.2rem;
     color: var(--color-negro-texto);
 }
-.moddal-titulo2{
+
+.moddal-titulo2 {
     font-size: 1.5rem;
 }
-.moddal-image{
+
+.moddal-image {
     width: 400px;
 }
-.separador-moddal{
+
+.separador-moddal {
     width: 100%;
     height: 2px;
     background-color: var(--color-gris-fondo);
     margin: 5px 0px;
 }
-.moddal-bajo{
+
+.moddal-bajo {
     display: flex;
     justify-content: flex-end;
 }
-.boton-cerrar-modal{
+
+.boton-cerrar-modal {
     background-color: var(--color-gris-fondo);
     color: var(--color-blanco-texto);
     text-decoration: none;
@@ -705,7 +744,7 @@ footer {
 
 }
 
-footer a{
+footer a {
     color: var(--color-blanco-texto);
 }
 
@@ -841,22 +880,25 @@ footer a{
 
 /*           sprite         */
 
-.info-dispositivos{
+.info-dispositivos {
     display: none;
 }
-#alert-gen{
+
+#alert-gen {
     display: none;
 }
+
 /* ocultamos el srpite y mostramos alerta
 no me es posible adaptar el srpite a pantallas mas pequeñas
 ademas en movil no hay "raton" para pasar por encima
 */
 @media (max-width:768px) {
-    
-    .sprite-vino{
+
+    .sprite-vino {
         display: none;
     }
-    #alert-gen{
+
+    #alert-gen {
         display: block;
     }
 }
@@ -984,137 +1026,157 @@ ademas en movil no hay "raton" para pasar por encima
 
 
 /* Mapa D.O. en vinos tintos*/
-.container-do{
+.container-do {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    }
-    #mapa-do{
-        width: 900px;
-        position: relative;
-    }
-    .info-dispositivos{
-        color: red;
-        width: fit-content;
-        font-weight: bold;
-        font-size: 1em;
-        background-color: var(--color-azul-fondo);
-        padding: 15px 20px;
-        margin: 35px auto;
-        border-radius: 10px;
-    }
-    #info-mapa{
-        display: none;
-    }
+
+}
+
+#mapa-do {
+    width: 900px;
+    position: relative;
+}
+
+.info-dispositivos {
+    color: red;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: var(--color-azul-fondo);
+    padding: 15px 20px;
+    margin: 35px auto;
+    border-radius: 10px;
+}
+
+#info-mapa {
+    display: none;
+}
+
 /* ocultamos la vista en el movil, no me es posible (o no se hacerlo)
 adaptar todos las posiciones a una situacion responsive
 además en movil no hay "raton" para pasar por encima y ver la información*/
 
-    @media (max-width:800px) {
-        #mapa-do {
-           display: none;
-        }
-        #info-mapa{
-            display: block;
-        }
-    }
-    #mapa-do > img {
-        position: relative;
-        width: 800px;
-    }
-    #mapa-do:hover ul.cuadro li {
-        display: block;
-    }
-    ul.cuadro li {
-        list-style: none;
+@media (max-width:800px) {
+    #mapa-do {
         display: none;
-        position: absolute;
-        border: medium solid rgb(102, 47, 47);
-        /*background: url("esta_imagen_no_existe");*/
     }
-    ul.cuadro li p {
-        margin: 10px 0 0 0;
-        padding: 0.3em;
-        display: none;
-        background: rgb(165, 86, 86);
-        opacity: 0.85;
-        position: absolute;
-        top: 100%;
-    }
-    ul.cuadro li:hover p {
-        display: inline;
-    }
-    ul.cuadro li.nota1 {
-        width: 140px;
-        height: 110px;
-        top: 220px;
-        left: 420px;
-    }
-    ul.cuadro li.nota2 {
-        width: 80px;
-        height: 50px;
-        top: 80px;
-        left: 480px;
-    }
-    ul.cuadro li.nota3 {
-        width: 90px;
-        height: 50px;
-        top: 110px;
-        left: 410px;
-    }
-    ul.cuadro li.nota4 {
-        width: 30px;
-        height: 30px;
-        top: 130px;
-        left: 660px;
-    }
-    ul.cuadro li.nota5 {
-        width: 40px;
-        height: 35px;
-        top: 95px;
-        left: 600px;
-    }
-    .nota1:hover p {
+
+    #info-mapa {
         display: block;
-        height: 80px;
-        width: 140px;
-        top: -10px;
-        left: 150px;
     }
-    
-    .nota2:hover p {
-        display: block;
-        height: 45px;
-        width: 130px;
-        top: -10px;
-        left: 85px;
-    }
-    .nota3:hover p {
-        display: block;
-        height: 100px;
-        width: 100px;
-        top: -10px;
-        left: -120px;
-    }
-    .nota4:hover p {
-        display: block;
-        height: 100px;
-        width: 100px;
-        top: -10px;
-        left: 35px;
-    }
-    .nota5:hover p {
-        display: block;
-        height: 90px;
-        width: 120px;
-        top: -110px;
-        left: 20px;
-    }
-    .cuadro > li > p {
-        color: rgb(255, 255, 255);
-    }
-    
-    
-    
-    /* FIN mapa D.O. en tintos*/
+}
+
+#mapa-do>img {
+    position: relative;
+    width: 800px;
+}
+
+#mapa-do:hover ul.cuadro li {
+    display: block;
+}
+
+ul.cuadro li {
+    list-style: none;
+    display: none;
+    position: absolute;
+    border: medium solid rgb(102, 47, 47);
+    /*background: url("esta_imagen_no_existe");*/
+}
+
+ul.cuadro li p {
+    margin: 10px 0 0 0;
+    padding: 0.3em;
+    display: none;
+    background: rgb(165, 86, 86);
+    opacity: 0.85;
+    position: absolute;
+    top: 100%;
+}
+
+ul.cuadro li:hover p {
+    display: inline;
+}
+
+ul.cuadro li.nota1 {
+    width: 140px;
+    height: 110px;
+    top: 220px;
+    left: 420px;
+}
+
+ul.cuadro li.nota2 {
+    width: 80px;
+    height: 50px;
+    top: 80px;
+    left: 480px;
+}
+
+ul.cuadro li.nota3 {
+    width: 90px;
+    height: 50px;
+    top: 110px;
+    left: 410px;
+}
+
+ul.cuadro li.nota4 {
+    width: 30px;
+    height: 30px;
+    top: 130px;
+    left: 660px;
+}
+
+ul.cuadro li.nota5 {
+    width: 40px;
+    height: 35px;
+    top: 95px;
+    left: 600px;
+}
+
+.nota1:hover p {
+    display: block;
+    height: 80px;
+    width: 140px;
+    top: -10px;
+    left: 150px;
+}
+
+.nota2:hover p {
+    display: block;
+    height: 45px;
+    width: 130px;
+    top: -10px;
+    left: 85px;
+}
+
+.nota3:hover p {
+    display: block;
+    height: 100px;
+    width: 100px;
+    top: -10px;
+    left: -120px;
+}
+
+.nota4:hover p {
+    display: block;
+    height: 100px;
+    width: 100px;
+    top: -10px;
+    left: 35px;
+}
+
+.nota5:hover p {
+    display: block;
+    height: 90px;
+    width: 120px;
+    top: -110px;
+    left: 20px;
+}
+
+.cuadro>li>p {
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* FIN mapa D.O. en tintos*/
