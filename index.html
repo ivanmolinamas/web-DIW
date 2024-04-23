@@ -6,226 +6,243 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, charset=utf-8" />
     <title>Mundo de vinos</title>
     <link href="/Bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="/Bootstrap/style.css" rel="stylesheet" type="text/css">
+    <link href="/Bootstrap/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <!--            navbar               -->
-    <nav class="navbar navbar-expand-md ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="img/Logo.png" alt="logo del centro" width="150px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    <a class="nav-link" href="Bootstrap/bootstrap1.html">Vino Tinto</a>
-                    <a class="nav-link" href="Bootstrap/bootstrap2.html">Vino Blanco</a>
-                    <a class="nav-link" href="CSS/pagina1.html">Vinos Generosos</a>
-                    <a class="nav-link" href="Bootstrap/bootstrap5.html">Sobre mi</a>
+    <!-- Header  -->
+    <header>
+        <!--            navbar               -->
+        <nav class="navbar navbar-expand-md ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/Logo.png" alt="logo del centro"
+                        width="150px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link" href="Bootstrap/bootstrap1.html">Vino Tinto</a>
+                        <a class="nav-link" href="Bootstrap/bootstrap2.html">Vino Blanco</a>
+                        <a class="nav-link" href="CSS/pagina1.html">Vinos Generosos</a>
+                        <a class="nav-link" href="Bootstrap/bootstrap5.html">Sobre mi</a>
+                    </div>
                 </div>
+            </div>
+        </nav>
+        <!--            Titulo                       -->
+        <div class="container-flex mb-3 mt-3">
+            <h1 class="display-1 text-center">Mundo de vinos</h1>
+            <h2 class="h2 text-center">La web con información de los diferentes vinos</h2>
+        </div>
+    </header>
+    <!--   Main   -->
+    <main>
+        <!--                   Carrousel                            -->
+
+        <div class="container-flex">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/bodega1.png" class="d-block w-100" alt="bodega centenaria">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Bodegas en la Rioja</h5>
+                            <p>La denominación de origen mas famosa del país</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/bodega2.jpeg" class="d-block w-100" alt="bodegas Lustau">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Vinos de Jerez</h5>
+                            <p>Los vinos mas exportados a todo el mundo y con mejor valoración</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/bodega3.jpg" class="d-block w-100" alt="Copas de vino Jerez">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Aprende a diferenciar los tipos de vinos</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-    </nav>
+        <!--                       fin carrousel                 -->
 
-    <!--            Titulo                       -->
-
-    <div class="container-flex mb-3 mt-3">
-        <h1 class="display-1 text-center">Mundo de vinos</h1>
-        <h2 class="h2 text-center">La web con información de los diferentes vinos</h2>
-    </div>
-
-    <!--                   Carrousel                            -->
-
-    <div class="container-flex">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/bodega1.png" class="d-block w-100" alt="bodega centenaria">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Bodegas en la Rioja</h5>
-                        <p>La denominación de origen mas famosa del país</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/bodega2.jpeg" class="d-block w-100" alt="bodegas Lustau">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Vinos de Jerez</h5>
-                        <p>Los vinos mas exportados a todo el mundo y con mejor valoración</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/bodega3.jpg" class="d-block w-100" alt="Copas de vino Jerez">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Aprende a diferenciar los tipos de vinos</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-    <!--                       fin carrousel                 -->
-
-    <!--   Parrafo de Texto     -->
-    <div class="container-sm mt-5">
-        <h2 class="displa-2 text-center">Tipos de vino que debes conocer</h2>
-        <div class="row justify-content-center">
-            <div class="col-8 m-2">
-                <p class="texto-justificado">Los vinos más comunes son el vino blanco, el vino tinto y el vino generoso. Los tres colores pueden
-                    presentarse como vino tranquilo o espumoso o vino de aguja producirse. También existe un cuarto
-                    color, el vino naranja. Los distintos tipos difieren principalmente en el proceso de producción y en
-                    el color de las uvas utilizadas. </p>
-                <p class="texto-justificado">
-                    El vino blanco suele elaborarse a partir de uvas claras mediante la fermentación del mosto. El vino
-                    blanco elaborado con uvas oscuras por fermentación del mosto se conoce como Blanc de Noirs.
-                </p>
-                <p class="texto-justificado">
-                    El vino generoso puede ser seco o dulce, a diferencia del Licoroso (siempre dulce). También se producen en los tipos de vino especiales Mistela y Rancio
-                </p>
-                <a href="https://glossaire.wein.plus/vino-tinto" target="_blank">Origen información</a>
-            </div>
-        </div>
-    </div>
-
-    <!--        CARDS             -->
-
-    <div class="container-lg mt-5 bg-secondary p-3 text-center" id="tarjetas">
-        <div class="row mb-3 mt-3">
-            <div class="col-12 text-center">
-                <h3 class="h3 light-rgb">Más información de las diferentes variedades de vinos</h3>
-            </div>
-        </div>
-        <!-- primera row-->
-        <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="card mx-auto d-block m-2" style="width: 18rem;">
-                    <img src="img/vino-tinto-LOW.jpg" class="card-img-top" alt="copa de vino tinto">
-                    <div class="card-body">
-                        <h5 class="card-title">Vintos tintos</h5>
-                        <p class="card-text">
-                            Vino procedente mayormente de mosto de uvas tintas, el envejecimiento se realiza en barrica.
-                            Es el vino mas famoso y el primero que suele pensar la gente cuando le hablan de vino.
-                        </p>
-                        <a href="Bootstrap/bootstrap1.html" class="btn btn-primary">Aprende mas sobre tintos</a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="card mx-auto d-block m-2" style="width: 18rem;">
-                    <img src="img/vino-blanco-LOW.jpg" class="card-img-top" alt="copa de vino blanco">
-                    <div class="card-body">
-                        <h5 class="card-title">Vintos blancos</h5>
-                        <p class="card-text">
-                            Vino producido por la fermentación de diferentes tipos de uvas blancas, estos son vinos
-                            jovenes que no suelen pasar por barril, son vinos que van bien con el pescado y suelen
-                            servierse frios.
-                        </p>
-                        <a href="Bootstrap/bootstrap2.html" class="btn btn-primary">Saber mas de blancos</a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="card mx-auto d-block m-2" style="width: 18rem;">
-                    <img src="img/copa-generoso-LOW.jpg" class="card-img-top" alt="copa de vino manzanilla">
-                    <div class="card-body">
-                        <h5 class="card-title">Vintos generosos</h5>
-                        <p class="card-text">
-                            El vino generoso es un vino que se le añade alcohol de la fermentación de la
-                            uva para aumentar la graduación con la idea de protegerlo de los microorganismos duarnte las
-                            largas crianzas en bota.
-                        </p>
-                        <a href="CSS/pagina1.html" class="btn btn-primary">Descubre los generosos</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-    <!--     Alert      -->
-    <div class="container mt-2">
-        <div class="row">
-            <div class="col-6 offset-3">
-                <div class="alert alert-success" role="alert">
-                    Dentro de cada sección de vinos encontraras una recomendación.
+        <!--   Parrafo de Texto     -->
+        <div class="container-sm mt-5">
+            <h3 class="display-3 text-center">Tipos de vino que debes conocer</h3>
+            <div class="row justify-content-center">
+                <div class="col-8 m-2">
+                    <p class="texto-justificado">Los vinos más comunes son el vino blanco, el vino tinto y el vino
+                        generoso.
+                        Los tres colores pueden
+                        presentarse como vino tranquilo o espumoso o vino de aguja producirse. También existe un cuarto
+                        color, el vino naranja. Los distintos tipos difieren principalmente en el proceso de producción
+                        y en
+                        el color de las uvas utilizadas. </p>
+                    <p class="texto-justificado">
+                        El vino blanco suele elaborarse a partir de uvas claras mediante la fermentación del mosto. El
+                        vino
+                        blanco elaborado con uvas oscuras por fermentación del mosto se conoce como Blanc de Noirs.
+                    </p>
+                    <p class="texto-justificado">
+                        El vino generoso puede ser seco o dulce, a diferencia del Licoroso (siempre dulce). También se
+                        producen en los tipos de vino especiales Mistela y Rancio
+                    </p>
+                    <a href="https://glossaire.wein.plus/vino-tinto" target="_blank">Origen información</a>
                 </div>
             </div>
         </div>
 
+        <!--        CARDS             -->
 
-    </div>
+        <div class="container-lg mt-5 bg-secondary p-3 text-center" id="tarjetas">
+            <div class="row mb-3 mt-3">
+                <div class="col-12 text-center">
+                    <h3 class="h3 light-rgb">Más información de las diferentes variedades de vinos</h3>
+                </div>
+            </div>
+            <!-- primera row-->
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card mx-auto d-block m-2" style="width: 18rem;">
+                        <img src="img/vino-tinto-LOW.jpg" class="card-img-top" alt="copa de vino tinto">
+                        <div class="card-body">
+                            <h5 class="card-title">Vintos tintos</h5>
+                            <p class="card-text">
+                                Vino procedente mayormente de mosto de uvas tintas, el envejecimiento se realiza en
+                                barrica.
+                                Es el vino mas famoso y el primero que suele pensar la gente cuando le hablan de vino.
+                            </p>
+                            <a href="Bootstrap/bootstrap1.html" class="btn btn-primary">Aprende mas sobre tintos</a>
+                        </div>
+                    </div>
 
-    <!--     collapse    -->
-    <div class="container mt-3">
-        <div class="row">
-            <div class="col-sm-12 col-md-6 mt-2">
-                <p class="text-center">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#vino-naranja-desplegable" aria-expanded="false"
-                        aria-controls="collapseWidthExample">
-                        ¿Y que es el Vino Naranja?
-                    </button>
-                </p>
-                <div style="min-height: 120px;">
-                    <div class="collapse collapse-horizontal" id="vino-naranja-desplegable">
-                        <div class="card card-body" style="width: 350px;">
-                            El vino brisado o vino blanco brisado, conocido en algunos países como vino naranja debido a
-                            su color, es un tipo de vino elaborado con cepas blancas cuyo mosto ha fermentado junto
-                            con sus hollejos, como si fuera un vino tinto.
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card mx-auto d-block m-2" style="width: 18rem;">
+                        <img src="img/vino-blanco-LOW.jpg" class="card-img-top" alt="copa de vino blanco">
+                        <div class="card-body">
+                            <h5 class="card-title">Vintos blancos</h5>
+                            <p class="card-text">
+                                Vino producido por la fermentación de diferentes tipos de uvas blancas, estos son vinos
+                                jovenes que no suelen pasar por barril, son vinos que van bien con el pescado y suelen
+                                servierse frios.
+                            </p>
+                            <a href="Bootstrap/bootstrap2.html" class="btn btn-primary">Saber mas de blancos</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card mx-auto d-block m-2" style="width: 18rem;">
+                        <img src="img/copa-generoso-LOW.jpg" class="card-img-top" alt="copa de vino manzanilla">
+                        <div class="card-body">
+                            <h5 class="card-title">Vintos generosos</h5>
+                            <p class="card-text">
+                                El vino generoso es un vino que se le añade alcohol de la fermentación de la
+                                uva para aumentar la graduación con la idea de protegerlo de los microorganismos duarnte
+                                las
+                                largas crianzas en bota.
+                            </p>
+                            <a href="CSS/pagina1.html" class="btn btn-primary">Descubre los generosos</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!--     Alert      -->
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-6 offset-3">
+                    <div class="alert alert-success" role="alert">
+                        Dentro de cada sección de vinos encontraras una recomendación.
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--     collapse    -->
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 mt-2">
+                    <p class="text-center">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#vino-naranja-desplegable" aria-expanded="false"
+                            aria-controls="collapseWidthExample">
+                            ¿Y que es el Vino Naranja?
+                        </button>
+                    </p>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="vino-naranja-desplegable">
+                            <div class="card card-body" style="width: 350px;">
+                                El vino brisado o vino blanco brisado, conocido en algunos países como vino naranja
+                                debido a
+                                su color, es un tipo de vino elaborado con cepas blancas cuyo mosto ha fermentado junto
+                                con sus hollejos, como si fuera un vino tinto.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mt-2">
+                    <p class="text-center">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#cava-desplegable" aria-expanded="false"
+                            aria-controls="collapseWidthExample">
+                            ¿El cava tambien es vino?
+                        </button>
+                    </p>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="cava-desplegable">
+                            <div class="card card-body" style="width: 350px;">
+                                Si, el cava es un tipo de vino, concretamente un vino espumoso caracteristico por sus
+                                burbujas y su color brillante y dorado. El nombre de cava viene por las antiguas bodegas
+                                donde se almacenaba que se les llamava "cavas".
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 mt-2">
-                <p class="text-center">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#cava-desplegable" aria-expanded="false" aria-controls="collapseWidthExample">
-                        ¿El cava tambien es vino?
-                    </button>
-                </p>
-                <div style="min-height: 120px;">
-                    <div class="collapse collapse-horizontal" id="cava-desplegable">
-                        <div class="card card-body" style="width: 350px;">
-                            Si, el cava es un tipo de vino, concretamente un vino espumoso caracteristico por sus
-                            burbujas y su color brillante y dorado. El nombre de cava viene por las antiguas bodegas
-                            donde se almacenaba que se les llamava "cavas".
-                        </div>
-                    </div>
+        </div>
+
+
+        <!--   texto infomativo     -->
+
+        <div class="container-sm mt-4">
+            <div class="row justify-content-center">
+                <div class="col-10 m-2">
+                    <p class="texto-justificado">
+                        En esta web encontraras información sobre vinos, los tipos y sus diferfencias, tambien mapas con
+                        las
+                        distintas D.O.
+                        que hay en España y la producción de vino que se elabora en España. Tambien encontraras
+                        informacion
+                        sobre el propietario de la web
+                        y un formuario para ponerte en contanto conmigo.
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
-
-    <!--   texto infomativo     -->
-
-    <div class="container-sm mt-4">
-        <div class="row justify-content-center">
-            <div class="col-10 m-2">
-                <p class="texto-justificado">
-                    En esta web encontraras información sobre vinos, los tipos y sus diferfencias, tambien mapas con las
-                    distintas D.O.
-                    que hay en España y la producción de vino que se elabora en España. Tambien encontraras informacion
-                    sobre el propietario de la web
-                    y un formuario para ponerte en contanto conmigo.
-                </p>
-            </div>
-        </div>
-    </div>
 
     <!--                 Footer                -->
     <footer class="container-fluid bg-dark mt-5 pt-5 pb-5">
@@ -233,8 +250,8 @@
             <div class="col">
                 <div class="row">
                     <p><a class="text-light" href="Bootstrap/bootstrap4.html">Pagina de conctacto</a></p>
-                    <p class="text-light">Desarrollado por <a class="text-light"
-                        href="Bootstrap/bootstrap5.html">Ivan Molina Mas</a> </p>
+                    <p class="text-light">Desarrollado por <a class="text-light" href="Bootstrap/bootstrap5.html">Ivan
+                            Molina Mas</a> </p>
                     <p class="text-light">Pagina desarrollada con Bootstrap</p>
                     <p class="text-light">Para proyecto en clase Desarrollo Interfaces Web año - 2024 - Los Enlaces</p>
                 </div>

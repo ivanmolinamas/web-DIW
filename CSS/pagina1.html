@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-ES">
 
 <head>
     <meta charset="UTF-8">
@@ -10,25 +10,27 @@
 </head>
 
 <body>
-    <!--        NavBar       -->
-    <nav class="nav">
-        <a class="navbar-brand" href="../index.html"><img src="../img/Logo.png" alt="logo del centro" width="150px"></a>
-        <input type="checkbox" id="toggle">
-        <label for="toggle" class="toggle-btn">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </label>
-        <ul class="nav-list">
-            <li><a class="color-negro" aria-current="page" href="../index.html">Inicio</a></li>
-            <li><a href="../Bootstrap/bootstrap1.html">Vino Tinto</a></li>
-            <li><a href="../Bootstrap/bootstrap2.html">Vino Blanco</a></li>
-            <li><a href="pagina1.html">Vinos Generosos</a></li>
-            <li><a href="../Bootstrap/bootstrap5.html">Sobre mi</a></li>
-        </ul>
-    </nav>
+    <!--   header   -->
+    <header>
+        <!--        NavBar       -->
+        <nav class="nav">
+            <a class="navbar-brand" href="../index.html"><img src="../img/Logo.png" alt="logo del centro"
+                    width="150px"></a>
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="toggle-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="nav-list">
+                <li><a class="color-negro" aria-current="page" href="../index.html">Inicio</a></li>
+                <li><a href="../Bootstrap/bootstrap1.html">Vino Tinto</a></li>
+                <li><a href="../Bootstrap/bootstrap2.html">Vino Blanco</a></li>
+                <li><a href="pagina1.html">Vinos Generosos</a></li>
+                <li><a href="../Bootstrap/bootstrap5.html">Sobre mi</a></li>
+            </ul>
+        </nav>
 
-    <main>
         <!--        migas de pan      -->
         <div class="container">
             <div aria-label="migas-separador">
@@ -37,18 +39,21 @@
                     <li class="migas-item active" aria-current="page">Vinos generosos</li>
                 </ol>
             </div>
-
         </div>
 
         <!-- titulo principal -->
         <div>
             <h1 class="h1-pequeño text-center">Mundo de vinos</h1>
         </div>
+    </header>
+
+
+    <!--    main    -->
+    <main>
         <!--         titulo                -->
         <h2 class="text-center">Vinos Generosos</h2>
 
         <!-- imagen de cabecera-->
-
         <div class="imagen-cabecera">
             <p class="texto-cabecera-imagen">
                 Bodegas en Fundador en Jerez de la Frontera<br>
@@ -68,9 +73,8 @@
         </div>
 
         <!--   Primer contenido que es el generoso   -->
-
         <div class="container-general" id="general-generoso">
-            <h2 class="text-center padding-general">¿Que es el vino generoso?</h2>
+            <h3 class="text-center padding-general">¿Que es el vino generoso?</h3>
             <div class="container-texto-70">
                 <p class="text-justify">
                     Es un vino que se le añade alcohol vinico para que este tenga mas graduación en alcohol. Tambien se
@@ -118,9 +122,12 @@
                 </p>
             </div>
         </div>
+        <!--   boton enlace saber mas a pagina 3-->
         <div class="centrar">
             <a class="boton-saber" href="pagina3.html">Más información</a>
         </div>
+
+        <!--      ventana modal     -->
         <div class="centrar">
             <a class="boton-vino-mes" href="#modal1">Vino del mes</a>
         </div>
@@ -148,7 +155,6 @@
                 </div>
             </div>
         </div>
-
 
         <!--   desplegables con uso de Pseudoclases  -->
 
@@ -201,9 +207,6 @@
             <h2 class="text-center">Los diferentes tipos de vinos</h2>
 
             <div class="centrado-map">
-                <!-- Mapa de imágenes haciendo uso de la etiqueta <map>, definiendo al menos 4 áreas, 2 de ellas
-                    deben ser poligonales (de forma similar al ejercicio de “animales marinos”)-->
-
                 <div class="mapa-div">
                     <h4 class="text-center">Existen hasta 10 variedades de vino diferentes</h4>
                     <map name="image-map">
@@ -260,8 +263,8 @@
             </div>
         </div>
 
-        <!-- Mapa de imágenes sin hacer uso de la etiqueta <map> -->
 
+        <!-- Mapa de imágenes sin hacer uso de la etiqueta <map> -->
         <div class="container-soleras" id="soleras-generoso">
 
             <h3 class="text-center">Sistema de soleras y criaderas</h3>
@@ -298,8 +301,6 @@
                     y olores, pudiendo sacar vinos de grandisima calidad y unicos.
                 </p>
             </div>
-
-
             <div class="centrado-solera">
                 <div id="contenedor-soleras">
                     <div id="primera-criadera"></div>
@@ -336,16 +337,18 @@
                         class="imagen-galeria">
                     <img src="../img/galeria/generoso/bodega07.jpg" alt="imagen de bodegas La Concha de Tio Pepe"
                         class="imagen-galeria">
-
                 </div>
             </div>
         </div>
 
+        <!--    botones enlace a otras paginas  -->
         <div class="container-botones">
             <a class="boton" href="../Bootstrap/bootstrap1.html">Descubre vintos tintos</a>
             <a class="boton" href="../Bootstrap/bootstrap2.html">Conoce los vintos blancos</a>
         </div>
     </main>
+
+    <!-- footer  -->
     <footer>
         <p><a class="text-light" href="../Bootstrap/bootstrap4.html">Página de conctacto</a></p>
         <p>Desarrollado por <a class="text-light" href="../Bootstrap/bootstrap5.html">Ivan Molina Mas</a> </p>

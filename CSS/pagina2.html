@@ -10,27 +10,28 @@
 </head>
 
 <body>
-    <!--        NavBar       -->
-    <nav class="nav">
-        <a class="navbar-brand" href="../index.html"><img src="../img/Logo.png" alt="logo del centro" width="150px"></a>
-        <input type="checkbox" id="toggle">
-        <label for="toggle" class="toggle-btn">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </label>
-        <ul class="nav-list">
-            <li><a class="color-negro" aria-current="page" href="../index.html">Inicio</a></li>
-            <li><a class="color-gris" href="../Bootstrap/bootstrap1.html">Vino Tinto</a></li>
-            <li><a class="color-gris" href="../Bootstrap/bootstrap2.html">Vino Blanco</a></li>
-            <li><a class="color-gris" href="pagina1.html">Vinos Generosos</a></li>
-            <li><a class="color-gris" href="../Bootstrap/bootstrap5.html">Sobre mi</a></li>
-        </ul>
-    </nav>
+    <header>
 
-    <main>
+        <!--        NavBar       -->
+        <nav class="nav">
+            <a class="navbar-brand" href="../index.html"><img src="../img/Logo.png" alt="logo del centro"
+                    width="150px"></a>
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="toggle-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="nav-list">
+                <li><a class="color-negro" aria-current="page" href="../index.html">Inicio</a></li>
+                <li><a class="color-gris" href="../Bootstrap/bootstrap1.html">Vino Tinto</a></li>
+                <li><a class="color-gris" href="../Bootstrap/bootstrap2.html">Vino Blanco</a></li>
+                <li><a class="color-gris" href="pagina1.html">Vinos Generosos</a></li>
+                <li><a class="color-gris" href="../Bootstrap/bootstrap5.html">Sobre mi</a></li>
+            </ul>
+        </nav>
+
         <!--        migas de pan      -->
-
         <div class="container">
             <div aria-label="migas-separador">
                 <ol class="migas">
@@ -39,14 +40,17 @@
                     <li class="migas-item active" aria-current="page">Denominaciones de origen en España</li>
                 </ol>
             </div>
-
         </div>
 
-          <!-- titulo principal -->
-  <div>
-    <h1 class="h1-pequeño text-center">Mundo de vinos</h1>
-  </div>
+        <!-- titulo principal -->
+        <div>
+            <h1 class="h1-pequeño text-center">Mundo de vinos</h1>
+        </div>
 
+    </header>
+
+    <!--      main     -->
+    <main>
         <!-- contenido   -->
         <div class="container-general">
             <h2 class="text-center"> D.O. en España</h2>
@@ -56,6 +60,7 @@
             </p>
         </div>
 
+        <!-- mapa DO con comentarios -->
         <div class="container-do">
             <h3>Mapa de distintas D.O. de Vinos en España</h3>
             <p class="info-dispositivos" id="info-mapa">Vista del mapa no disponible en esta resolución</p>
@@ -81,6 +86,7 @@
             </div>
         </div>
 
+        <!--  contanedor con imagen  -->
         <div class="container-grande fondo-gris">
             <h3>Piramide de la clasificación de las los vinos </h3>
             <img src="../img/Clasificación-Vinos.png" class="imagen-piramide" alt="imagen de clasificaicon de vinos">
@@ -88,11 +94,11 @@
 
 
     </main>
+    
     <!--          Footer    -->
     <footer>
         <p><a class="text-light" href="../Bootstrap/bootstrap4.html">Página de conctacto</a></p>
-        <p>Desarrollado por <a class="text-light"
-            href="../Bootstrap/bootstrap5.html">Ivan Molina Mas</a> </p>
+        <p>Desarrollado por <a class="text-light" href="../Bootstrap/bootstrap5.html">Ivan Molina Mas</a> </p>
         <p>Pagina desarrollada con CSS</p>
         <p>Para proyecto en clase Desarrollo Interfaces Web año - 2024 - Los Enlaces</p>
     </footer>
