@@ -24,3 +24,9 @@
 .texto-justificado{
     text-align: justify;
 }
+
+@media (max-width: 800px) {
+    video, iframe {
+        width: 300px;
+    }
+}
